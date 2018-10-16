@@ -50,6 +50,7 @@ class FreeFallViewController: UIViewController {
         else {
             lbResult.text = "¡Que mal!"
         }
+        gameOver = true
     }
     
     var option:Option?
@@ -68,9 +69,11 @@ class FreeFallViewController: UIViewController {
     @IBOutlet weak var lbResult: UILabel!
     @IBOutlet weak var lbTimer: UILabel!
     
+    var arregloDiccionarios : NSArray!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeCount = 15
+        timeCount = 40
         gameOver = false
         lbResult.frame.origin.x = -1000
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
@@ -89,11 +92,24 @@ class FreeFallViewController: UIViewController {
     }
     
     func getData() {
-        currentPhrase = "En la mesa ____ tres manzanas."
-        optionWords.append("hay")
-        optionWords.append("ay")
-        optionWords.append("ahí")
-        solution = "hay"
+        
+        let randomIndex = 1//Int.random(in: <#T##ClosedRange<Int>#>)
+        
+        let path = Bundle.main.path(forResource: "FreeFallData", ofType: "plist")!
+        arregloDiccionarios = NSArray(contentsOfFile: path)
+        
+        let dic = arregloDiccionarios[randomIndex] as! NSDictionary
+        
+        let phrase = dic.object(forKey: "phrase") as? String
+        let optionsArray = dic.object(forKey: "options") as? [String]
+        let sol = dic.object(forKey: "solution") as? String
+            
+        currentPhrase = phrase
+        for op in optionsArray! {
+            optionWords.append(op)
+        }
+        solution = sol
+    
     }
     
     func setOptions() {

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>solution</key>
+		<string>hay</string>
+		<key>phrase</key>
+		<string>En la mesa ____ tres manzanas.</string>
+		<key>options</key>
+		<array>
+			<string>ay</string>
+			<string>ahí</string>
+			<string>hay</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>hay</string>
+		<key>phrase</key>
+		<string>En la mesa ____ tres manzanas.</string>
+		<key>options</key>
+		<array>
+			<string>ay</string>
+			<string>ahí</string>
+			<string>hay</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>hay</string>
+		<key>phrase</key>
+		<string>En la mesa ____ tres manzanas.</string>
+		<key>options</key>
+		<array>
+			<string>ay</string>
+			<string>ahí</string>
+			<string>hay</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>hay</string>
+		<key>phrase</key>
+		<string>En la mesa ____ tres manzanas.</string>
+		<key>options</key>
+		<array>
+			<string>ay</string>
+			<string>ahí</string>
+			<string>hay</string>
+		</array>
+	</dict>
+</array>
+</plist>
