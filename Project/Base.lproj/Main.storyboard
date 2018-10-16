@@ -92,6 +92,9 @@
                                 <rect key="frame" x="0.0" y="339" width="375" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Juego 1"/>
+                                <connections>
+                                    <segue destination="KuI-X3-DGf" kind="presentation" id="QJs-Ct-5Z4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-1U-t1s">
                                 <rect key="frame" x="0.0" y="449" width="375" height="102"/>
@@ -119,6 +122,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDO-U4-b8u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1025" y="-206"/>
+        </scene>
+        <!--Free Fall View Controller-->
+        <scene sceneID="hvk-EG-My8">
+            <objects>
+                <viewController id="KuI-X3-DGf" customClass="FreeFallViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TC8-13-UHn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUJ-jT-HE4">
+                                <rect key="frame" x="117" y="158" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="op1"/>
+                                <connections>
+                                    <action selector="choose:" destination="KuI-X3-DGf" eventType="touchUpInside" id="ZvF-zU-Kce"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1r-aL-af0">
+                                <rect key="frame" x="221" y="193" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="op2"/>
+                                <connections>
+                                    <action selector="choose2:" destination="KuI-X3-DGf" eventType="touchUpInside" id="drH-gu-JLm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-r7-b2e">
+                                <rect key="frame" x="117" y="264" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="op3"/>
+                                <connections>
+                                    <action selector="choose3:" destination="KuI-X3-DGf" eventType="touchUpInside" id="edu-CJ-gy5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crA-ap-cTh">
+                                <rect key="frame" x="237" y="290" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="op4"/>
+                                <connections>
+                                    <action selector="choose4:" destination="KuI-X3-DGf" eventType="touchUpInside" id="ykK-6W-vJl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQv-u5-Hp9">
+                                <rect key="frame" x="109" y="381" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="op5"/>
+                                <connections>
+                                    <action selector="choose5:" destination="KuI-X3-DGf" eventType="touchUpInside" id="b25-jE-CpZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AS-Ld-S8t">
+                                <rect key="frame" x="0.0" y="538" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diH-xX-chr">
+                                <rect key="frame" x="0.0" y="71" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-bH-B1f">
+                                <rect key="frame" x="0.0" y="315" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="La1-Ym-Msf"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbOption1" destination="PUJ-jT-HE4" id="5Qq-HM-dZU"/>
+                        <outlet property="lbOption2" destination="X1r-aL-af0" id="9Ag-T0-GxW"/>
+                        <outlet property="lbOption3" destination="aWc-r7-b2e" id="5jN-GD-Y4l"/>
+                        <outlet property="lbOption4" destination="crA-ap-cTh" id="e05-y7-B3B"/>
+                        <outlet property="lbOption5" destination="MQv-u5-Hp9" id="X8G-Af-B6e"/>
+                        <outlet property="lbPhrase" destination="8AS-Ld-S8t" id="cZD-rA-CYr"/>
+                        <outlet property="lbResult" destination="G3P-bH-B1f" id="87Y-sc-B4j"/>
+                        <outlet property="lbTimer" destination="diH-xX-chr" id="flM-Zf-WcU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzU-QQ-GfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880.8" y="-622.03898050974522"/>
         </scene>
     </scenes>
 </document>
