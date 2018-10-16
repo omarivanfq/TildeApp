@@ -48,7 +48,7 @@ class Option: NSObject {
         let rand = Float(arc4random()) / Float(UINT32_MAX)
         self.x = screenWidth * CGFloat(rand)
         
-        self.up = arc4random_uniform(2) == 0
+        self.up = Bool.random()
         if up {
             self.y = screenHeight
         }
