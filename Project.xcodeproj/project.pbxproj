@@ -10,6 +10,7 @@
 		FB503E1321763B2A003C3874 /* FreeFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1221763B2A003C3874 /* FreeFallViewController.swift */; };
 		FB503E1521763C4B003C3874 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1421763C4B003C3874 /* Option.swift */; };
 		FB503E1A217648F7003C3874 /* FreeFallData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB503E18217640C0003C3874 /* FreeFallData.plist */; };
+		FB8A88FA21778E7400B858C1 /* MinijuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */; };
 		FBAB2A7D216FDF2A00E982F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */; };
 		FBAB2A7F216FDF2A00E982F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */; };
 		FBAB2A82216FDF2A00E982F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAB2A80216FDF2A00E982F3 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		FB503E1221763B2A003C3874 /* FreeFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFallViewController.swift; sourceTree = "<group>"; };
 		FB503E1421763C4B003C3874 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		FB503E18217640C0003C3874 /* FreeFallData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FreeFallData.plist; sourceTree = "<group>"; };
+		FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinijuegosViewController.swift; sourceTree = "<group>"; };
 		FBAB2A79216FDF2A00E982F3 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */,
 				FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */,
 				FBAB2A80216FDF2A00E982F3 /* Main.storyboard */,
+				FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */,
 				FB503E1421763C4B003C3874 /* Option.swift */,
 				FB503E1221763B2A003C3874 /* FreeFallViewController.swift */,
 				FBAB2A83216FDF2A00E982F3 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				FBAB2A7F216FDF2A00E982F3 /* ViewController.swift in Sources */,
 				FB503E1321763B2A003C3874 /* FreeFallViewController.swift in Sources */,
 				FBAB2A7D216FDF2A00E982F3 /* AppDelegate.swift in Sources */,
+				FB8A88FA21778E7400B858C1 /* MinijuegosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
