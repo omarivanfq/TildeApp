@@ -70,9 +70,12 @@
 				FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */,
 				FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */,
 				FBAB2A80216FDF2A00E982F3 /* Main.storyboard */,
-				FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */,
+<<<<<<< HEAD
 				8D2382062176A31C009A39AC /* SwipingViewController.swift */,
 				8D2382082176A4D2009A39AC /* Swiping.plist */,
+=======
+				FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */,
+>>>>>>> origin/master
 				FB503E1421763C4B003C3874 /* Option.swift */,
 				FB503E1221763B2A003C3874 /* FreeFallViewController.swift */,
 				FBAB2A83216FDF2A00E982F3 /* Assets.xcassets */,
