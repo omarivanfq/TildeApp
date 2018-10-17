@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Swiping.plist
-   Project
-
-   Created by Ana Perez on 10/16/18.
-   Copyright (c) 2018 itesm. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<dict>
+		<key>word</key>
+		<string>Canción</string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Oracion</string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Tentacion</string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string> Árbol</string>
+		<key>correct</key>
+		<true/>
+	</dict>
+</array>
 </plist>

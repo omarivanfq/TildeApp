@@ -8,23 +8,14 @@
 
 import UIKit
 
-class SwipingViewControllerCard: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+extension SwipingViewController {
+    
+    func getData() {
+        let path = Bundle.main.path(forResource: "Swiping", ofType: "plist")!
+        arrWords = NSArray(contentsOfFile: path)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateCard() {
+        cardLabel.text = (arrWords[indexWord] as! NSDictionary).object(forKey: "word") as? String
     }
-    */
-
 }
