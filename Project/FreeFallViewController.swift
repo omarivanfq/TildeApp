@@ -16,7 +16,6 @@ class FreeFallViewController: UIViewController {
     @IBOutlet weak var lbOption4: UIButton!
     @IBOutlet weak var lbOption5: UIButton!
     
-    
     @IBAction func choose(_ sender: UIButton) {
         chooses(opcion: sender.titleLabel!.text!)
     }
@@ -73,7 +72,8 @@ class FreeFallViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeCount = 40
+        timeCount = 25
+        lbTimer.text = secondsToString(seconds: timeCount!)
         gameOver = false
         lbResult.frame.origin.x = -1000
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
@@ -93,10 +93,10 @@ class FreeFallViewController: UIViewController {
     
     func getData() {
         
-        let randomIndex = 1//Int.random(in: <#T##ClosedRange<Int>#>)
-        
         let path = Bundle.main.path(forResource: "FreeFallData", ofType: "plist")!
         arregloDiccionarios = NSArray(contentsOfFile: path)
+        
+        let randomIndex = Int.random(in: 0 ... arregloDiccionarios.count - 1)
         
         let dic = arregloDiccionarios[randomIndex] as! NSDictionary
         

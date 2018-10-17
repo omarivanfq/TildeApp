@@ -16,38 +16,122 @@
 	</dict>
 	<dict>
 		<key>solution</key>
-		<string>hay</string>
+		<string>a ver</string>
 		<key>phrase</key>
-		<string>En la mesa ____ tres manzanas.</string>
+		<string>¡Vamos al cine _______ una película!</string>
 		<key>options</key>
 		<array>
-			<string>ay</string>
-			<string>ahí</string>
-			<string>hay</string>
+			<string>aber</string>
+			<string>haber</string>
+			<string>a ver</string>
 		</array>
 	</dict>
 	<dict>
 		<key>solution</key>
-		<string>hay</string>
+		<string>hecho</string>
 		<key>phrase</key>
-		<string>En la mesa ____ tres manzanas.</string>
+		<string>Ya es tarde y no he ______ la tarea.</string>
 		<key>options</key>
 		<array>
-			<string>ay</string>
-			<string>ahí</string>
-			<string>hay</string>
+			<string>echo</string>
+			<string>hecho</string>
 		</array>
 	</dict>
 	<dict>
 		<key>solution</key>
-		<string>hay</string>
+		<string>árboles</string>
 		<key>phrase</key>
-		<string>En la mesa ____ tres manzanas.</string>
+		<string>A mi gato le gusta jugar en los _______.</string>
 		<key>options</key>
 		<array>
-			<string>ay</string>
-			<string>ahí</string>
-			<string>hay</string>
+			<string>árboles</string>
+			<string>arboles</string>
+			<string>arvoles</string>
+			<string>arbóles</string>
+			<string>arvóles</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>sucio</string>
+		<key>phrase</key>
+		<string>Mi perro termina muy ______ después de jugar en el parque.</string>
+		<key>options</key>
+		<array>
+			<string>susio</string>
+			<string>suzio</string>
+			<string>sucio</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>hacia</string>
+		<key>phrase</key>
+		<string>Me da flojera caminar _____ la cocina.</string>
+		<key>options</key>
+		<array>
+			<string>asia</string>
+			<string>hacia</string>
+			<string>hasia</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>adolescencia</string>
+		<key>phrase</key>
+		<string>La _______ es una etapa muy difícil.</string>
+		<key>options</key>
+		<array>
+			<string>adolescencia</string>
+			<string>adolesencia</string>
+			<string>adolecencia</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>silencio</string>
+		<key>phrase</key>
+		<string>Le pedí a mi compañero que guardara _______ mientras trabajo.</string>
+		<key>options</key>
+		<array>
+			<string>silencio</string>
+			<string>silensio</string>
+			<string>cilensio</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>él</string>
+		<key>phrase</key>
+		<string>Traté de explicarle pero ___ no quiso escuchar.</string>
+		<key>options</key>
+		<array>
+			<string>él</string>
+			<string>el</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>lápices</string>
+		<key>phrase</key>
+		<string>¿Me prestas uno de tus ______?</string>
+		<key>options</key>
+		<array>
+			<string>lapices</string>
+			<string>lápices</string>
+			<string>lápises</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>expresión</string>
+		<key>phrase</key>
+		<string>Ella usó una _______ que no comprendí.</string>
+		<key>options</key>
+		<array>
+			<string>expresion</string>
+			<string>expresión</string>
+			<string>expreción</string>
 		</array>
 	</dict>
 </array>
