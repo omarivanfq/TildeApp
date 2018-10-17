@@ -50,7 +50,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sbH-5H-Rkx" kind="show" id="DzC-fg-n7z"/>
+                                    <segue destination="sbH-5H-Rkx" kind="presentation" id="Oje-Fn-Fsn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tilde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJH-XV-SLh">
@@ -142,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="1833" y="-719"/>
         </scene>
-        <!--View Controller-->
+        <!--Minijuegos View Controller-->
         <scene sceneID="AqA-NB-y8P">
             <objects>
-                <viewController id="sbH-5H-Rkx" sceneMemberID="viewController">
+                <viewController id="sbH-5H-Rkx" customClass="MinijuegosViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tvz-xn-I8f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,6 +206,9 @@
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="y0h-4Z-nK5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -309,6 +312,9 @@
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sbH-5H-Rkx" kind="presentation" id="wGc-6A-i2L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40784313725490196" green="0.43137254901960786" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -334,4 +340,7 @@
         <image name="elipse" width="129" height="129"/>
         <image name="logo" width="600" height="600"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wGc-6A-i2L"/>
+    </inferredMetricsTieBreakers>
 </document>
