@@ -45,7 +45,7 @@ class Option: NSObject {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
-        let rand = Float.random(in: 0...1)//Float(arc4random()) / Float(UINT32_MAX)
+        let rand = Float.random(in: 0...1)
         self.x = (screenWidth - self.button.frame.width) * CGFloat(rand)
         self.up = Bool.random()
         if up {

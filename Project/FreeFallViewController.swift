@@ -71,7 +71,7 @@ class FreeFallViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeCount = 25
+        timeCount = 3
         lbTimer.text = secondsToString(seconds: timeCount!)
         
         gameOver = false
@@ -142,6 +142,10 @@ class FreeFallViewController: UIViewController {
         if timeCount == 0 {
             lbTimer.text = "Game Over"
             gameOver = true
+            
+            let homeView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
+            present(homeView, animated: true, completion: nil)
+            
         }
         else {
             timeCount = timeCount! - 1
