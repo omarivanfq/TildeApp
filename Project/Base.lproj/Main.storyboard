@@ -17,10 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqM-mH-KPe">
-                                <rect key="frame" x="0.0" y="463" width="375" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqM-mH-KPe">
+                                <rect key="frame" x="0.0" y="467" width="375" height="100"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.42745098039215684" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gKl-x0-PJ7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Opciones">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -29,10 +31,12 @@
                                     <segue destination="AC7-Nx-2kX" kind="show" id="ygc-UZ-RK0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tee-Rn-5Co">
-                                <rect key="frame" x="0.0" y="565" width="375" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tee-Rn-5Co">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
                                 <color key="backgroundColor" red="0.1764705882352941" green="0.36470588235294116" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="xSA-x2-qtn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Acerca">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,10 +45,12 @@
                                     <segue destination="4lH-Gq-6i1" kind="show" id="a5S-qE-UQW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7j-Zw-0lZ">
-                                <rect key="frame" x="0.0" y="362" width="375" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7j-Zw-0lZ">
+                                <rect key="frame" x="0.0" y="367" width="375" height="100"/>
                                 <color key="backgroundColor" red="0.23529411764705882" green="0.50196078431372548" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WIS-rO-LWK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Jugar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,19 +59,36 @@
                                     <segue destination="sbH-5H-Rkx" kind="presentation" id="Oje-Fn-Fsn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tilde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJH-XV-SLh">
-                                <rect key="frame" x="0.0" y="50" width="375" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tilde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJH-XV-SLh">
+                                <rect key="frame" x="106" y="30" width="163" height="63"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="54"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ey9-Bp-u3l">
-                                <rect key="frame" x="0.0" y="118" width="376" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ey9-Bp-u3l">
+                                <rect key="frame" x="81.5" y="128" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="fOJ-sG-EXZ"/>
+                                    <constraint firstAttribute="width" constant="220" id="yES-ar-h0O"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980392156865" green="0.59215686274509804" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ey9-Bp-u3l" firstAttribute="top" secondItem="GJH-XV-SLh" secondAttribute="bottom" constant="35" id="0p1-4m-KSG"/>
+                            <constraint firstItem="tee-Rn-5Co" firstAttribute="top" secondItem="bqM-mH-KPe" secondAttribute="bottom" id="9or-nX-kyu"/>
+                            <constraint firstItem="bqM-mH-KPe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IyK-Kh-Wkm"/>
+                            <constraint firstItem="GJH-XV-SLh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="KSY-lh-NEU"/>
+                            <constraint firstItem="tee-Rn-5Co" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LZj-fI-bPS"/>
+                            <constraint firstItem="bqM-mH-KPe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MXu-nJ-ihQ"/>
+                            <constraint firstItem="bqM-mH-KPe" firstAttribute="top" secondItem="J7j-Zw-0lZ" secondAttribute="bottom" id="OCO-ai-y3e"/>
+                            <constraint firstItem="Ey9-Bp-u3l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4" id="ObL-qo-v7Q"/>
+                            <constraint firstItem="J7j-Zw-0lZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VSb-5V-0ri"/>
+                            <constraint firstItem="tee-Rn-5Co" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="niK-b8-T0q"/>
+                            <constraint firstItem="tee-Rn-5Co" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uWY-xF-UeX"/>
+                            <constraint firstItem="GJH-XV-SLh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yEI-Kx-upC"/>
+                            <constraint firstItem="J7j-Zw-0lZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zSe-Bv-cuy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -490,7 +513,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="V5r-e4-9UX"/>
-        <segue reference="wGc-6A-i2L"/>
+        <segue reference="Oje-Fn-Fsn"/>
         <segue reference="hTz-jw-62l"/>
     </inferredMetricsTieBreakers>
 </document>
