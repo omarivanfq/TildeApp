@@ -24,6 +24,7 @@ class Option: NSObject {
     }
     
     func act() {
+    //    print("acting \(self.y)")
         let screenSize = UIScreen.main.bounds
         let screenHeight = screenSize.height
         
@@ -41,21 +42,30 @@ class Option: NSObject {
         self.button.frame.origin.y = self.y
     }
     
-    private func reallocate() {
+    func reallocate() {
+        
+        print("reacomodando!!!!!")
+        
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
         let rand = Float.random(in: 0...1)
         self.x = (screenWidth - self.button.frame.width) * CGFloat(rand)
+        
         self.up = Bool.random()
+        
         if up {
-            self.y = screenHeight
+            self.y = (screenHeight + CGFloat(Float.random(in:0...250)))
         }
         else {
-            self.y = 0
+            self.y = -(CGFloat(1 + Float.random(in: 0 ... 100)))
         }
+        
+        self.speed = CGFloat(Float.random(in: 1 ... 2))
+        
         button.frame.origin.x = self.x
         button.frame.origin.y = self.y
+        button.isEnabled = true
     }
     
 }

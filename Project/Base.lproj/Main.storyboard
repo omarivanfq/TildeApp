@@ -326,7 +326,7 @@
                                     <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose:" destination="KuI-X3-DGf" eventType="touchUpInside" id="ZvF-zU-Kce"/>
+                                    <action selector="choose1:" destination="KuI-X3-DGf" eventType="touchDown" id="0BU-Vk-SJe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-r7-b2e">
@@ -337,7 +337,7 @@
                                     <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose3:" destination="KuI-X3-DGf" eventType="touchUpInside" id="edu-CJ-gy5"/>
+                                    <action selector="choose3:" destination="KuI-X3-DGf" eventType="touchDown" id="sp8-RF-gcc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crA-ap-cTh">
@@ -348,7 +348,7 @@
                                     <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose4:" destination="KuI-X3-DGf" eventType="touchUpInside" id="ykK-6W-vJl"/>
+                                    <action selector="choose4:" destination="KuI-X3-DGf" eventType="touchDown" id="c3a-iW-KdT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-aD-bkg">
@@ -359,8 +359,7 @@
                                     <color key="titleColor" red="0.41176470590000003" green="0.4431372549" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose2:" destination="KuI-X3-DGf" eventType="touchUpInside" id="oVn-gv-64F"/>
-                                    <action selector="choose:" destination="KuI-X3-DGf" eventType="touchUpInside" id="7GV-B0-8Dc"/>
+                                    <action selector="choose2:" destination="KuI-X3-DGf" eventType="touchDown" id="8NU-B8-fuW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="354-Be-YTF">
@@ -371,8 +370,7 @@
                                     <color key="titleColor" red="0.41176470590000003" green="0.4431372549" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose5:" destination="KuI-X3-DGf" eventType="touchUpInside" id="4Rm-WH-yll"/>
-                                    <action selector="choose:" destination="KuI-X3-DGf" eventType="touchUpInside" id="7Gz-uU-k8c"/>
+                                    <action selector="choose5:" destination="KuI-X3-DGf" eventType="touchDown" id="jbP-Wd-qUj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phrase" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AS-Ld-S8t">
@@ -431,11 +429,11 @@
                         <viewLayoutGuide key="safeArea" id="La1-Ym-Msf"/>
                     </view>
                     <connections>
-                        <outlet property="lbOption1" destination="PUJ-jT-HE4" id="5Qq-HM-dZU"/>
-                        <outlet property="lbOption2" destination="iAR-aD-bkg" id="Lfe-Pk-0f1"/>
-                        <outlet property="lbOption3" destination="aWc-r7-b2e" id="5jN-GD-Y4l"/>
-                        <outlet property="lbOption4" destination="crA-ap-cTh" id="e05-y7-B3B"/>
-                        <outlet property="lbOption5" destination="354-Be-YTF" id="7gQ-LI-bEz"/>
+                        <outlet property="btnOption1" destination="PUJ-jT-HE4" id="5Qq-HM-dZU"/>
+                        <outlet property="btnOption2" destination="iAR-aD-bkg" id="Lfe-Pk-0f1"/>
+                        <outlet property="btnOption3" destination="aWc-r7-b2e" id="5jN-GD-Y4l"/>
+                        <outlet property="btnOption4" destination="crA-ap-cTh" id="e05-y7-B3B"/>
+                        <outlet property="btnOption5" destination="354-Be-YTF" id="7gQ-LI-bEz"/>
                         <outlet property="lbPhrase" destination="8AS-Ld-S8t" id="cZD-rA-CYr"/>
                         <outlet property="lbResult" destination="G3P-bH-B1f" id="87Y-sc-B4j"/>
                         <outlet property="lbTimer" destination="diH-xX-chr" id="flM-Zf-WcU"/>

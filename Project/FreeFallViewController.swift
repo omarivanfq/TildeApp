@@ -1,39 +1,31 @@
-//
-//  FreeFallViewController.swift
-//  Project
-//
-//  Created by Alumno on 16/10/18.
-//  Copyright © 2018 itesm. All rights reserved.
-//
-
 import UIKit
 
 class FreeFallViewController: UIViewController {
     
-    @IBOutlet weak var lbOption1: UIButton!
-    @IBOutlet weak var lbOption2: UIButton!
-    @IBOutlet weak var lbOption3: UIButton!
-    @IBOutlet weak var lbOption4: UIButton!
-    @IBOutlet weak var lbOption5: UIButton!
+    @IBOutlet weak var btnOption1: UIButton!
+    @IBOutlet weak var btnOption2: UIButton!
+    @IBOutlet weak var btnOption3: UIButton!
+    @IBOutlet weak var btnOption4: UIButton!
+    @IBOutlet weak var btnOption5: UIButton!
     
-    @IBAction func choose(_ sender: UIButton) {
-        chooses(opcion: sender.titleLabel!.text!)
+    @IBAction func choose1(_ sender: UIButton) {
+        chooses(opcion: (sender.titleLabel?.text!)!)
     }
     
     @IBAction func choose2(_ sender: UIButton) {
-        chooses(opcion: sender.titleLabel!.text!)
+        chooses(opcion: (sender.titleLabel?.text!)!)
     }
     
     @IBAction func choose3(_ sender: UIButton) {
-        chooses(opcion: sender.titleLabel!.text!)
+        chooses(opcion: (sender.titleLabel?.text!)!)
     }
     
     @IBAction func choose4(_ sender: UIButton) {
-        chooses(opcion: sender.titleLabel!.text!)
+        chooses(opcion: (sender.titleLabel?.text!)!)
     }
     
     @IBAction func choose5(_ sender: UIButton) {
-        chooses(opcion: sender.titleLabel!.text!)
+        chooses(opcion: (sender.titleLabel?.text!)!)
     }
     
     func chooses(opcion:String) {
@@ -42,14 +34,21 @@ class FreeFallViewController: UIViewController {
         let screenHeight = screenSize.height
         lbResult.frame.origin.x = screenWidth * 0.5 - lbResult.frame.width * 0.5
         lbResult.frame.origin.y = screenHeight * 0.5 - lbResult.frame.height * 0.5
-        gameOver = true
-        if (opcion == solution) {
+        
+        print("solucion: \(solution!) elegido: \(opcion)")
+        
+        if (opcion == solution!) {
             lbResult.text = "¡Bien hecho!"
+            restartPosition()
+            getData() // recuperando nueva info
+            options.removeAll()
+            setOptions()
         }
         else {
             lbResult.text = "¡Que mal!"
+            gameOver = true
+            goToRetro()
         }
-        gameOver = true
     }
     
     var option:Option?
@@ -58,7 +57,7 @@ class FreeFallViewController: UIViewController {
     var timeCount:Int?
     var timer = Timer()
     var actTimer = Timer()
-    var labels = [UIButton]()
+    var buttons = [UIButton]()
     var solution:String?
     var currentPhrase:String?
     var optionWords = [String]()
@@ -71,28 +70,27 @@ class FreeFallViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeCount = 3
+        timeCount = 20
         lbTimer.text = secondsToString(seconds: timeCount!)
-        
         gameOver = false
         lbResult.frame.origin.x = -1000
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
         getData()
-        setLabels()
+        setButtons()
         setOptions()
+        restartPosition()
     }
     
-    func setLabels(){
-        labels.append(lbOption1)
-        labels.append(lbOption2)
-        labels.append(lbOption3)
-        labels.append(lbOption4)
-        labels.append(lbOption5)
+    func setButtons(){
+        buttons.append(btnOption1)
+        buttons.append(btnOption2)
+        buttons.append(btnOption3)
+        buttons.append(btnOption4)
+        buttons.append(btnOption5)
     }
     
     func getData() {
-        
         let path = Bundle.main.path(forResource: "FreeFallData", ofType: "plist")!
         arregloDiccionarios = NSArray(contentsOfFile: path)
         
@@ -105,6 +103,7 @@ class FreeFallViewController: UIViewController {
         let sol = dic.object(forKey: "solution") as? String
             
         currentPhrase = phrase
+        optionWords.removeAll()
         for op in optionsArray! {
             optionWords.append(op)
         }
@@ -114,7 +113,7 @@ class FreeFallViewController: UIViewController {
     
     func setOptions() {
         var c = 0
-        for label in labels {
+        for label in buttons {
             options.append(Option(content: optionWords[c], button: label))
             if (c == optionWords.count - 1) {
                 c = 0
@@ -142,10 +141,8 @@ class FreeFallViewController: UIViewController {
         if timeCount == 0 {
             lbTimer.text = "Game Over"
             gameOver = true
-            
-            let homeView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
-            present(homeView, animated: true, completion: nil)
-            
+            goToRetro()
+           // restartPosition()
         }
         else {
             timeCount = timeCount! - 1
@@ -157,6 +154,17 @@ class FreeFallViewController: UIViewController {
         let minutes = seconds / 60 % 60
         let seconds = seconds % 60
         return String(format:"%02d:%02d", minutes, seconds)
+    }
+    
+    func goToRetro() {
+        let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
+        present(retroView, animated: true, completion: nil)
+    }
+    
+    func restartPosition() {
+        for option in options {
+            option.reallocate()
+        }
     }
     
     /*
