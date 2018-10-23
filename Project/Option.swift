@@ -27,7 +27,7 @@ class Option: NSObject {
         let screenSize = UIScreen.main.bounds
         let screenHeight = screenSize.height
         
-        if self.y >= screenHeight + 20 || self.y <= -20 {
+        if self.y >= screenHeight + 20 || self.y <= -20 - self.button.frame.height {
             reallocate()
         }
         
@@ -45,9 +45,8 @@ class Option: NSObject {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
-        let rand = Float(arc4random()) / Float(UINT32_MAX)
-        self.x = screenWidth * CGFloat(rand)
-        
+        let rand = Float.random(in: 0...1)//Float(arc4random()) / Float(UINT32_MAX)
+        self.x = (screenWidth - self.button.frame.width) * CGFloat(rand)
         self.up = Bool.random()
         if up {
             self.y = screenHeight
@@ -55,7 +54,6 @@ class Option: NSObject {
         else {
             self.y = 0
         }
-        
         button.frame.origin.x = self.x
         button.frame.origin.y = self.y
     }

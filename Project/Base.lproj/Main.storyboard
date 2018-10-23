@@ -351,26 +351,28 @@
                                     <action selector="choose4:" destination="KuI-X3-DGf" eventType="touchUpInside" id="ykK-6W-vJl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQv-u5-Hp9">
-                                <rect key="frame" x="50" y="499" width="84" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="op5" backgroundImage="elipse">
-                                    <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="choose5:" destination="KuI-X3-DGf" eventType="touchUpInside" id="b25-jE-CpZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1r-aL-af0">
-                                <rect key="frame" x="183" y="429" width="81" height="81"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-aD-bkg">
+                                <rect key="frame" x="117" y="192" width="84" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="op2" backgroundImage="elipse">
-                                    <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.41176470590000003" green="0.4431372549" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose2:" destination="KuI-X3-DGf" eventType="touchUpInside" id="drH-gu-JLm"/>
+                                    <action selector="choose2:" destination="KuI-X3-DGf" eventType="touchUpInside" id="oVn-gv-64F"/>
+                                    <action selector="choose:" destination="KuI-X3-DGf" eventType="touchUpInside" id="7GV-B0-8Dc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="354-Be-YTF">
+                                <rect key="frame" x="218" y="77" width="83" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="op5" backgroundImage="elipse">
+                                    <color key="titleColor" red="0.41176470590000003" green="0.4431372549" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choose5:" destination="KuI-X3-DGf" eventType="touchUpInside" id="4Rm-WH-yll"/>
+                                    <action selector="choose:" destination="KuI-X3-DGf" eventType="touchUpInside" id="7Gz-uU-k8c"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phrase" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AS-Ld-S8t">
@@ -383,6 +385,12 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-bH-B1f">
+                                <rect key="frame" x="0.0" y="315" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diH-xX-chr">
                                 <rect key="frame" x="0.0" y="30" width="375" height="35"/>
                                 <color key="backgroundColor" red="0.22352941176470587" green="0.23921568627450979" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -393,9 +401,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjw-uw-StH">
-                                <rect key="frame" x="0.0" y="27" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjw-uw-StH">
+                                <rect key="frame" x="0.0" y="27" width="46" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -404,31 +411,31 @@
                                     <segue destination="sbH-5H-Rkx" kind="presentation" id="wGc-6A-i2L"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-bH-B1f">
-                                <rect key="frame" x="0.0" y="315" width="375" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40784313725490196" green="0.43137254901960786" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="sjw-uw-StH" firstAttribute="top" secondItem="La1-Ym-Msf" secondAttribute="top" constant="7" id="4KV-ZC-3ty"/>
                             <constraint firstItem="diH-xX-chr" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" id="FPm-Qf-GKA"/>
                             <constraint firstItem="diH-xX-chr" firstAttribute="trailing" secondItem="La1-Ym-Msf" secondAttribute="trailing" id="JlP-EH-XPZ"/>
                             <constraint firstItem="8AS-Ld-S8t" firstAttribute="trailing" secondItem="La1-Ym-Msf" secondAttribute="trailing" id="Tvw-mf-rZb"/>
+                            <constraint firstItem="sjw-uw-StH" firstAttribute="leading" secondItem="diH-xX-chr" secondAttribute="leading" id="Wyb-Ug-jBF"/>
                             <constraint firstItem="diH-xX-chr" firstAttribute="top" secondItem="La1-Ym-Msf" secondAttribute="top" constant="10" id="b6O-ct-1Zp"/>
+                            <constraint firstItem="La1-Ym-Msf" firstAttribute="trailing" secondItem="sjw-uw-StH" secondAttribute="trailing" constant="329" id="gFO-NG-we4"/>
+                            <constraint firstItem="G3P-bH-B1f" firstAttribute="top" secondItem="TC8-13-UHn" secondAttribute="top" constant="315" id="hlj-qM-knm"/>
                             <constraint firstItem="8AS-Ld-S8t" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" id="jZJ-j4-udI"/>
+                            <constraint firstItem="sjw-uw-StH" firstAttribute="leading" secondItem="G3P-bH-B1f" secondAttribute="leading" id="m0j-Uf-Z4F"/>
                             <constraint firstItem="La1-Ym-Msf" firstAttribute="bottom" secondItem="8AS-Ld-S8t" secondAttribute="bottom" constant="100" id="v2z-nW-Lad"/>
+                            <constraint firstItem="G3P-bH-B1f" firstAttribute="trailing" secondItem="8AS-Ld-S8t" secondAttribute="trailing" id="zsk-rc-MjV"/>
+                            <constraint firstItem="sjw-uw-StH" firstAttribute="height" secondItem="diH-xX-chr" secondAttribute="height" id="zul-SC-MNN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="La1-Ym-Msf"/>
                     </view>
                     <connections>
                         <outlet property="lbOption1" destination="PUJ-jT-HE4" id="5Qq-HM-dZU"/>
-                        <outlet property="lbOption2" destination="X1r-aL-af0" id="9Ag-T0-GxW"/>
+                        <outlet property="lbOption2" destination="iAR-aD-bkg" id="Lfe-Pk-0f1"/>
                         <outlet property="lbOption3" destination="aWc-r7-b2e" id="5jN-GD-Y4l"/>
                         <outlet property="lbOption4" destination="crA-ap-cTh" id="e05-y7-B3B"/>
-                        <outlet property="lbOption5" destination="MQv-u5-Hp9" id="X8G-Af-B6e"/>
+                        <outlet property="lbOption5" destination="354-Be-YTF" id="7gQ-LI-bEz"/>
                         <outlet property="lbPhrase" destination="8AS-Ld-S8t" id="cZD-rA-CYr"/>
                         <outlet property="lbResult" destination="G3P-bH-B1f" id="87Y-sc-B4j"/>
                         <outlet property="lbTimer" destination="diH-xX-chr" id="flM-Zf-WcU"/>

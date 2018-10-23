@@ -44,11 +44,7 @@ class FreeFallViewController: UIViewController {
         lbResult.frame.origin.y = screenHeight * 0.5 - lbResult.frame.height * 0.5
         gameOver = true
         if (opcion == solution) {
-            
-            
             lbResult.text = "¡Bien hecho!"
-            
-            
         }
         else {
             lbResult.text = "¡Que mal!"
