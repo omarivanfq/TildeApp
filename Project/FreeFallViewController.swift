@@ -44,7 +44,11 @@ class FreeFallViewController: UIViewController {
         lbResult.frame.origin.y = screenHeight * 0.5 - lbResult.frame.height * 0.5
         gameOver = true
         if (opcion == solution) {
+            
+            
             lbResult.text = "¡Bien hecho!"
+            
+            
         }
         else {
             lbResult.text = "¡Que mal!"
@@ -67,13 +71,13 @@ class FreeFallViewController: UIViewController {
     @IBOutlet weak var lbPhrase: UILabel!
     @IBOutlet weak var lbResult: UILabel!
     @IBOutlet weak var lbTimer: UILabel!
-    
     var arregloDiccionarios : NSArray!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         timeCount = 25
         lbTimer.text = secondsToString(seconds: timeCount!)
+        
         gameOver = false
         lbResult.frame.origin.x = -1000
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
