@@ -38,7 +38,7 @@ class FreeFallViewController: UIViewController {
         print("solucion: \(solution!) elegido: \(opcion)")
         
         if (opcion == solution!) {
-            lbResult.text = "¡Bien hecho!"
+            showCongratsLabel()
             restartPosition()
             getData() // recuperando nueva info
             options.removeAll()
@@ -73,7 +73,7 @@ class FreeFallViewController: UIViewController {
         timeCount = 20
         lbTimer.text = secondsToString(seconds: timeCount!)
         gameOver = false
-        lbResult.frame.origin.x = -1000
+        lbResult.alpha = 0
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
         getData()
@@ -165,6 +165,16 @@ class FreeFallViewController: UIViewController {
         for option in options {
             option.reallocate()
         }
+    }
+    
+    func showCongratsLabel(){
+        UIView.animate(withDuration: 0.5, animations: {
+            self.lbResult.alpha = 1
+        }, completion: { _ in
+            UIView.animate(withDuration: 1.2, animations: {
+                self.lbResult.alpha = 0
+            })
+        })
     }
     
     /*
