@@ -7,35 +7,17 @@ class FreeFallViewController: UIViewController {
     @IBOutlet weak var btnOption3: UIButton!
     @IBOutlet weak var btnOption4: UIButton!
     @IBOutlet weak var btnOption5: UIButton!
+    @IBOutlet weak var lbScore: UILabel!
+    var score:Int!
     
-    @IBAction func choose1(_ sender: UIButton) {
-        chooses(opcion: (sender.titleLabel?.text!)!)
-    }
-    
-    @IBAction func choose2(_ sender: UIButton) {
-        chooses(opcion: (sender.titleLabel?.text!)!)
-    }
-    
-    @IBAction func choose3(_ sender: UIButton) {
-        chooses(opcion: (sender.titleLabel?.text!)!)
-    }
-    
-    @IBAction func choose4(_ sender: UIButton) {
-        chooses(opcion: (sender.titleLabel?.text!)!)
-    }
-    
-    @IBAction func choose5(_ sender: UIButton) {
-        chooses(opcion: (sender.titleLabel?.text!)!)
-    }
-    
-    func chooses(opcion:String) {
+    @IBAction func chooses(_ sender: UIButton) {
+        
+        let opcion = sender.titleLabel?.text!
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
         lbResult.frame.origin.x = screenWidth * 0.5 - lbResult.frame.width * 0.5
         lbResult.frame.origin.y = screenHeight * 0.5 - lbResult.frame.height * 0.5
-        
-        print("solucion: \(solution!) elegido: \(opcion)")
         
         if (opcion == solution!) {
             showCongratsLabel()
@@ -43,6 +25,8 @@ class FreeFallViewController: UIViewController {
             getData() // recuperando nueva info
             options.removeAll()
             setOptions()
+            score = score + 1
+            lbScore.text = "\(score!)"
         }
         else {
             lbResult.text = "¡Que mal!"
@@ -71,6 +55,7 @@ class FreeFallViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         timeCount = 20
+        score = 0
         lbTimer.text = secondsToString(seconds: timeCount!)
         gameOver = false
         lbResult.alpha = 0

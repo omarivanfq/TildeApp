@@ -349,7 +349,7 @@
                                     <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose1:" destination="KuI-X3-DGf" eventType="touchDown" id="0BU-Vk-SJe"/>
+                                    <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="5KS-cD-EiR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-r7-b2e">
@@ -360,7 +360,7 @@
                                     <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose3:" destination="KuI-X3-DGf" eventType="touchDown" id="sp8-RF-gcc"/>
+                                    <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="Yfl-j1-Hwu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crA-ap-cTh">
@@ -371,7 +371,7 @@
                                     <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose4:" destination="KuI-X3-DGf" eventType="touchDown" id="c3a-iW-KdT"/>
+                                    <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="988-6n-U4w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-aD-bkg">
@@ -382,18 +382,18 @@
                                     <color key="titleColor" red="0.41176470590000003" green="0.4431372549" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose2:" destination="KuI-X3-DGf" eventType="touchDown" id="8NU-B8-fuW"/>
+                                    <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="DOl-e4-rkf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="354-Be-YTF">
-                                <rect key="frame" x="218" y="77" width="83" height="83"/>
+                                <rect key="frame" x="218" y="76" width="83" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="op5" backgroundImage="elipse">
                                     <color key="titleColor" red="0.41176470590000003" green="0.4431372549" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="choose5:" destination="KuI-X3-DGf" eventType="touchDown" id="jbP-Wd-qUj"/>
+                                    <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="G7u-6L-71i"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phrase" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AS-Ld-S8t">
@@ -407,7 +407,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bien Hecho!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-bH-B1f">
-                                <rect key="frame" x="0.0" y="315" width="375" height="31.5"/>
+                                <rect key="frame" x="0.0" y="315" width="375" height="32"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -432,6 +432,16 @@
                                     <segue destination="sbH-5H-Rkx" kind="presentation" id="wGc-6A-i2L"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47o-cO-L9V">
+                                <rect key="frame" x="315" y="30" width="30" height="35"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.58122859589041098" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4hL-ae-3yb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40784313725490196" green="0.43137254901960786" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -439,8 +449,11 @@
                             <constraint firstItem="diH-xX-chr" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" id="FPm-Qf-GKA"/>
                             <constraint firstItem="diH-xX-chr" firstAttribute="trailing" secondItem="La1-Ym-Msf" secondAttribute="trailing" id="JlP-EH-XPZ"/>
                             <constraint firstItem="8AS-Ld-S8t" firstAttribute="trailing" secondItem="La1-Ym-Msf" secondAttribute="trailing" id="Tvw-mf-rZb"/>
+                            <constraint firstItem="47o-cO-L9V" firstAttribute="centerY" secondItem="diH-xX-chr" secondAttribute="centerY" id="U1k-RB-TGV"/>
+                            <constraint firstItem="47o-cO-L9V" firstAttribute="height" secondItem="diH-xX-chr" secondAttribute="height" id="WUT-cK-2ll"/>
                             <constraint firstItem="sjw-uw-StH" firstAttribute="leading" secondItem="diH-xX-chr" secondAttribute="leading" id="Wyb-Ug-jBF"/>
                             <constraint firstItem="diH-xX-chr" firstAttribute="top" secondItem="La1-Ym-Msf" secondAttribute="top" constant="10" id="b6O-ct-1Zp"/>
+                            <constraint firstItem="La1-Ym-Msf" firstAttribute="trailing" secondItem="47o-cO-L9V" secondAttribute="trailing" constant="30" id="eja-fq-cuy"/>
                             <constraint firstItem="La1-Ym-Msf" firstAttribute="trailing" secondItem="sjw-uw-StH" secondAttribute="trailing" constant="329" id="gFO-NG-we4"/>
                             <constraint firstItem="G3P-bH-B1f" firstAttribute="top" secondItem="TC8-13-UHn" secondAttribute="top" constant="315" id="hlj-qM-knm"/>
                             <constraint firstItem="8AS-Ld-S8t" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" id="jZJ-j4-udI"/>
@@ -459,6 +472,7 @@
                         <outlet property="btnOption5" destination="354-Be-YTF" id="7gQ-LI-bEz"/>
                         <outlet property="lbPhrase" destination="8AS-Ld-S8t" id="cZD-rA-CYr"/>
                         <outlet property="lbResult" destination="G3P-bH-B1f" id="87Y-sc-B4j"/>
+                        <outlet property="lbScore" destination="47o-cO-L9V" id="Qvn-Mo-brT"/>
                         <outlet property="lbTimer" destination="diH-xX-chr" id="flM-Zf-WcU"/>
                     </connections>
                 </viewController>
@@ -513,7 +527,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="V5r-e4-9UX"/>
-        <segue reference="Oje-Fn-Fsn"/>
+        <segue reference="wGc-6A-i2L"/>
         <segue reference="hTz-jw-62l"/>
     </inferredMetricsTieBreakers>
 </document>
