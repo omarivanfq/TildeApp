@@ -488,37 +488,125 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Retro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8I-sI-nwz">
-                                <rect key="frame" x="157" y="298" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRO-Wu-Tjs">
-                                <rect key="frame" x="129" y="178" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="jugar de nuevo"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1T7-ir-QjC">
+                                <rect key="frame" x="20" y="60" width="335" height="267"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phrase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8I-sI-nwz">
+                                        <rect key="frame" x="0.0" y="10" width="335" height="106.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="29"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="solution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pic-Qs-zmi">
+                                        <rect key="frame" x="0.0" y="157.5" width="335" height="33"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="23"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respuesta correcta:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfm-6t-wQs">
+                                        <rect key="frame" x="0.0" y="136.5" width="317" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="ZdY-uq-U8d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Terminó el tiempo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOF-RN-k66">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="267"/>
+                                        <color key="backgroundColor" red="0.2627450980392157" green="0.37647058823529411" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="44"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="dfm-6t-wQs" firstAttribute="top" secondItem="Y8I-sI-nwz" secondAttribute="bottom" constant="20" id="8LM-ij-gjL"/>
+                                    <constraint firstItem="dfm-6t-wQs" firstAttribute="leading" secondItem="pic-Qs-zmi" secondAttribute="leading" id="B8a-yD-rNv"/>
+                                    <constraint firstAttribute="bottom" secondItem="OOF-RN-k66" secondAttribute="bottom" id="CJW-Fg-uuG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y8I-sI-nwz" secondAttribute="trailing" id="I7j-Vd-Xlb"/>
+                                    <constraint firstItem="Y8I-sI-nwz" firstAttribute="leading" secondItem="1T7-ir-QjC" secondAttribute="leading" id="IL4-VH-xgu"/>
+                                    <constraint firstItem="pic-Qs-zmi" firstAttribute="leading" secondItem="1T7-ir-QjC" secondAttribute="leading" id="NDB-3J-LtO"/>
+                                    <constraint firstAttribute="trailing" secondItem="dfm-6t-wQs" secondAttribute="trailing" constant="18" id="XOT-vr-pJl"/>
+                                    <constraint firstItem="Y8I-sI-nwz" firstAttribute="top" secondItem="1T7-ir-QjC" secondAttribute="top" constant="10" id="XVF-9w-XQr"/>
+                                    <constraint firstItem="Y8I-sI-nwz" firstAttribute="height" secondItem="1T7-ir-QjC" secondAttribute="height" multiplier="0.4" id="gU0-1e-0jg"/>
+                                    <constraint firstAttribute="trailing" secondItem="pic-Qs-zmi" secondAttribute="trailing" id="h1s-GW-ElC"/>
+                                    <constraint firstItem="pic-Qs-zmi" firstAttribute="top" secondItem="dfm-6t-wQs" secondAttribute="bottom" id="nuY-UJ-3IG"/>
+                                    <constraint firstAttribute="trailing" secondItem="OOF-RN-k66" secondAttribute="trailing" id="sCK-CG-R9o"/>
+                                    <constraint firstItem="OOF-RN-k66" firstAttribute="top" secondItem="1T7-ir-QjC" secondAttribute="top" id="wYt-vV-btp"/>
+                                    <constraint firstItem="OOF-RN-k66" firstAttribute="leading" secondItem="1T7-ir-QjC" secondAttribute="leading" id="yCK-32-Noc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRO-Wu-Tjs">
+                                <rect key="frame" x="0.0" y="596" width="375" height="71"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45256314212328769" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="61O-1I-w4r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="27"/>
+                                <state key="normal" title="jugar de nuevo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="KuI-X3-DGf" kind="show" id="V5r-e4-9UX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9R-pp-q9f">
-                                <rect key="frame" x="134" y="221" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="volver a inicio"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9R-pp-q9f">
+                                <rect key="frame" x="0.0" y="542" width="375" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="24"/>
+                                <state key="normal" title="volver a inicio">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="hTz-jw-62l"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu puntaje:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyJ-eq-X2f">
+                                <rect key="frame" x="0.0" y="357" width="375" height="44"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ0-2P-uf9">
+                                <rect key="frame" x="124.5" y="431" width="126.5" height="73"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.35686274509803922" green="0.58431372549019611" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WRO-BM-PLk" firstAttribute="trailing" secondItem="1T7-ir-QjC" secondAttribute="trailing" constant="20" id="075-GJ-zpP"/>
+                            <constraint firstItem="1T7-ir-QjC" firstAttribute="leading" secondItem="WRO-BM-PLk" secondAttribute="leading" constant="20" id="1EH-kP-PZi"/>
+                            <constraint firstItem="WRO-Wu-Tjs" firstAttribute="top" secondItem="n9R-pp-q9f" secondAttribute="bottom" constant="8" symbolic="YES" id="3bi-c4-ETv"/>
+                            <constraint firstItem="1T7-ir-QjC" firstAttribute="height" secondItem="oVh-wo-qux" secondAttribute="height" multiplier="0.4" id="4y2-ra-KGh"/>
+                            <constraint firstItem="WRO-Wu-Tjs" firstAttribute="leading" secondItem="YyJ-eq-X2f" secondAttribute="leading" id="7Xt-bi-l9j"/>
+                            <constraint firstItem="WRO-Wu-Tjs" firstAttribute="trailing" secondItem="YyJ-eq-X2f" secondAttribute="trailing" id="87j-ms-gwr"/>
+                            <constraint firstItem="1T7-ir-QjC" firstAttribute="centerX" secondItem="oVh-wo-qux" secondAttribute="centerX" id="ESC-fo-Khe"/>
+                            <constraint firstItem="WRO-Wu-Tjs" firstAttribute="leading" secondItem="n9R-pp-q9f" secondAttribute="leading" id="Gp6-GL-alc"/>
+                            <constraint firstItem="WRO-Wu-Tjs" firstAttribute="leading" secondItem="oVh-wo-qux" secondAttribute="leading" id="S39-1t-Dcy"/>
+                            <constraint firstItem="YyJ-eq-X2f" firstAttribute="top" secondItem="1T7-ir-QjC" secondAttribute="bottom" constant="30" id="VQE-fg-WFg"/>
+                            <constraint firstItem="FJ0-2P-uf9" firstAttribute="top" secondItem="YyJ-eq-X2f" secondAttribute="bottom" constant="30" id="XJO-BQ-yvc"/>
+                            <constraint firstItem="WRO-Wu-Tjs" firstAttribute="centerX" secondItem="1T7-ir-QjC" secondAttribute="centerX" id="XXc-4P-357"/>
+                            <constraint firstItem="WRO-Wu-Tjs" firstAttribute="bottom" secondItem="WRO-BM-PLk" secondAttribute="bottom" id="a7b-Qv-RUV"/>
+                            <constraint firstItem="WRO-Wu-Tjs" firstAttribute="trailing" secondItem="n9R-pp-q9f" secondAttribute="trailing" id="eDS-u7-81Z"/>
+                            <constraint firstItem="1T7-ir-QjC" firstAttribute="top" secondItem="WRO-BM-PLk" secondAttribute="top" constant="40" id="jSh-FS-BuY"/>
+                            <constraint firstItem="WRO-Wu-Tjs" firstAttribute="centerX" secondItem="FJ0-2P-uf9" secondAttribute="centerX" id="y3e-bY-I4r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WRO-BM-PLk"/>
                     </view>
+                    <connections>
+                        <outlet property="lbScore" destination="FJ0-2P-uf9" id="K8f-zW-2Ph"/>
+                        <outlet property="lbSolution" destination="pic-Qs-zmi" id="qsM-bG-aCd"/>
+                        <outlet property="lbTimeOver" destination="OOF-RN-k66" id="FVD-Mv-jEO"/>
+                        <outlet property="lbWrongPhrase" destination="Y8I-sI-nwz" id="zeY-0o-Jad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pb6-Ur-xdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2649" y="-2088"/>
+            <point key="canvasLocation" x="2648.8000000000002" y="-2088.3058470764618"/>
         </scene>
     </scenes>
     <resources>

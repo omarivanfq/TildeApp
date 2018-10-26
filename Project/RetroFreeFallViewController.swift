@@ -2,10 +2,28 @@ import UIKit
 
 class RetroFreeFallViewController: UIViewController {
 
+    var score:Int!
+    @IBOutlet weak var lbScore: UILabel!
+    @IBOutlet weak var lbWrongPhrase: UILabel!
+    @IBOutlet weak var lbSolution: UILabel!
+    var wrongPhrase:String!
+    var solution:String!
+    
+    @IBOutlet weak var lbTimeOver: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        lbScore.text = "\(score!)"
+        if wrongPhrase != nil {
+            lbWrongPhrase.text = wrongPhrase
+            lbSolution.text = solution
+            lbTimeOver.alpha = 0
+        }
+        else {
+            lbTimeOver.alpha = 1
+            lbWrongPhrase.text = "Time Over!!"
+            lbSolution.text = ""
+        }
     }
     
 

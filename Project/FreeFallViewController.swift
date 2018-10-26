@@ -31,7 +31,7 @@ class FreeFallViewController: UIViewController {
         else {
             lbResult.text = "¡Que mal!"
             gameOver = true
-            goToRetro()
+            goToRetro(timeOver: false)
         }
     }
     
@@ -126,8 +126,7 @@ class FreeFallViewController: UIViewController {
         if timeCount == 0 {
             lbTimer.text = "Game Over"
             gameOver = true
-            goToRetro()
-           // restartPosition()
+            goToRetro(timeOver: true)
         }
         else {
             timeCount = timeCount! - 1
@@ -141,8 +140,16 @@ class FreeFallViewController: UIViewController {
         return String(format:"%02d:%02d", minutes, seconds)
     }
     
-    func goToRetro() {
+    func goToRetro(timeOver:Bool) {
         let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
+        retroView.score = score
+        if !timeOver {
+            retroView.wrongPhrase = currentPhrase
+            retroView.solution = solution
+        }
+        else {
+            retroView.wrongPhrase = nil
+        }
         present(retroView, animated: true, completion: nil)
     }
     
@@ -161,6 +168,7 @@ class FreeFallViewController: UIViewController {
             })
         })
     }
+    
     
     /*
      // MARK: - Navigation

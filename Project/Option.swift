@@ -24,7 +24,6 @@ class Option: NSObject {
     }
     
     func act() {
-    //    print("acting \(self.y)")
         let screenSize = UIScreen.main.bounds
         let screenHeight = screenSize.height
         
@@ -43,9 +42,6 @@ class Option: NSObject {
     }
     
     func reallocate() {
-        
-        print("reacomodando!!!!!")
-        
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
