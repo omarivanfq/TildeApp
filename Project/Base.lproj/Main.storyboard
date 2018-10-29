@@ -347,14 +347,6 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="y0h-4Z-nK5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnF-My-Dhf">
-                                <rect key="frame" x="63" y="617" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="save"/>
-                                <connections>
-                                    <action selector="saveData:" destination="sbH-5H-Rkx" eventType="touchUpInside" id="7n5-lh-hM3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ypy-56-x2I"/>
@@ -650,8 +642,8 @@
         <image name="logo" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QJs-Ct-5Z4"/>
+        <segue reference="V5r-e4-9UX"/>
         <segue reference="wGc-6A-i2L"/>
-        <segue reference="y0h-4Z-nK5"/>
+        <segue reference="hTz-jw-62l"/>
     </inferredMetricsTieBreakers>
 </document>

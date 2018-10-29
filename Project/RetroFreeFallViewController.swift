@@ -37,7 +37,6 @@ class RetroFreeFallViewController: UIViewController {
     
     func updateScore() {
         let filePath = dataFilePath()
-        
         if FileManager.default.fileExists(atPath: filePath) {
             let dictionary = NSDictionary(contentsOfFile: filePath)!
             let storedScore = dictionary.object(forKey: "freefall")! as! Int

@@ -10,7 +10,6 @@
 		8D2382072176A31C009A39AC /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2382062176A31C009A39AC /* SwipingViewController.swift */; };
 		8D2382092176A4D2009A39AC /* Swiping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D2382082176A4D2009A39AC /* Swiping.plist */; };
 		FB3D0918217F81E100DF3CB5 /* RetroFreeFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */; };
-		FB4572F42187AF8C00BE6DBC /* ScoreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB4572F32187AF8C00BE6DBC /* ScoreData.plist */; };
 		FB503E1321763B2A003C3874 /* FreeFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1221763B2A003C3874 /* FreeFallViewController.swift */; };
 		FB503E1521763C4B003C3874 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1421763C4B003C3874 /* Option.swift */; };
 		FB503E1A217648F7003C3874 /* FreeFallData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB503E18217640C0003C3874 /* FreeFallData.plist */; };
@@ -26,7 +25,6 @@
 		8D2382062176A31C009A39AC /* SwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
 		8D2382082176A4D2009A39AC /* Swiping.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Swiping.plist; sourceTree = "<group>"; };
 		FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroFreeFallViewController.swift; sourceTree = "<group>"; };
-		FB4572F32187AF8C00BE6DBC /* ScoreData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ScoreData.plist; sourceTree = "<group>"; };
 		FB503E1221763B2A003C3874 /* FreeFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFallViewController.swift; sourceTree = "<group>"; };
 		FB503E1421763C4B003C3874 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		FB503E18217640C0003C3874 /* FreeFallData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FreeFallData.plist; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */,
 				FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */,
 				FBAB2A80216FDF2A00E982F3 /* Main.storyboard */,
-				FB4572F32187AF8C00BE6DBC /* ScoreData.plist */,
 				FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */,
 				FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */,
 				8D2382062176A31C009A39AC /* SwipingViewController.swift */,
@@ -147,7 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D2382092176A4D2009A39AC /* Swiping.plist in Resources */,
-				FB4572F42187AF8C00BE6DBC /* ScoreData.plist in Resources */,
 				FBAB2A87216FDF2A00E982F3 /* LaunchScreen.storyboard in Resources */,
 				FBAB2A84216FDF2A00E982F3 /* Assets.xcassets in Resources */,
 				FBAB2A82216FDF2A00E982F3 /* Main.storyboard in Resources */,
