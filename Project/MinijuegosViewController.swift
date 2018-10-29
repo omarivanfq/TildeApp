@@ -13,6 +13,11 @@ class MinijuegosViewController: UIViewController {
     @IBOutlet weak var lbScoreFreeFall: UILabel!
     @IBOutlet weak var lbScoreSwiping: UILabel!
     @IBOutlet weak var lbScoreCatchUp: UILabel!
+    var dictionary:NSDictionary!
+    
+    @IBAction func saveData(_ sender: Any) {
+        save()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +25,41 @@ class MinijuegosViewController: UIViewController {
     }
     
     func getScores() {
-        let path = Bundle.main.path(forResource: "ScoreData", ofType: "plist")!
-        let dictionary = NSDictionary(contentsOfFile: path)
+        let filePath = dataFilePath()
+        if FileManager.default.fileExists(atPath: filePath) {
+            dictionary = NSDictionary(contentsOfFile: filePath)!
+        }
+        else {
+            dictionary = [
+                "freefall" : 0,
+                "swiping" : 0,
+                "catchup" : 0
+            ]
+        }
+        
         lbScoreFreeFall.text = "\(dictionary!.object(forKey: "freefall")! as! Int)"
         lbScoreSwiping.text = "\(dictionary!.object(forKey: "swiping")! as! Int)"
         lbScoreCatchUp.text = "\(dictionary!.object(forKey: "catchup")! as! Int)"
+    }
+    
+    func dataFilePath() -> String {
+        let url = FileManager().urls(for: .documentDirectory,
+                                     in: .userDomainMask).first!
+        let pathArchivo =
+            url.appendingPathComponent("scores.plist")
+        return pathArchivo.path
+    }
+    
+    func save() {
+        /*
+        dictionary = [
+            "freefall": 00,
+            "swiping": 00,
+            "catchup" : 00
+        ]
+        dictionary.write(toFile: dataFilePath(), atomically: true)
+ */
+ 
     }
 
     /*

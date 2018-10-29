@@ -24,8 +24,33 @@ class RetroFreeFallViewController: UIViewController {
             lbWrongPhrase.text = "Time Over!!"
             lbSolution.text = ""
         }
+        updateScore()
     }
     
+    func dataFilePath() -> String {
+        let url = FileManager().urls(for: .documentDirectory,
+                                     in: .userDomainMask).first!
+        let pathArchivo =
+            url.appendingPathComponent("scores.plist")
+        return pathArchivo.path
+    }
+    
+    func updateScore() {
+        let filePath = dataFilePath()
+        
+        if FileManager.default.fileExists(atPath: filePath) {
+            let dictionary = NSDictionary(contentsOfFile: filePath)!
+            let storedScore = dictionary.object(forKey: "freefall")! as! Int
+            if storedScore < score {
+                let newDictionary:NSDictionary = [
+                    "freefall": score,
+                    "swiping": dictionary.object(forKey: "swiping")! as! Int,
+                    "catchup": dictionary.object(forKey: "catchup")! as! Int,
+                ]
+                newDictionary.write(toFile: dataFilePath(), atomically: true)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
