@@ -10,12 +10,22 @@ import UIKit
 
 class MinijuegosViewController: UIViewController {
 
+    @IBOutlet weak var lbScoreFreeFall: UILabel!
+    @IBOutlet weak var lbScoreSwiping: UILabel!
+    @IBOutlet weak var lbScoreCatchUp: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        getScores()
     }
     
+    func getScores() {
+        let path = Bundle.main.path(forResource: "ScoreData", ofType: "plist")!
+        let dictionary = NSDictionary(contentsOfFile: path)
+        lbScoreFreeFall.text = "\(dictionary!.object(forKey: "freefall")! as! Int)"
+        lbScoreSwiping.text = "\(dictionary!.object(forKey: "swiping")! as! Int)"
+        lbScoreCatchUp.text = "\(dictionary!.object(forKey: "catchup")! as! Int)"
+    }
 
     /*
     // MARK: - Navigation
