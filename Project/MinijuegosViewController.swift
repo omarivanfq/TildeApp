@@ -15,10 +15,6 @@ class MinijuegosViewController: UIViewController {
     @IBOutlet weak var lbScoreCatchUp: UILabel!
     var dictionary:NSDictionary!
     
-    @IBAction func saveData(_ sender: Any) {
-        save()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         getScores()
@@ -35,8 +31,8 @@ class MinijuegosViewController: UIViewController {
                 "swiping" : 0,
                 "catchup" : 0
             ]
+            dictionary.write(toFile: dataFilePath(), atomically: true)
         }
-        
         lbScoreFreeFall.text = "\(dictionary!.object(forKey: "freefall")! as! Int)"
         lbScoreSwiping.text = "\(dictionary!.object(forKey: "swiping")! as! Int)"
         lbScoreCatchUp.text = "\(dictionary!.object(forKey: "catchup")! as! Int)"
@@ -50,18 +46,6 @@ class MinijuegosViewController: UIViewController {
         return pathArchivo.path
     }
     
-    func save() {
-        /*
-        dictionary = [
-            "freefall": 00,
-            "swiping": 00,
-            "catchup" : 00
-        ]
-        dictionary.write(toFile: dataFilePath(), atomically: true)
- */
- 
-    }
-
     /*
     // MARK: - Navigation
 
