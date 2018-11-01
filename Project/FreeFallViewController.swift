@@ -67,6 +67,10 @@ class FreeFallViewController: UIViewController {
         restartPosition()
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     func setButtons(){
         buttons.append(btnOption1)
         buttons.append(btnOption2)
