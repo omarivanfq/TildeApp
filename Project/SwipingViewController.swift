@@ -17,22 +17,35 @@ class SwipingViewController: UIViewController {
     var gameOver = false
     var indexWord : Int!
     var correctCount : Int!
-    var incorrectCount : Int!
+    @IBOutlet weak var skip1: UIView!
+    @IBOutlet weak var skip2: UIView!
+    @IBOutlet weak var skip3: UIView!
     @IBOutlet weak var lbTimer: UILabel!
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var imageThumbnail: UIImageView!
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var lbCorrect: UILabel!
-    @IBOutlet weak var lbIncorrect: UILabel!
     @IBOutlet weak var cardSecond: UIView!
+    var skips : Int!
     
+    @IBAction func skip(_ sender: Any) {
+        if skips == 3 {
+            skip3.alpha = 0.5
+            updateCard()
+        } else if skips == 2 {
+            skip2.alpha = 0.5
+            updateCard()
+        } else if skips == 1 {
+            skip1.alpha = 0.1
+            updateCard()
+        }
+    }
     
     @IBAction func moveCard(_ sender: UIPanGestureRecognizer) {
         let cardS = sender.view!
         let point = sender.translation(in: view)
         cardS.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
         let xMovement = cardS.center.x - view.center.x
-        
         card.transform = CGAffineTransform(rotationAngle: 0.61*(2*xMovement/view.frame.width))
         if xMovement > 0 {
             imageThumbnail.image = UIImage(named: "correct.png")
@@ -56,7 +69,6 @@ class SwipingViewController: UIViewController {
                     self.resetCard(timeAnimation: 0)
                 }
                 checkPoints(correct: !correct)
-                indexWord = (indexWord + 1) % 4
                 updateCard()
             } else if cardS.center.x > view.frame.width - 75 {
                 // User choose correct
@@ -67,7 +79,6 @@ class SwipingViewController: UIViewController {
                     self.resetCard(timeAnimation: 0)
                 }
                 checkPoints(correct: correct)
-                indexWord = (indexWord + 1) % 4
                 updateCard()
             } else {
                 resetCard(timeAnimation: 0.3)
@@ -80,9 +91,6 @@ class SwipingViewController: UIViewController {
         if correct {
             correctCount = correctCount + 1
             lbCorrect.text = String(correctCount)
-        } else {
-            incorrectCount = incorrectCount + 1
-            lbIncorrect.text = String(incorrectCount)
         }
     }
     
@@ -101,10 +109,10 @@ class SwipingViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         makeCardForm(card: card)
         makeCardForm(card: cardSecond)
-        
+        card.center = CGPoint(x: view.center.x, y: view.center.y)
         // TODO: Shuffle NSArray
         correctCount = 0
-        incorrectCount = 0
+        skips = 3
         indexWord = 0
         getData()
         updateCard()
@@ -147,6 +155,7 @@ class SwipingViewController: UIViewController {
     }
     
     func updateCard() {
+        indexWord = (indexWord + 1) % arrWords.count
         cardLabel.text = (arrWords[indexWord] as! NSDictionary).object(forKey: "word") as? String
     }
     

@@ -4,25 +4,2497 @@
 <array>
 	<dict>
 		<key>word</key>
-		<string>Canción</string>
+		<string>Tecnologico                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Numero                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Monografia                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Categoria                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Titulo                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garcia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
 		<key>correct</key>
 		<true/>
 	</dict>
 	<dict>
 		<key>word</key>
-		<string>Oracion</string>
+		<string>investigaci�n                                                                                                   </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tecnica                                                                                                         </string>
 		<key>correct</key>
 		<false/>
 	</dict>
 	<dict>
 		<key>word</key>
-		<string>Tentacion</string>
+		<string>García</string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Marquez                                                                                                         </string>
 		<key>correct</key>
 		<false/>
 	</dict>
 	<dict>
 		<key>word</key>
-		<string> Árbol</string>
+		<string>Cronica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�nica                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Velazquez                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>V�zquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Numero                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigacion                                                                                                   </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>explorara                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>definici�n                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracteristicas                                                                                                 </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>despu�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cronica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigacion                                                                                                   </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tecnica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garcia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cronica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>analisis                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garc�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigacion                                                                                                   </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>comun                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>comprension                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>involucr�                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Ademas                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>incluyo                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>an�lisis                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Analisis                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Rodriguez                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Despues                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>an�lisis                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>concluy�                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>focalizaci�n                                                                                                    </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>ironia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>hip�rbole                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garc�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Marquez                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Numero                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cap�tulo                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Capitulo                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garcia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Marquez                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Capitulo                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Analisis                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cronica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>monograf�a                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigacion                                                                                                   </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cr�nica                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigaci�n                                                                                                   </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>mayoria                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracter�sticas                                                                                                 </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Adem�s                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambi�n                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>analisis                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>aportara                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigaci�n                                                                                                   </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garc�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Marquez                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigacion                                                                                                   </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>seguira                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>accion                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>analizar�                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>teor�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>mayoria                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>definicion                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracter�sticas                                                                                                 </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>despu�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>utilizar�n                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracteristicas                                                                                                 </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>definicion                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Despues                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tratar�                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>monografia                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garcia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>desempeo                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>desempe��                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>llev�ndolo                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fen�meno                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>informaci�n                                                                                                     </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>cosmovision                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>�ltimo                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>analizar�                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cronica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>teoria                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>An�lisis                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Rodriguez                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigacion                                                                                                   </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tecnica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garc�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cronica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Capitulo                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>cap�tulo                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tratara                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>t�rmino                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracter�sticas                                                                                                 </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>definicion                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>teorica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>t�rmino                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>cr�tico                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>aleman                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>t�rmino                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracteristicas                                                                                                 </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>segu�an                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>hacian                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambien                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>incluian                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>convertian                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>podian                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>�nicamente                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Segun                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�dula                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>teor�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fant�stico                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>trav�s                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>sensaci�n                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Despu�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>definici�n                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>definici�n                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>conjuncion                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fantastico                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Tambien                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>afirmaci�n                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>monograf�a                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fant�stico                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>analizara                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambi�n                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fant�sticos                                                                                                     </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>extraeza                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Despu�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fantastica                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fant�stica                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gica                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>estableci�                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>l�gica                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>explicaci�n                                                                                                     </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>psicol�gica                                                                                                     </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Tambi�n                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>�ste                                                                                                            </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambien                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>an�lisis                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>participes                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garcia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>despu�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>vision                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>estatico                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>estereoscopico                                                                                                  </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>introduccion                                                                                                    </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>enf�tica                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>algun                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>extrao                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>definici�n                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambien                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracteristicas                                                                                                 </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Adem�s                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>est�n                                                                                                           </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>deberia                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fantastica                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>com�nmente                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cr�nica                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>realista                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>subg�nero                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>traves                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>aparicion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Arist�teles                                                                                                     </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Poetica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Aristoteles                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambi�n                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>sensaci�n                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fant�stica                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambi�n                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>logica                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fisico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>correlacion                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>correlaci�n                                                                                                     </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>f�sico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>veridico                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>fant�stica                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>extrao                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>extraeza                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Despu�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>monograf�a                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>exegesis                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garc�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tomar�                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>termino                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>extra�o                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracter�sticas                                                                                                 </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>definici�n                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>expresi�n                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>adem�s                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>definici�n                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cap�tulo                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garcia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Marquez                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>estudio                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>conocio                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>permiti�                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>period�sticas                                                                                                   </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>comenz�                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>periodicos                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambien                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>vivio                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�xico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Espaa                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Destaco                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>profesion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>practica                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>imponia                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Comunicaci�n                                                                                                    </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Comunicaci�n                                                                                                    </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>pr�ctica                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>ideolog�a                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Marquez                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>creaci�n                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>seala                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>profesion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>ademas                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>pr�ctica                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>relaci�n                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magica                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cap�tulo                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>An�lisis                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cronica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cr�nica                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garc�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Marquez                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>habia                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>an�lisis                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>hablara                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>an�cdotas                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>sabian                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>duea                                                                                                            </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�ltiples                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>relaci�n                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>re�ne                                                                                                           </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>relacion                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>religion                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>religion                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>adem�s                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>aparicion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>religi�n                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>�poca                                                                                                           </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Rom�n                                                                                                           </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambien                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>despu�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>habia                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>narracion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>dandonos                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>an�lisis                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>genero                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>utilizar�                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>An�lisis                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Rodr�guez                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>capitulos                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>�ltima                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>permitiendonos                                                                                                  </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>categor�a                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>capitulos                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>descripcion                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>inter�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>seccion                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracteristica                                                                                                  </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>narraci�n                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambien                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>dificil                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>reaccionara                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>cap�tulo                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>capitulo                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambi�n                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>conexion                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracter�stica                                                                                                  </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>narracion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>emocion                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>despu�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>analizar�                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>narraci�n                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>despu�s                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>reiteracion                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>narraci�n                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>inclusion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>repeticion                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>confusion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>focalizacion                                                                                                    </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>posici�n                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>eligi�                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>informacion                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>encontr�                                                                                                        </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>adem�s                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>�nimo                                                                                                           </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>posicion                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>ling�istico                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>relacion                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>narracion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>volvio                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>asest�                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>volvia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>habia                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>hab�a                                                                                                           </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>analisis                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>narracion                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tenia                                                                                                           </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>conjuncion                                                                                                      </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>caracteristicas                                                                                                 </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tambien                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Marquez                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>ironia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>�sta                                                                                                            </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>sabian                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>�nica                                                                                                           </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Placida                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>iron�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>retorica                                                                                                        </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>hiperbole                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garcia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Marquez                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>descripcion                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>                                                                                                                </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigacion                                                                                                   </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>tecnica                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Garcia                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>implement�                                                                                                      </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Cr�nica                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>aparici�n                                                                                                       </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>precision                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Ademas                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>cosmovision                                                                                                     </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>Rodriguez                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>analizo                                                                                                         </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>investigacion                                                                                                   </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>magico                                                                                                          </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>M�rquez                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>t�cnica                                                                                                         </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>espec�ficamente                                                                                                 </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>focalizacion                                                                                                    </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>iron�a                                                                                                          </string>
+		<key>correct</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>hiperbole                                                                                                       </string>
+		<key>correct</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>word</key>
+		<string>m�gico                                                                                                          </string>
 		<key>correct</key>
 		<true/>
 	</dict>
