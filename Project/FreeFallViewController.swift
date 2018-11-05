@@ -97,7 +97,6 @@ class FreeFallViewController: UIViewController {
             optionWords.append(op)
         }
         solution = sol
-    
     }
     
     func setOptions() {

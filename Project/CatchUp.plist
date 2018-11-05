@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>right</key>
+		<string>Expresiones regulares</string>
+		<key>wrong</key>
+		<string>Expreciones regulares</string>
+	</dict>
+	<dict>
+		<key>right</key>
+		<string>Vehículos veloces.</string>
+		<key>wrong</key>
+		<string>Vehiculos veloces.</string>
+	</dict>
+	<dict>
+		<key>right</key>
+		<string>Buenos días</string>
+		<key>wrong</key>
+		<string>Buenos dias</string>
+	</dict>
+	<dict>
+		<key>right</key>
+		<string>Buena vista.</string>
+		<key>wrong</key>
+		<string>Buena bista.</string>
+	</dict>
+</array>
+</plist>
