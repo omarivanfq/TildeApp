@@ -57,7 +57,7 @@ class Option: NSObject {
             self.y = -(CGFloat(1 + Float.random(in: 0 ... 100)))
         }
         
-        self.speed = CGFloat(Float.random(in: 1 ... 2))
+        self.speed = CGFloat(Float.random(in: 1 ... 1.5))
         
         button.frame.origin.x = self.x
         button.frame.origin.y = self.y

@@ -11,7 +11,6 @@ class FreeFallViewController: UIViewController {
     var score:Int!
     
     @IBAction func chooses(_ sender: UIButton) {
-        
         let opcion = sender.titleLabel?.text!
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width

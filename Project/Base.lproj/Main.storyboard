@@ -388,6 +388,9 @@
                                 <state key="normal" title="jugar de nuevo">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="axF-QV-027" kind="show" id="Izn-HK-11h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJk-AK-N97">
                                 <rect key="frame" x="0.0" y="550.5" width="375" height="50"/>
@@ -396,6 +399,9 @@
                                 <state key="normal" title="volver a inicio">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7UF-gt-yk9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntaje:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ada-pp-mmT">
                                 <rect key="frame" x="131" y="383.5" width="113.5" height="44"/>
@@ -839,6 +845,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="V5r-e4-9UX"/>
         <segue reference="wGc-6A-i2L"/>
+        <segue reference="aCg-sX-8Xn"/>
         <segue reference="e1k-bW-KhU"/>
     </inferredMetricsTieBreakers>
 </document>
