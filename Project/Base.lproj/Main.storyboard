@@ -373,76 +373,6 @@
             </objects>
             <point key="canvasLocation" x="2272.8000000000002" y="-575.26236881559225"/>
         </scene>
-        <!--Retro Catch Up View Controller-->
-        <scene sceneID="AvS-14-Lxp">
-            <objects>
-                <viewController storyboardIdentifier="RetroCatchUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rgA-Q0-5Yk" customClass="RetroCatchUpViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XUU-Et-Knh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg6-zj-B5N">
-                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45256314209999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="27"/>
-                                <state key="normal" title="jugar de nuevo">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="playAgain:" destination="rgA-Q0-5Yk" eventType="touchUpInside" id="NJt-V5-lfU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJk-AK-N97">
-                                <rect key="frame" x="0.0" y="550.5" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.36103381849999999" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="24"/>
-                                <state key="normal" title="volver a inicio">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="7UF-gt-yk9"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntaje:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ada-pp-mmT">
-                                <rect key="frame" x="131" y="383.5" width="113.5" height="44"/>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="31"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLO-bP-yQ2">
-                                <rect key="frame" x="124.5" y="457.5" width="126.5" height="73"/>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="52"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.40784313725490196" green="0.57647058823529407" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ada-pp-mmT" firstAttribute="centerX" secondItem="XUU-Et-Knh" secondAttribute="centerX" id="3yt-4N-wi5"/>
-                            <constraint firstItem="lg6-zj-B5N" firstAttribute="height" secondItem="XUU-Et-Knh" secondAttribute="height" multiplier="0.1" id="7Bz-ex-5Xf"/>
-                            <constraint firstItem="lg6-zj-B5N" firstAttribute="top" secondItem="qJk-AK-N97" secondAttribute="bottom" id="HTf-tW-T0g"/>
-                            <constraint firstItem="lg6-zj-B5N" firstAttribute="top" secondItem="qJk-AK-N97" secondAttribute="bottom" id="Hlo-mP-eq4"/>
-                            <constraint firstItem="qJk-AK-N97" firstAttribute="height" secondItem="XUU-Et-Knh" secondAttribute="height" multiplier="0.075" id="KwI-dA-8MK"/>
-                            <constraint firstAttribute="bottom" secondItem="lg6-zj-B5N" secondAttribute="bottom" id="MBV-ev-3LI"/>
-                            <constraint firstItem="qJk-AK-N97" firstAttribute="top" secondItem="YLO-bP-yQ2" secondAttribute="bottom" constant="20" id="Mbg-f0-ArO"/>
-                            <constraint firstItem="qJk-AK-N97" firstAttribute="trailing" secondItem="ruG-2E-Jup" secondAttribute="trailing" id="Nkm-oH-cUS"/>
-                            <constraint firstItem="ruG-2E-Jup" firstAttribute="bottom" secondItem="lg6-zj-B5N" secondAttribute="bottom" id="WOZ-78-UuZ"/>
-                            <constraint firstItem="YLO-bP-yQ2" firstAttribute="centerX" secondItem="XUU-Et-Knh" secondAttribute="centerX" id="d9a-Ic-EWx"/>
-                            <constraint firstItem="qJk-AK-N97" firstAttribute="leading" secondItem="ruG-2E-Jup" secondAttribute="leading" id="fhD-7M-3gO"/>
-                            <constraint firstItem="YLO-bP-yQ2" firstAttribute="top" secondItem="ada-pp-mmT" secondAttribute="bottom" constant="30" id="flY-KP-Sfs"/>
-                            <constraint firstItem="lg6-zj-B5N" firstAttribute="trailing" secondItem="ruG-2E-Jup" secondAttribute="trailing" id="lkO-s8-wzc"/>
-                            <constraint firstItem="lg6-zj-B5N" firstAttribute="leading" secondItem="ruG-2E-Jup" secondAttribute="leading" id="q85-S0-dhX"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ruG-2E-Jup"/>
-                    </view>
-                    <connections>
-                        <outlet property="lbScore" destination="YLO-bP-yQ2" id="p95-Ts-RQC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TZw-6K-its" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3053" y="-573"/>
-        </scene>
         <!--Minijuegos View Controller-->
         <scene sceneID="AqA-NB-y8P">
             <objects>
@@ -459,7 +389,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KuI-X3-DGf" kind="presentation" id="QJs-Ct-5Z4"/>
+                                    <segue destination="KuI-X3-DGf" kind="presentation" identifier="toFreeFall" id="QJs-Ct-5Z4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNu-tC-Ncr">
@@ -514,7 +444,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="y0h-4Z-nK5"/>
+                                    <action selector="goBack:" destination="sbH-5H-Rkx" eventType="touchUpInside" id="fdP-BI-QLn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-1U-t1s">
@@ -662,7 +592,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sbH-5H-Rkx" kind="presentation" id="wGc-6A-i2L"/>
+                                    <action selector="goBack:" destination="KuI-X3-DGf" eventType="touchUpInside" id="uVf-XP-VQ7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47o-cO-L9V">
@@ -675,6 +605,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcK-6l-Rve">
+                                <rect key="frame" x="300" y="590" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="INFO">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="action:" destination="KuI-X3-DGf" eventType="touchUpInside" id="hAP-p7-XZd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40784313725490196" green="0.43137254901960786" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -799,7 +739,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="e1k-bW-KhU"/>
+                                    <action selector="goToHome:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="j36-77-68p"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -835,7 +775,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pb6-Ur-xdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2648.8000000000002" y="-2088.3058470764618"/>
+            <point key="canvasLocation" x="2809" y="-2128"/>
         </scene>
     </scenes>
     <resources>
@@ -843,7 +783,6 @@
         <image name="logo" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wGc-6A-i2L"/>
-        <segue reference="e1k-bW-KhU"/>
+        <segue reference="Oje-Fn-Fsn"/>
     </inferredMetricsTieBreakers>
 </document>

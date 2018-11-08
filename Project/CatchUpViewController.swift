@@ -2,7 +2,7 @@ import UIKit
 import AVFoundation
 
 class CatchUpViewController: UIViewController, Game {
-
+    
     var arregloDiccionarios : NSArray!
     var upCorrect: Bool!
     var upPhrase: String!
@@ -56,7 +56,7 @@ class CatchUpViewController: UIViewController, Game {
     func restart() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         score = 0
-        timeCount = Int.random(in: 20 ... 21)
+        timeCount = Int.random(in: 20 ... 60)
         lbScore.text = "0"
         getData()
         playMusic()
@@ -87,6 +87,7 @@ class CatchUpViewController: UIViewController, Game {
     
 
     func goToRetro(timeOver:Bool) {
+        updateScore()
         player?.stop()
         timer.invalidate()
         let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
@@ -105,7 +106,6 @@ class CatchUpViewController: UIViewController, Game {
         else {
             retroView.wrongPhrase = nil
         }
-
         present(retroView, animated: true, completion: nil)
     }
     
@@ -122,16 +122,27 @@ class CatchUpViewController: UIViewController, Game {
         }
     }
     
-    func pla() {
-        let url = Bundle.main.url(forResource: "clock-sound", withExtension: "mp3")!
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            guard let player = player else { return }
-            player.numberOfLoops = -1
-            player.prepareToPlay()
-            player.play()
-        } catch let error {
-            print(error.localizedDescription)
+    func dataFilePath() -> String {
+        let url = FileManager().urls(for: .documentDirectory,
+                                     in: .userDomainMask).first!
+        let pathArchivo =
+            url.appendingPathComponent("scores.plist")
+        return pathArchivo.path
+    }
+    
+    func updateScore() {
+        let filePath = dataFilePath()
+        if FileManager.default.fileExists(atPath: filePath) {
+            let dictionary = NSDictionary(contentsOfFile: filePath)!
+            let storedScore = dictionary.object(forKey: "catchup")! as! Int
+            if storedScore < score {
+                let newDictionary:NSDictionary = [
+                    "freefall": dictionary.object(forKey: "freefall")! as! Int,
+                    "swiping": dictionary.object(forKey: "swiping")! as! Int,
+                    "catchup": score,
+                    ]
+                newDictionary.write(toFile: dataFilePath(), atomically: true)
+            }
         }
     }
     

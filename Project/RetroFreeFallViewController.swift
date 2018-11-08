@@ -19,6 +19,10 @@ class RetroFreeFallViewController: UIViewController {
         game.restart()
     }
     
+    @IBAction func goToHome(_ sender: UIButton) {
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var lbTimeOver: UILabel!
     
     override func viewDidLoad() {
@@ -34,41 +38,7 @@ class RetroFreeFallViewController: UIViewController {
             lbWrongPhrase.text = "Time Over!!"
             lbSolution.text = ""
         }
-        updateScore()
+      //  updateScore()
     }
-    
-    func dataFilePath() -> String {
-        let url = FileManager().urls(for: .documentDirectory,
-                                     in: .userDomainMask).first!
-        let pathArchivo =
-            url.appendingPathComponent("scores.plist")
-        return pathArchivo.path
-    }
-    
-    func updateScore() {
-        let filePath = dataFilePath()
-        if FileManager.default.fileExists(atPath: filePath) {
-            let dictionary = NSDictionary(contentsOfFile: filePath)!
-            let storedScore = dictionary.object(forKey: "freefall")! as! Int
-            if storedScore < score {
-                let newDictionary:NSDictionary = [
-                    "freefall": score,
-                    "swiping": dictionary.object(forKey: "swiping")! as! Int,
-                    "catchup": dictionary.object(forKey: "catchup")! as! Int,
-                ]
-                newDictionary.write(toFile: dataFilePath(), atomically: true)
-            }
-        }
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
