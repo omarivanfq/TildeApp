@@ -389,7 +389,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="axF-QV-027" kind="show" id="Izn-HK-11h"/>
+                                    <action selector="playAgain:" destination="rgA-Q0-5Yk" eventType="touchUpInside" id="NJt-V5-lfU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJk-AK-N97">
@@ -776,7 +776,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KuI-X3-DGf" kind="show" id="V5r-e4-9UX"/>
+                                    <action selector="playAgain:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="EP6-1o-kyn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu puntaje:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyJ-eq-X2f">
@@ -843,9 +843,7 @@
         <image name="logo" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V5r-e4-9UX"/>
         <segue reference="wGc-6A-i2L"/>
-        <segue reference="aCg-sX-8Xn"/>
         <segue reference="e1k-bW-KhU"/>
     </inferredMetricsTieBreakers>
 </document>

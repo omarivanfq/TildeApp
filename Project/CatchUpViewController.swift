@@ -1,7 +1,7 @@
 import UIKit
 import AVFoundation
 
-class CatchUpViewController: UIViewController {
+class CatchUpViewController: UIViewController, Game {
 
     var arregloDiccionarios : NSArray!
     var upCorrect: Bool!
@@ -23,7 +23,7 @@ class CatchUpViewController: UIViewController {
             lbScore.text = "\(score!)"
         }
         else {
-            goToRetro(timeOver: true)
+            goToRetro(timeOver: false)
         }
     }
     
@@ -34,32 +34,30 @@ class CatchUpViewController: UIViewController {
             lbScore.text = "\(score!)"
         }
         else {
-            goToRetro(timeOver: true)
+            goToRetro(timeOver: false)
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         restart()
     }
 
     @objc func counter() {
         if timeCount == 0 {
-        //    lbTimer.text = "Game Over"
-        //    gameOver = true
             goToRetro(timeOver: true)
         }
         else {
             timeCount = timeCount! - 1
-            print(timeCount)
-        //   lbTimer.text = secondsToString(seconds: timeCount!)
+            print(timeCount!)
         }
     }
     
     func restart() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         score = 0
         timeCount = Int.random(in: 20 ... 21)
+        lbScore.text = "0"
         getData()
         playMusic()
     }
@@ -76,19 +74,38 @@ class CatchUpViewController: UIViewController {
         upCorrect = Bool.random()
         
         if (upCorrect) {
-            btnUpPhrase.setTitle(correctPhrase, for: .normal)
-            btnDownPhrase.setTitle(wrongPhrase, for: .normal)
+            upPhrase = correctPhrase
+            downPhrase = wrongPhrase
         }
         else {
-            btnUpPhrase.setTitle(wrongPhrase, for: .normal)
-            btnDownPhrase.setTitle(correctPhrase, for: .normal)
+            upPhrase = wrongPhrase
+            downPhrase = correctPhrase
         }
+        btnUpPhrase.setTitle(upPhrase, for: .normal)
+        btnDownPhrase.setTitle(downPhrase, for: .normal)
     }
     
+
     func goToRetro(timeOver:Bool) {
-     //   playTimeOverSound()
-        let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroCatchUpViewController") as! RetroCatchUpViewController
+        player?.stop()
+        timer.invalidate()
+        let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
         retroView.score = score
+        retroView.game = self
+        if !timeOver {
+            if (upCorrect) {
+                retroView.wrongPhrase = downPhrase
+                retroView.solution = upPhrase
+            }
+            else {
+                retroView.wrongPhrase = upPhrase
+                retroView.solution = downPhrase
+            }
+        }
+        else {
+            retroView.wrongPhrase = nil
+        }
+
         present(retroView, animated: true, completion: nil)
     }
     

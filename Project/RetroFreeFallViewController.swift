@@ -1,5 +1,9 @@
 import UIKit
 
+protocol Game {
+    func restart() -> Void
+}
+
 class RetroFreeFallViewController: UIViewController {
 
     var score:Int!
@@ -8,6 +12,12 @@ class RetroFreeFallViewController: UIViewController {
     @IBOutlet weak var lbSolution: UILabel!
     var wrongPhrase:String!
     var solution:String!
+    var game: Game!
+    
+    @IBAction func playAgain(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+        game.restart()
+    }
     
     @IBOutlet weak var lbTimeOver: UILabel!
     

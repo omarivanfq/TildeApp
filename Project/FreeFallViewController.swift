@@ -1,6 +1,6 @@
 import UIKit
 
-class FreeFallViewController: UIViewController {
+class FreeFallViewController: UIViewController, Game {
     
     @IBOutlet weak var btnOption1: UIButton!
     @IBOutlet weak var btnOption2: UIButton!
@@ -28,13 +28,12 @@ class FreeFallViewController: UIViewController {
             lbScore.text = "\(score!)"
         }
         else {
-            lbResult.text = "¡Que mal!"
             gameOver = true
             goToRetro(timeOver: false)
         }
     }
     
-    var option:Option?
+    var option: Option?
     var options = [Option]()
     
     var timeCount:Int?
@@ -53,6 +52,11 @@ class FreeFallViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setButtons()
+        restart()
+    }
+    
+    func restart() {
         timeCount = 20
         score = 0
         lbTimer.text = secondsToString(seconds: timeCount!)
@@ -61,7 +65,6 @@ class FreeFallViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
         getData()
-        setButtons()
         setOptions()
         restartPosition()
     }
@@ -81,7 +84,6 @@ class FreeFallViewController: UIViewController {
     func getData() {
         let path = Bundle.main.path(forResource: "FreeFallData", ofType: "plist")!
         arregloDiccionarios = NSArray(contentsOfFile: path)
-        
         let randomIndex = Int.random(in: 0 ... arregloDiccionarios.count - 1)
         
         let dic = arregloDiccionarios[randomIndex] as! NSDictionary
@@ -100,8 +102,9 @@ class FreeFallViewController: UIViewController {
     
     func setOptions() {
         var c = 0
-        for label in buttons {
-            options.append(Option(content: optionWords[c], button: label))
+        options.removeAll()
+        for button in buttons {
+            options.append(Option(content: optionWords[c], button: button))
             if (c == optionWords.count - 1) {
                 c = 0
             }
@@ -143,8 +146,11 @@ class FreeFallViewController: UIViewController {
     }
     
     func goToRetro(timeOver:Bool) {
+        timer.invalidate()
+        actTimer.invalidate()
         let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
         retroView.score = score
+        retroView.game = self
         if !timeOver {
             retroView.wrongPhrase = currentPhrase
             retroView.solution = solution
