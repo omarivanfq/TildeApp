@@ -25,7 +25,6 @@
 		FBD2A7642191E494005F71B6 /* time-over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD2A7632191E494005F71B6 /* time-over.mp3 */; };
 		FBDBED3B2190EB06002641D9 /* CatchUp.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBDBED3A2190EB06002641D9 /* CatchUp.plist */; };
 		FBDBED3D2190F009002641D9 /* CatchUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBED3C2190F009002641D9 /* CatchUpViewController.swift */; };
-		FBDBED3F2190FC5D002641D9 /* RetroCatchUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBED3E2190FC5D002641D9 /* RetroCatchUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		FBD2A7632191E494005F71B6 /* time-over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "time-over.mp3"; sourceTree = "<group>"; };
 		FBDBED3A2190EB06002641D9 /* CatchUp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CatchUp.plist; sourceTree = "<group>"; };
 		FBDBED3C2190F009002641D9 /* CatchUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchUpViewController.swift; sourceTree = "<group>"; };
-		FBDBED3E2190FC5D002641D9 /* RetroCatchUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCatchUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 		FBAB2A7B216FDF2A00E982F3 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				FBDBED3E2190FC5D002641D9 /* RetroCatchUpViewController.swift */,
 				FB503E18217640C0003C3874 /* FreeFallData.plist */,
 				FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */,
 				FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */,
@@ -186,7 +183,6 @@
 				FB503E1521763C4B003C3874 /* Option.swift in Sources */,
 				FB3D0918217F81E100DF3CB5 /* RetroFreeFallViewController.swift in Sources */,
 				FBAB2A7F216FDF2A00E982F3 /* ViewController.swift in Sources */,
-				FBDBED3F2190FC5D002641D9 /* RetroCatchUpViewController.swift in Sources */,
 				FB503E1321763B2A003C3874 /* FreeFallViewController.swift in Sources */,
 				8D2382072176A31C009A39AC /* SwipingViewController.swift in Sources */,
 				FBDBED3D2190F009002641D9 /* CatchUpViewController.swift in Sources */,

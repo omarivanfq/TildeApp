@@ -9,7 +9,7 @@ class Option: NSObject {
     var speed:CGFloat
     var up:Bool
     
-    init(content:String, button:UIButton) {
+    init (content:String, button:UIButton) {
         self.button = button
         self.button.setTitle(content, for: .normal)
         self.content = content
@@ -26,11 +26,9 @@ class Option: NSObject {
     func act() {
         let screenSize = UIScreen.main.bounds
         let screenHeight = screenSize.height
-        
-        if self.y >= screenHeight + 20 || self.y <= -20 - self.button.frame.height {
+        if self.y >= screenHeight + 200 || self.y <= -200 - self.button.frame.height {
             reallocate()
         }
-        
         if up {
             self.y = self.y - (screenHeight / 700 * self.speed)
         }
@@ -48,13 +46,16 @@ class Option: NSObject {
         let rand = Float.random(in: 0...1)
         self.x = (screenWidth - self.button.frame.width) * CGFloat(rand)
         
+        print(Bool.random())
         self.up = Bool.random()
         
-        if up {
-            self.y = (screenHeight + CGFloat(Float.random(in:0...250)))
+        if self.up {
+            self.y = (screenHeight + self.button.frame.height + CGFloat(Float.random(in:0...250)))
+            print("uppp")
         }
         else {
-            self.y = -(CGFloat(1 + Float.random(in: 0 ... 100)))
+            self.y = -self.button.frame.height - (CGFloat(1 + Float.random(in: 0 ... 100)))
+            print("downn")
         }
         
         self.speed = CGFloat(Float.random(in: 1 ... 1.5))
