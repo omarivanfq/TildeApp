@@ -9,6 +9,16 @@ class FreeFallViewController: UIViewController, Game {
     @IBOutlet weak var btnOption5: UIButton!
     @IBOutlet weak var lbScore: UILabel!
     var score:Int!
+    var gameStarted:Bool!
+    var c = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        infoButton.tintColor = UIColor.white
+        gameStarted = false
+        setButtons()
+        restart()
+    }
     
     @IBAction func goBack(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
@@ -51,7 +61,8 @@ class FreeFallViewController: UIViewController, Game {
     var optionWords = [String]()
     var gameOver:Bool?
     var detail:UIView!
-
+    @IBOutlet weak var infoButton: UIButton!
+    
     @IBAction func action(_ sender: Any) {
         detail = UIView()
         detail.backgroundColor = UIColor(
@@ -94,22 +105,10 @@ class FreeFallViewController: UIViewController, Game {
         actTimer.invalidate()
     }
     
-    @objc func continuePlaying(sender: UIButton!) {
-        detail.removeFromSuperview()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
-        actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
-    }
-    
     @IBOutlet weak var lbPhrase: UILabel!
     @IBOutlet weak var lbResult: UILabel!
     @IBOutlet weak var lbTimer: UILabel!
     var arregloDiccionarios : NSArray!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setButtons()
-        restart()
-    }
     
     func restart() {
         timeCount = 20
@@ -130,6 +129,16 @@ class FreeFallViewController: UIViewController, Game {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
         showButtons()
+        gameStarted = true
+    }
+    
+    @objc func continuePlaying(sender: UIButton!) {
+        detail.removeFromSuperview()
+        if !gameStarted {
+            showButtons()
+        }
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
+        actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -179,6 +188,7 @@ class FreeFallViewController: UIViewController, Game {
     }
     
     @objc func act() {
+        c = c + 1
         if !gameOver! {
             for option in options {
                 option.act()
@@ -277,6 +287,14 @@ class FreeFallViewController: UIViewController, Game {
         }
     }
 
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
 }
 
 

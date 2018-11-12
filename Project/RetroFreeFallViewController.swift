@@ -41,4 +41,12 @@ class RetroFreeFallViewController: UIViewController {
       //  updateScore()
     }
 
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
 }

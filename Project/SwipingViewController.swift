@@ -159,6 +159,14 @@ class SwipingViewController: UIViewController {
         cardLabel.text = (arrWords[indexWord] as! NSDictionary).object(forKey: "word") as? String
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
     /*
     // MARK: - Navigation
 

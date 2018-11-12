@@ -50,4 +50,12 @@ class OptionsViewController: UIViewController {
         newDictionary.write(toFile: filePath, atomically: true)
     }
 
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
 }

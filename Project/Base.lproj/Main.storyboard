@@ -438,10 +438,9 @@
                                     <action selector="goBack:" destination="axF-QV-027" eventType="touchUpInside" id="TWp-7l-JVH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9Y-F5-0Ne">
-                                <rect key="frame" x="309" y="621" width="46" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="INFO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9Y-F5-0Ne">
+                                <rect key="frame" x="333" y="635" width="22" height="22"/>
+                                <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -472,6 +471,7 @@
                     <connections>
                         <outlet property="btnDownPhrase" destination="AoA-iq-9dL" id="M2Y-MC-2Ws"/>
                         <outlet property="btnUpPhrase" destination="HkI-nj-8Ga" id="LWg-8J-ysN"/>
+                        <outlet property="infoButton" destination="u9Y-F5-0Ne" id="sXg-5L-yMo"/>
                         <outlet property="lbScore" destination="Xpm-sj-eow" id="hmG-Yb-Yao"/>
                     </connections>
                 </viewController>
@@ -705,9 +705,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcK-6l-Rve">
-                                <rect key="frame" x="315" y="607" width="35" height="30"/>
-                                <state key="normal" title="INFO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcK-6l-Rve">
+                                <rect key="frame" x="328" y="615" width="22" height="22"/>
+                                <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -749,6 +749,7 @@
                         <outlet property="btnOption3" destination="aWc-r7-b2e" id="5jN-GD-Y4l"/>
                         <outlet property="btnOption4" destination="crA-ap-cTh" id="e05-y7-B3B"/>
                         <outlet property="btnOption5" destination="354-Be-YTF" id="7gQ-LI-bEz"/>
+                        <outlet property="infoButton" destination="kcK-6l-Rve" id="qu7-wT-oOo"/>
                         <outlet property="lbPhrase" destination="8AS-Ld-S8t" id="cZD-rA-CYr"/>
                         <outlet property="lbResult" destination="G3P-bH-B1f" id="87Y-sc-B4j"/>
                         <outlet property="lbScore" destination="47o-cO-L9V" id="Qvn-Mo-brT"/>

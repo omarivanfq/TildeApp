@@ -12,7 +12,8 @@ class CatchUpViewController: UIViewController, Game {
     var timeCount:Int!
     var player: AVAudioPlayer?
     var detail:UIView!
-
+    @IBOutlet weak var infoButton: UIButton!
+    
     @IBOutlet weak var lbScore: UILabel!
     @IBOutlet weak var btnUpPhrase: UIButton!
     @IBOutlet weak var btnDownPhrase: UIButton!
@@ -92,6 +93,7 @@ class CatchUpViewController: UIViewController, Game {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        infoButton.tintColor = UIColor.white
         restart()
     }
 
@@ -196,6 +198,14 @@ class CatchUpViewController: UIViewController, Game {
                 newDictionary.write(toFile: dataFilePath(), atomically: true)
             }
         }
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
     }
     
 }
