@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D2382072176A31C009A39AC /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2382062176A31C009A39AC /* SwipingViewController.swift */; };
 		8D2382092176A4D2009A39AC /* Swiping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D2382082176A4D2009A39AC /* Swiping.plist */; };
+		FB04DFBC2199CDC4008D8B41 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB04DFBB2199CDC4008D8B41 /* OptionsViewController.swift */; };
 		FB3D0918217F81E100DF3CB5 /* RetroFreeFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */; };
 		FB503E1321763B2A003C3874 /* FreeFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1221763B2A003C3874 /* FreeFallViewController.swift */; };
 		FB503E1521763C4B003C3874 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1421763C4B003C3874 /* Option.swift */; };
@@ -19,11 +20,17 @@
 		FBAB2A82216FDF2A00E982F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAB2A80216FDF2A00E982F3 /* Main.storyboard */; };
 		FBAB2A84216FDF2A00E982F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAB2A83216FDF2A00E982F3 /* Assets.xcassets */; };
 		FBAB2A87216FDF2A00E982F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAB2A85216FDF2A00E982F3 /* LaunchScreen.storyboard */; };
+		FBD2A7602191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD2A75F2191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 */; };
+		FBD2A7622191E25A005F71B6 /* clock-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD2A7612191E25A005F71B6 /* clock-sound.mp3 */; };
+		FBD2A7642191E494005F71B6 /* time-over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD2A7632191E494005F71B6 /* time-over.mp3 */; };
+		FBDBED3B2190EB06002641D9 /* CatchUp.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBDBED3A2190EB06002641D9 /* CatchUp.plist */; };
+		FBDBED3D2190F009002641D9 /* CatchUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBED3C2190F009002641D9 /* CatchUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D2382062176A31C009A39AC /* SwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
 		8D2382082176A4D2009A39AC /* Swiping.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Swiping.plist; sourceTree = "<group>"; };
+		FB04DFBB2199CDC4008D8B41 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroFreeFallViewController.swift; sourceTree = "<group>"; };
 		FB503E1221763B2A003C3874 /* FreeFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFallViewController.swift; sourceTree = "<group>"; };
 		FB503E1421763C4B003C3874 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
@@ -36,6 +43,11 @@
 		FBAB2A83216FDF2A00E982F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBAB2A86216FDF2A00E982F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBAB2A88216FDF2A00E982F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD2A75F2191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "the-ting-tings-earthquake-official-audio.mp3"; sourceTree = "<group>"; };
+		FBD2A7612191E25A005F71B6 /* clock-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "clock-sound.mp3"; sourceTree = "<group>"; };
+		FBD2A7632191E494005F71B6 /* time-over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "time-over.mp3"; sourceTree = "<group>"; };
+		FBDBED3A2190EB06002641D9 /* CatchUp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CatchUp.plist; sourceTree = "<group>"; };
+		FBDBED3C2190F009002641D9 /* CatchUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +84,21 @@
 				FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */,
 				FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */,
 				FBAB2A80216FDF2A00E982F3 /* Main.storyboard */,
+				FB04DFBB2199CDC4008D8B41 /* OptionsViewController.swift */,
+				FBDBED3C2190F009002641D9 /* CatchUpViewController.swift */,
 				FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */,
 				FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */,
 				8D2382062176A31C009A39AC /* SwipingViewController.swift */,
+				FBD2A75F2191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 */,
+				FBD2A7612191E25A005F71B6 /* clock-sound.mp3 */,
+				FBD2A7632191E494005F71B6 /* time-over.mp3 */,
 				8D2382082176A4D2009A39AC /* Swiping.plist */,
 				FB503E1421763C4B003C3874 /* Option.swift */,
 				FB503E1221763B2A003C3874 /* FreeFallViewController.swift */,
 				FBAB2A83216FDF2A00E982F3 /* Assets.xcassets */,
 				FBAB2A85216FDF2A00E982F3 /* LaunchScreen.storyboard */,
 				FBAB2A88216FDF2A00E982F3 /* Info.plist */,
+				FBDBED3A2190EB06002641D9 /* CatchUp.plist */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -146,8 +164,12 @@
 				8D2382092176A4D2009A39AC /* Swiping.plist in Resources */,
 				FBAB2A87216FDF2A00E982F3 /* LaunchScreen.storyboard in Resources */,
 				FBAB2A84216FDF2A00E982F3 /* Assets.xcassets in Resources */,
+				FBD2A7602191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 in Resources */,
+				FBDBED3B2190EB06002641D9 /* CatchUp.plist in Resources */,
+				FBD2A7642191E494005F71B6 /* time-over.mp3 in Resources */,
 				FBAB2A82216FDF2A00E982F3 /* Main.storyboard in Resources */,
 				FB503E1A217648F7003C3874 /* FreeFallData.plist in Resources */,
+				FBD2A7622191E25A005F71B6 /* clock-sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +185,10 @@
 				FBAB2A7F216FDF2A00E982F3 /* ViewController.swift in Sources */,
 				FB503E1321763B2A003C3874 /* FreeFallViewController.swift in Sources */,
 				8D2382072176A31C009A39AC /* SwipingViewController.swift in Sources */,
+				FBDBED3D2190F009002641D9 /* CatchUpViewController.swift in Sources */,
 				FBAB2A7D216FDF2A00E982F3 /* AppDelegate.swift in Sources */,
 				FB8A88FA21778E7400B858C1 /* MinijuegosViewController.swift in Sources */,
+				FB04DFBC2199CDC4008D8B41 /* OptionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,15 +335,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZDG6F3G85;
 				INFOPLIST_FILE = Project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.Project;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.pepe.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,15 +354,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZDG6F3G85;
 				INFOPLIST_FILE = Project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.Project;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.pepe.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

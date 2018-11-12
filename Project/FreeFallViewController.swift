@@ -1,6 +1,6 @@
 import UIKit
 
-class FreeFallViewController: UIViewController {
+class FreeFallViewController: UIViewController, Game {
     
     @IBOutlet weak var btnOption1: UIButton!
     @IBOutlet weak var btnOption2: UIButton!
@@ -9,9 +9,24 @@ class FreeFallViewController: UIViewController {
     @IBOutlet weak var btnOption5: UIButton!
     @IBOutlet weak var lbScore: UILabel!
     var score:Int!
+    var gameStarted:Bool!
+    var c = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        infoButton.tintColor = UIColor.white
+        gameStarted = false
+        setButtons()
+        restart()
+    }
+    
+    @IBAction func goBack(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+        timer.invalidate()
+        actTimer.invalidate()
+    }
     
     @IBAction func chooses(_ sender: UIButton) {
-        
         let opcion = sender.titleLabel?.text!
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
@@ -29,13 +44,12 @@ class FreeFallViewController: UIViewController {
             lbScore.text = "\(score!)"
         }
         else {
-            lbResult.text = "¡Que mal!"
             gameOver = true
             goToRetro(timeOver: false)
         }
     }
     
-    var option:Option?
+    var option: Option?
     var options = [Option]()
     
     var timeCount:Int?
@@ -46,25 +60,85 @@ class FreeFallViewController: UIViewController {
     var currentPhrase:String?
     var optionWords = [String]()
     var gameOver:Bool?
+    var detail:UIView!
+    @IBOutlet weak var infoButton: UIButton!
+    
+    @IBAction func action(_ sender: Any) {
+        detail = UIView()
+        detail.backgroundColor = UIColor(
+            red: 0,
+            green: 0,
+            blue: 0,
+            alpha: 0.92)
+        detail.frame.size.width = view.frame.width
+        detail.frame.size.height = view.frame.height
+        detail.frame.origin.x = 0
+        detail.frame.origin.y = 0
+        let tv = UITextView()
+        tv.isEditable = false
+        tv.backgroundColor = UIColor(
+            red: 0,
+            green: 0,
+            blue: 0,
+            alpha: 0.0)
+        tv.textAlignment = .center
+        tv.text = "¿Cómo jugar?\n\n"
+        tv.text = tv.text + "Selecciona la palabra que complete correctamente el enunciado que aparece en la parte inferior de la pantalla.\nPor cada elección correcta obtendrás un punto pero al primer error termina el juego."
+        tv.font = tv.font!.withSize(20)
+        tv.textColor = .white
+        tv.frame.size.width = view.frame.width * 0.9
+        tv.frame.size.height = view.frame.height * 0.4
+        tv.frame.origin.y = view.frame.height * 0.5 - tv.frame.height * 0.5
+        tv.frame.origin.x = view.frame.width * 0.05
+        let btn = UIButton()
+        btn.frame.size.width = view.frame.width
+        btn.frame.size.height = 50
+        btn.frame.origin.y = view.frame.height - btn.frame.height - 100
+        btn.frame.origin.x = 0
+        btn.setTitle("OK", for: .normal)
+        btn.tintColor = .white
+        btn.addTarget(self, action: #selector(continuePlaying), for: .touchUpInside)
+        detail.addSubview(tv)
+        detail.addSubview(btn)
+        view.addSubview(detail)
+        timer.invalidate()
+        actTimer.invalidate()
+    }
     
     @IBOutlet weak var lbPhrase: UILabel!
     @IBOutlet weak var lbResult: UILabel!
     @IBOutlet weak var lbTimer: UILabel!
     var arregloDiccionarios : NSArray!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func restart() {
         timeCount = 20
         score = 0
         lbTimer.text = secondsToString(seconds: timeCount!)
+        lbScore.text = "0"
         gameOver = false
         lbResult.alpha = 0
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
-        actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(letsStartPlaying), userInfo: nil, repeats: true)
         getData()
-        setButtons()
         setOptions()
         restartPosition()
+        hideButtons()
+    }
+    
+    @objc func letsStartPlaying() {
+        timer.invalidate()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
+        actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
+        showButtons()
+        gameStarted = true
+    }
+    
+    @objc func continuePlaying(sender: UIButton!) {
+        detail.removeFromSuperview()
+        if !gameStarted {
+            showButtons()
+        }
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
+        actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -82,7 +156,6 @@ class FreeFallViewController: UIViewController {
     func getData() {
         let path = Bundle.main.path(forResource: "FreeFallData", ofType: "plist")!
         arregloDiccionarios = NSArray(contentsOfFile: path)
-        
         let randomIndex = Int.random(in: 0 ... arregloDiccionarios.count - 1)
         
         let dic = arregloDiccionarios[randomIndex] as! NSDictionary
@@ -97,13 +170,13 @@ class FreeFallViewController: UIViewController {
             optionWords.append(op)
         }
         solution = sol
-    
     }
     
     func setOptions() {
         var c = 0
-        for label in buttons {
-            options.append(Option(content: optionWords[c], button: label))
+        options.removeAll()
+        for button in buttons {
+            options.append(Option(content: optionWords[c], button: button))
             if (c == optionWords.count - 1) {
                 c = 0
             }
@@ -115,6 +188,7 @@ class FreeFallViewController: UIViewController {
     }
     
     @objc func act() {
+        c = c + 1
         if !gameOver! {
             for option in options {
                 option.act()
@@ -145,8 +219,12 @@ class FreeFallViewController: UIViewController {
     }
     
     func goToRetro(timeOver:Bool) {
+        updateScore()
+        timer.invalidate()
+        actTimer.invalidate()
         let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
         retroView.score = score
+        retroView.game = self
         if !timeOver {
             retroView.wrongPhrase = currentPhrase
             retroView.solution = solution
@@ -175,16 +253,49 @@ class FreeFallViewController: UIViewController {
         })
     }
     
+    func dataFilePath() -> String {
+        let url = FileManager().urls(for: .documentDirectory,
+                                     in: .userDomainMask).first!
+        let pathArchivo =
+            url.appendingPathComponent("scores.plist")
+        return pathArchivo.path
+    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func updateScore() {
+         let filePath = dataFilePath()
+         if FileManager.default.fileExists(atPath: filePath) {
+             let dictionary = NSDictionary(contentsOfFile: filePath)!
+             let storedScore = dictionary.object(forKey: "freefall")! as! Int
+             if storedScore < score {
+             let newDictionary:NSDictionary = [
+                 "freefall": score,
+                 "swiping": dictionary.object(forKey: "swiping")! as! Int,
+                 "catchup": dictionary.object(forKey: "catchup")! as! Int,
+             ]
+             newDictionary.write(toFile: dataFilePath(), atomically: true)
+             }
+         }
+    }
+    
+    func hideButtons() {
+        for button in buttons {
+            button.alpha = 0
+        }
+    }
+    
+    func showButtons() {
+        for button in buttons {
+            button.alpha = 1
+        }
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
     
 }
 

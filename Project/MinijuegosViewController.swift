@@ -15,6 +15,10 @@ class MinijuegosViewController: UIViewController {
     @IBOutlet weak var lbScoreCatchUp: UILabel!
     var dictionary:NSDictionary!
     
+    @IBAction func goBack(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getScores()
@@ -36,6 +40,9 @@ class MinijuegosViewController: UIViewController {
         lbScoreFreeFall.text = "\(dictionary!.object(forKey: "freefall")! as! Int)"
         lbScoreSwiping.text = "\(dictionary!.object(forKey: "swiping")! as! Int)"
         lbScoreCatchUp.text = "\(dictionary!.object(forKey: "catchup")! as! Int)"
+        print(dictionary!.object(forKey: "freefall")!)
+        print(dictionary!.object(forKey: "swiping")!)
+        print(dictionary!.object(forKey: "catchup")!)
     }
     
     func dataFilePath() -> String {
@@ -46,14 +53,12 @@ class MinijuegosViewController: UIViewController {
         return pathArchivo.path
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
     }
-    */
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
 
 }

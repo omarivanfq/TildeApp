@@ -1,5 +1,9 @@
 import UIKit
 
+protocol Game {
+    func restart() -> Void
+}
+
 class RetroFreeFallViewController: UIViewController {
 
     var score:Int!
@@ -9,6 +13,16 @@ class RetroFreeFallViewController: UIViewController {
     var wrongPhrase:String!
     var solution:String!
     var source:Int!
+    var game: Game!
+    
+    @IBAction func playAgain(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+        game.restart()
+    }
+    
+    @IBAction func goToHome(_ sender: UIButton) {
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     
     @IBOutlet weak var lbTimeOver: UILabel!
     
@@ -25,15 +39,11 @@ class RetroFreeFallViewController: UIViewController {
             lbWrongPhrase.text = "Time Over!!"
             lbSolution.text = ""
         }
-        updateScore()
+      //  updateScore()
     }
-    
-    func dataFilePath() -> String {
-        let url = FileManager().urls(for: .documentDirectory,
-                                     in: .userDomainMask).first!
-        let pathArchivo =
-            url.appendingPathComponent("scores.plist")
-        return pathArchivo.path
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
     }
     
     @IBAction func back(_ sender: Any) {
@@ -83,4 +93,8 @@ class RetroFreeFallViewController: UIViewController {
     }
     
 
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
 }
