@@ -46,16 +46,13 @@ class Option: NSObject {
         let rand = Float.random(in: 0...1)
         self.x = (screenWidth - self.button.frame.width) * CGFloat(rand)
         
-        print(Bool.random())
         self.up = Bool.random()
         
         if self.up {
             self.y = (screenHeight + self.button.frame.height + CGFloat(Float.random(in:0...250)))
-            print("uppp")
         }
         else {
             self.y = -self.button.frame.height - (CGFloat(1 + Float.random(in: 0 ... 100)))
-            print("downn")
         }
         
         self.speed = CGFloat(Float.random(in: 1 ... 1.5))

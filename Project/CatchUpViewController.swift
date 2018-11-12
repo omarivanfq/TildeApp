@@ -11,6 +11,10 @@ class CatchUpViewController: UIViewController, Game {
     var timer:Timer!
     var timeCount:Int!
     var player: AVAudioPlayer?
+    var playerCorrect: AVAudioPlayer?
+    var playerWrong: AVAudioPlayer?
+    var playerTimeOver: AVAudioPlayer?
+
     var detail:UIView!
     @IBOutlet weak var infoButton: UIButton!
     
@@ -74,8 +78,10 @@ class CatchUpViewController: UIViewController, Game {
             getData()
             score = score + 1
             lbScore.text = "\(score!)"
+            playerCorrect!.play()
         }
         else {
+            playerWrong!.play()
             goToRetro(timeOver: false)
         }
     }
@@ -85,8 +91,10 @@ class CatchUpViewController: UIViewController, Game {
             getData()
             score = score + 1
             lbScore.text = "\(score!)"
+            playerCorrect!.play()
         }
         else {
+            playerWrong!.play()
             goToRetro(timeOver: false)
         }
     }
@@ -95,6 +103,7 @@ class CatchUpViewController: UIViewController, Game {
         super.viewDidLoad()
         infoButton.tintColor = UIColor.white
         restart()
+        setSoundEffectPlayers()
     }
 
     @objc func counter() {
@@ -110,7 +119,7 @@ class CatchUpViewController: UIViewController, Game {
     func restart() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         score = 0
-        timeCount = Int.random(in: 20 ... 60)
+        timeCount = Int.random(in: 5...10)
         lbScore.text = "0"
         getData()
         playMusic()
@@ -159,6 +168,7 @@ class CatchUpViewController: UIViewController, Game {
         }
         else {
             retroView.wrongPhrase = nil
+            playerTimeOver!.play()
         }
         present(retroView, animated: true, completion: nil)
     }
@@ -206,6 +216,38 @@ class CatchUpViewController: UIViewController, Game {
     
     override var shouldAutorotate: Bool {
         return false
+    }
+    
+    func setSoundEffectPlayers() {
+        var url = Bundle.main.url(forResource: "correct", withExtension: "mp3")!
+        do {
+            playerCorrect = try AVAudioPlayer(contentsOf: url)
+            guard let playerCorrect = playerCorrect else { return }
+            playerCorrect.numberOfLoops = 1
+            playerCorrect.prepareToPlay()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        url = Bundle.main.url(forResource: "wrong", withExtension: "mp3")!
+        do {
+            playerWrong = try AVAudioPlayer(contentsOf: url)
+            guard let playerWrong = playerWrong else { return }
+            playerWrong.numberOfLoops = 1
+            playerWrong.prepareToPlay()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+        url = Bundle.main.url(forResource: "time-over", withExtension: "mp3")!
+        do {
+            playerTimeOver = try AVAudioPlayer(contentsOf: url)
+            guard let playerTimeOver = playerTimeOver else { return }
+            playerTimeOver.numberOfLoops = 1
+            playerTimeOver.prepareToPlay()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
     }
     
 }

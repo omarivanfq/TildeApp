@@ -10,8 +10,19 @@ class FreeFallViewController: UIViewController, Game {
     @IBOutlet weak var lbScore: UILabel!
     var score:Int!
     var gameStarted:Bool!
-    var c = 0
+    var option: Option?
+    var options = [Option]()
+    var timeCount:Int?
+    var timer = Timer()
+    var actTimer = Timer()
+    var buttons = [UIButton]()
+    var solution:String?
+    var currentPhrase:String?
+    var optionWords = [String]()
+    var gameOver:Bool?
+    var detail:UIView!
     
+    @IBOutlet weak var infoButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         infoButton.tintColor = UIColor.white
@@ -33,7 +44,6 @@ class FreeFallViewController: UIViewController, Game {
         let screenHeight = screenSize.height
         lbResult.frame.origin.x = screenWidth * 0.5 - lbResult.frame.width * 0.5
         lbResult.frame.origin.y = screenHeight * 0.5 - lbResult.frame.height * 0.5
-        
         if (opcion == solution!) {
             showCongratsLabel()
             restartPosition()
@@ -48,20 +58,6 @@ class FreeFallViewController: UIViewController, Game {
             goToRetro(timeOver: false)
         }
     }
-    
-    var option: Option?
-    var options = [Option]()
-    
-    var timeCount:Int?
-    var timer = Timer()
-    var actTimer = Timer()
-    var buttons = [UIButton]()
-    var solution:String?
-    var currentPhrase:String?
-    var optionWords = [String]()
-    var gameOver:Bool?
-    var detail:UIView!
-    @IBOutlet weak var infoButton: UIButton!
     
     @IBAction func action(_ sender: Any) {
         detail = UIView()
@@ -188,7 +184,6 @@ class FreeFallViewController: UIViewController, Game {
     }
     
     @objc func act() {
-        c = c + 1
         if !gameOver! {
             for option in options {
                 option.act()

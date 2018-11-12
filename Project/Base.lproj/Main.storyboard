@@ -887,7 +887,6 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <connections>
                                     <action selector="back:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="9T4-Bf-BU0"/>
                                     <action selector="playAgain:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="EP6-1o-kyn"/>
-                                    <segue destination="eqg-ox-jZU" kind="show" id="jdo-jN-cyS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu puntaje:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyJ-eq-X2f">
@@ -955,6 +954,5 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Oje-Fn-Fsn"/>
-        <segue reference="jdo-jN-cyS"/>
     </inferredMetricsTieBreakers>
 </document>
