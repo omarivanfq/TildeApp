@@ -10,6 +10,7 @@
 		8D2382072176A31C009A39AC /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2382062176A31C009A39AC /* SwipingViewController.swift */; };
 		8D2382092176A4D2009A39AC /* Swiping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D2382082176A4D2009A39AC /* Swiping.plist */; };
 		FB04DFBC2199CDC4008D8B41 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB04DFBB2199CDC4008D8B41 /* OptionsViewController.swift */; };
+		FB0D4B18219A33D400BA2E41 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D4B17219A33D400BA2E41 /* AboutViewController.swift */; };
 		FB3D0918217F81E100DF3CB5 /* RetroFreeFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */; };
 		FB503E1321763B2A003C3874 /* FreeFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1221763B2A003C3874 /* FreeFallViewController.swift */; };
 		FB503E1521763C4B003C3874 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1421763C4B003C3874 /* Option.swift */; };
@@ -31,6 +32,7 @@
 		8D2382062176A31C009A39AC /* SwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
 		8D2382082176A4D2009A39AC /* Swiping.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Swiping.plist; sourceTree = "<group>"; };
 		FB04DFBB2199CDC4008D8B41 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		FB0D4B17219A33D400BA2E41 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroFreeFallViewController.swift; sourceTree = "<group>"; };
 		FB503E1221763B2A003C3874 /* FreeFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFallViewController.swift; sourceTree = "<group>"; };
 		FB503E1421763C4B003C3874 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		FBAB2A7B216FDF2A00E982F3 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				FB0D4B17219A33D400BA2E41 /* AboutViewController.swift */,
 				FB503E18217640C0003C3874 /* FreeFallData.plist */,
 				FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */,
 				FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */,
@@ -188,6 +191,7 @@
 				FBDBED3D2190F009002641D9 /* CatchUpViewController.swift in Sources */,
 				FBAB2A7D216FDF2A00E982F3 /* AppDelegate.swift in Sources */,
 				FB8A88FA21778E7400B858C1 /* MinijuegosViewController.swift in Sources */,
+				FB0D4B18219A33D400BA2E41 /* AboutViewController.swift in Sources */,
 				FB04DFBC2199CDC4008D8B41 /* OptionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

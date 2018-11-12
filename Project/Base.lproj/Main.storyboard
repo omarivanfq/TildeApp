@@ -88,20 +88,69 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="TLz-Cy-7XR">
             <objects>
-                <viewController id="4lH-Gq-6i1" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lU6-oh-s1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="4lH-Gq-6i1" customClass="AboutViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19C-K3-6VF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-5Q-I9f">
+                                <rect key="frame" x="0.0" y="285.5" width="375" height="267"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.28173159246575341" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">Tilde ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Agosto Diciembre de 2018, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.
+Desarrolladores:
+
+Omar Iván Flores Quijada
+
+Luis Daniel Vázquez Peña
+
+Tilde se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-aK-3RN">
+                                <rect key="frame" x="94" y="-128.5" width="187.5" height="600.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tilde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVr-No-X5h">
+                                <rect key="frame" x="119.5" y="581.5" width="136" height="53"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bQ-4s-pny">
+                                <rect key="frame" x="15" y="25" width="30" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="4lH-Gq-6i1" eventType="touchUpInside" id="W5i-d4-cSx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22352941176470589" green="0.35686274509803922" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gJF-5Q-I9f" firstAttribute="leading" secondItem="G5F-xh-xNd" secondAttribute="leading" id="0Y4-87-uLD"/>
+                            <constraint firstItem="fVr-No-X5h" firstAttribute="centerX" secondItem="19C-K3-6VF" secondAttribute="centerX" id="5QY-5U-iwO"/>
+                            <constraint firstItem="Cyd-aK-3RN" firstAttribute="width" secondItem="19C-K3-6VF" secondAttribute="width" multiplier="0.5" id="BFJ-9u-yRT"/>
+                            <constraint firstItem="4bQ-4s-pny" firstAttribute="top" secondItem="G5F-xh-xNd" secondAttribute="top" constant="5" id="Bm2-WQ-aGl"/>
+                            <constraint firstItem="4bQ-4s-pny" firstAttribute="leading" secondItem="G5F-xh-xNd" secondAttribute="leading" constant="15" id="IJz-lv-bXV"/>
+                            <constraint firstItem="gJF-5Q-I9f" firstAttribute="centerY" secondItem="G5F-xh-xNd" secondAttribute="centerY" multiplier="1.22" id="MNK-Oa-eX1"/>
+                            <constraint firstItem="gJF-5Q-I9f" firstAttribute="trailing" secondItem="G5F-xh-xNd" secondAttribute="trailing" id="WCb-oj-lP0"/>
+                            <constraint firstItem="Cyd-aK-3RN" firstAttribute="centerX" secondItem="G5F-xh-xNd" secondAttribute="centerX" id="c5g-aU-U4g"/>
+                            <constraint firstItem="fVr-No-X5h" firstAttribute="centerY" secondItem="G5F-xh-xNd" secondAttribute="centerY" multiplier="1.77" id="h3p-sc-MsH"/>
+                            <constraint firstItem="Cyd-aK-3RN" firstAttribute="centerY" secondItem="G5F-xh-xNd" secondAttribute="centerY" multiplier="0.5" id="tcj-wp-UYU"/>
+                            <constraint firstItem="gJF-5Q-I9f" firstAttribute="height" secondItem="19C-K3-6VF" secondAttribute="height" multiplier="0.4" id="xsp-Vu-hr4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G5F-xh-xNd"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lU6-oh-s1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008" y="529"/>
+            <point key="canvasLocation" x="1007.2" y="528.48575712143929"/>
         </scene>
         <!--Options View Controller-->
         <scene sceneID="M0L-zh-czl">
