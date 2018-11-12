@@ -150,9 +150,11 @@ class FreeFallViewController: UIViewController {
         if !timeOver {
             retroView.wrongPhrase = currentPhrase
             retroView.solution = solution
+            retroView.source = 1
         }
         else {
             retroView.wrongPhrase = nil
+            retroView.source = 1
         }
         present(retroView, animated: true, completion: nil)
     }

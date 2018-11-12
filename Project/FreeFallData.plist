@@ -77,18 +77,6 @@
 	</dict>
 	<dict>
 		<key>solution</key>
-		<string>adolescencia</string>
-		<key>phrase</key>
-		<string>La _______ es una etapa muy difícil.</string>
-		<key>options</key>
-		<array>
-			<string>adolescencia</string>
-			<string>adolesencia</string>
-			<string>adolecencia</string>
-		</array>
-	</dict>
-	<dict>
-		<key>solution</key>
 		<string>silencio</string>
 		<key>phrase</key>
 		<string>Le pedí a mi compañero que guardara _______ mientras trabajo.</string>
