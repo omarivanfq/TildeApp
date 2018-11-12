@@ -23,6 +23,13 @@ class ViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toOptions" {
+            let view = segue.destination as! OptionsViewController
+            view.player = player
+        }
+    }
+    
 }
 
 // https://www.quora.com/How-should-I-add-background-music-in-Swift-playground-not-a-project
