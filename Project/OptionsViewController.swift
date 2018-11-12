@@ -7,8 +7,10 @@ class OptionsViewController: UIViewController {
     
     @IBOutlet weak var switchMusic: UISwitch!
     
+    @IBOutlet weak var switchVibration: UISwitch!
     @IBAction func dismiss(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+        updateOptions()
     }
     
     @IBAction func changeMusic(_ sender: UISwitch) {
@@ -18,6 +20,7 @@ class OptionsViewController: UIViewController {
         else {
             player?.stop()
         }
+        updateOptions()
     }
     
     override func viewDidLoad() {
@@ -28,6 +31,23 @@ class OptionsViewController: UIViewController {
         else {
             switchMusic.isOn = false
         }
+    }
+    
+    func dataOptionsFilePath() -> String {
+        let url = FileManager().urls(for: .documentDirectory,
+                                     in: .userDomainMask).first!
+        let pathArchivo =
+            url.appendingPathComponent("options.plist")
+        return pathArchivo.path
+    }
+    
+    func updateOptions() {
+        let filePath = dataOptionsFilePath()
+        let newDictionary:NSDictionary = [
+            "music": switchMusic.isOn,
+            "vibration": switchVibration.isOn
+        ]
+        newDictionary.write(toFile: filePath, atomically: true)
     }
 
 }

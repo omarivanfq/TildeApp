@@ -17,7 +17,6 @@ class CatchUpViewController: UIViewController, Game {
     @IBOutlet weak var btnUpPhrase: UIButton!
     @IBOutlet weak var btnDownPhrase: UIButton!
     
-    
     @IBAction func howToPlay(_ sender: UIButton) {
         detail = UIView()
         detail.backgroundColor = UIColor(

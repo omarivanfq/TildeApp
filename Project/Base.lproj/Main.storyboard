@@ -111,6 +111,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-vi-wgz">
+                                <rect key="frame" x="83" y="234" width="381" height="393"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5Df-Jp-5aU">
                                 <rect key="frame" x="99" y="287.5" width="177.5" height="92"/>
                                 <subviews>
@@ -189,11 +193,12 @@
                     </view>
                     <connections>
                         <outlet property="switchMusic" destination="GL6-kN-Wbx" id="PIK-0k-5KX"/>
+                        <outlet property="switchVibration" destination="uHl-iL-atA" id="3Jj-x4-Sn9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jqZ-Nk-63h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1830" y="133"/>
+            <point key="canvasLocation" x="1829.5999999999999" y="132.68365817091455"/>
         </scene>
         <!--Swiping View Controller-->
         <scene sceneID="QFf-gB-LJQ">

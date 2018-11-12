@@ -6,10 +6,11 @@ class ViewController: UIViewController {
     var player: AVAudioPlayer?
     override func viewDidLoad() {
         super.viewDidLoad()
-        playMusic()
+        setMusic()
+        getOptions()
     }
 
-    func playMusic() {
+    func setMusic() {
         let url = Bundle.main.url(forResource: "the-ting-tings-earthquake-official-audio", withExtension: "mp3")!
         do {
             player = try AVAudioPlayer(contentsOf: url)
@@ -17,7 +18,6 @@ class ViewController: UIViewController {
             
             player.numberOfLoops = -1
             player.prepareToPlay()
-            player.play()
         } catch let error {
             print(error.localizedDescription)
         }
@@ -27,6 +27,28 @@ class ViewController: UIViewController {
         if segue.identifier == "toOptions" {
             let view = segue.destination as! OptionsViewController
             view.player = player
+        }
+    }
+    
+    func dataOptionsFilePath() -> String {
+        let url = FileManager().urls(for: .documentDirectory,
+                                     in: .userDomainMask).first!
+        let pathArchivo =
+            url.appendingPathComponent("options.plist")
+        return pathArchivo.path
+    }
+    
+    func getOptions() {
+        let filePath = dataOptionsFilePath()
+        if FileManager.default.fileExists(atPath: filePath) {
+            let dictionary = NSDictionary(contentsOfFile: filePath)!
+            let musicPlaying = dictionary.object(forKey: "music") as! Bool
+            if musicPlaying {
+                player!.play()
+            }
+        }
+        else {
+            player!.play()
         }
     }
     
