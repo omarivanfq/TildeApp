@@ -22,22 +22,29 @@ class SwipingViewController: UIViewController {
     @IBOutlet weak var skip3: UIView!
     @IBOutlet weak var lbTimer: UILabel!
     @IBOutlet weak var card: UIView!
+    @IBOutlet weak var cardSec: UIView!
     @IBOutlet weak var imageThumbnail: UIImageView!
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var lbCorrect: UILabel!
     @IBOutlet weak var cardSecond: UIView!
+    @IBOutlet weak var viewSkip: UIView!
+    
     var skips : Int!
     
     @IBAction func skip(_ sender: Any) {
         if skips == 3 {
-            skip3.alpha = 0.5
+            skip3.alpha = 0.3
+            skips = skips - 1
             updateCard()
         } else if skips == 2 {
-            skip2.alpha = 0.5
+            skip2.alpha = 0.3
+            skips = skips - 1
             updateCard()
         } else if skips == 1 {
-            skip1.alpha = 0.1
+            skip1.alpha = 0.3
+            skips = skips - 1
             updateCard()
+            viewSkip.alpha = 0.3
         }
     }
     
@@ -91,7 +98,24 @@ class SwipingViewController: UIViewController {
         if correct {
             correctCount = correctCount + 1
             lbCorrect.text = String(correctCount)
+        } else {
+            goToRetro(timeOver: false)
         }
+    }
+    
+    func goToRetro(timeOver:Bool) {
+        let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
+        retroView.score = correctCount
+        if !timeOver {
+            retroView.wrongPhrase = (arrWords[indexWord] as! NSDictionary).object(forKey: "word") as? String
+            retroView.solution = ""
+            retroView.source = 2
+        }
+        else {
+            retroView.wrongPhrase = nil
+            retroView.source = 2
+        }
+        present(retroView, animated: true, completion: nil)
     }
     
     func resetCard(timeAnimation : Double) {
@@ -110,6 +134,7 @@ class SwipingViewController: UIViewController {
         makeCardForm(card: card)
         makeCardForm(card: cardSecond)
         card.center = CGPoint(x: view.center.x, y: view.center.y)
+        cardSec.center = CGPoint(x: view.center.x, y: view.center.y)
         // TODO: Shuffle NSArray
         correctCount = 0
         skips = 3

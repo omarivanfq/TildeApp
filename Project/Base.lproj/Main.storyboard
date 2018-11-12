@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -91,7 +92,6 @@
         <!--About View Controller-->
         <scene sceneID="TLz-Cy-7XR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lU6-oh-s1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4lH-Gq-6i1" customClass="AboutViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19C-K3-6VF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -100,14 +100,14 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-5Q-I9f">
                                 <rect key="frame" x="0.0" y="285.5" width="375" height="267"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.28173159246575341" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">Tilde ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Agosto Diciembre de 2018, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.
+                                <string key="text">Tilde ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Agosto Diciembre de 2018, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.
 Desarrolladores:
 
 Omar Iván Flores Quijada
 
 Luis Daniel Vázquez Peña
 
-Tilde se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.</mutableString>
+Tilde se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -149,6 +149,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                         <viewLayoutGuide key="safeArea" id="G5F-xh-xNd"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lU6-oh-s1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1007.2" y="528.48575712143929"/>
         </scene>
@@ -252,7 +253,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
         <!--Swiping View Controller-->
         <scene sceneID="QFf-gB-LJQ">
             <objects>
-                <viewController id="eqg-ox-jZU" customClass="SwipingViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SwipingViewController" storyboardIdentifier="SwipingViewController" id="eqg-ox-jZU" customClass="SwipingViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="14X-NZ-VI9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,7 +314,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8A-fc-gGC">
-                                        <rect key="frame" x="62" y="62" width="150" height="150"/>
+                                        <rect key="frame" x="35" y="35" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -403,13 +404,15 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                     <connections>
                         <outlet property="card" destination="uuo-49-JeX" id="zlR-qT-D6f"/>
                         <outlet property="cardLabel" destination="2Lc-QR-csN" id="ReI-q3-Jnp"/>
-                        <outlet property="cardSecond" destination="2Mt-io-YoA" id="Nvo-Ut-dp8"/>
+                        <outlet property="cardSec" destination="2Mt-io-YoA" id="FmC-fp-VtW"/>
+                        <outlet property="cardSecond" destination="2Mt-io-YoA" id="2pW-fb-bGA"/>
                         <outlet property="imageThumbnail" destination="M8A-fc-gGC" id="Dbg-2f-wH7"/>
                         <outlet property="lbCorrect" destination="zfG-9v-PKp" id="jZP-oJ-nnf"/>
                         <outlet property="lbTimer" destination="cf7-ot-QYk" id="YQL-mc-UPZ"/>
-                        <outlet property="skip1" destination="hUI-KR-kpi" id="rMv-qJ-zWr"/>
-                        <outlet property="skip2" destination="hUI-KR-kpi" id="R7K-Ge-pY2"/>
-                        <outlet property="skip3" destination="hUI-KR-kpi" id="GK6-3I-yru"/>
+                        <outlet property="skip1" destination="baI-dd-7fi" id="ies-Aj-nE9"/>
+                        <outlet property="skip2" destination="e2T-qq-J2H" id="fWA-PL-KSc"/>
+                        <outlet property="skip3" destination="tq0-0d-0EW" id="Mk9-TA-0J9"/>
+                        <outlet property="viewSkip" destination="hUI-KR-kpi" id="lcF-w3-XwN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1o-ia-0Sp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -537,7 +540,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b2-TK-lqa">
-                                <rect key="frame" x="0.0" y="106.5" width="375" height="187"/>
+                                <rect key="frame" x="0.0" y="106.5" width="298" height="187"/>
                                 <color key="backgroundColor" red="0.40784313725490196" green="0.43137254901960786" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="free fall       ">
@@ -548,7 +551,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNu-tC-Ncr">
-                                <rect key="frame" x="0.0" y="480" width="375" height="187"/>
+                                <rect key="frame" x="0.0" y="480" width="298" height="187"/>
                                 <color key="backgroundColor" red="0.70196078431372544" green="0.4823529411764706" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="catch up       ">
@@ -558,8 +561,19 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                     <segue destination="axF-QV-027" kind="show" id="aCg-sX-8Xn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-1U-t1s">
+                                <rect key="frame" x="0.0" y="293.5" width="298" height="186.5"/>
+                                <color key="backgroundColor" red="0.84313725490196079" green="0.44313725490196076" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="swiping      ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eqg-ox-jZU" kind="show" id="92s-xt-7h8"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minijuegos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SI-MY-ZOw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="298" height="106.5"/>
                                 <color key="backgroundColor" red="0.27450980392156865" green="0.59215686274509804" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -568,29 +582,31 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-ME-sAY">
                                 <rect key="frame" x="298" y="108" width="84" height="571"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t46-A0-FuY">
-                                        <rect key="frame" x="20" y="76" width="43" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t46-A0-FuY">
+                                        <rect key="frame" x="-13" y="80.5" width="26.5" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWw-1K-5QG">
-                                        <rect key="frame" x="20" y="272" width="56" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWw-1K-5QG">
+                                        <rect key="frame" x="-13" y="267.5" width="26.5" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRW-QM-DCA">
-                                        <rect key="frame" x="20" y="456" width="56" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRW-QM-DCA">
+                                        <rect key="frame" x="-13" y="454" width="26.5" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.07100813356164383" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sRW-QM-DCA" firstAttribute="centerX" secondItem="nR1-ME-sAY" secondAttribute="centerX" id="Ayd-Mq-bBg"/>
+                                    <constraint firstItem="KWw-1K-5QG" firstAttribute="centerX" secondItem="nR1-ME-sAY" secondAttribute="centerX" id="IEm-t4-PVk"/>
+                                    <constraint firstItem="t46-A0-FuY" firstAttribute="centerX" secondItem="nR1-ME-sAY" secondAttribute="centerX" id="cEh-Yj-HqH"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8j-sE-SiV">
                                 <rect key="frame" x="25" y="26.5" width="30" height="54"/>
@@ -600,17 +616,6 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 </state>
                                 <connections>
                                     <action selector="goBack:" destination="sbH-5H-Rkx" eventType="touchUpInside" id="fdP-BI-QLn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-1U-t1s">
-                                <rect key="frame" x="0.0" y="293.5" width="375" height="186.5"/>
-                                <color key="backgroundColor" red="0.84313725490196079" green="0.44313725490196076" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="swiping      ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eqg-ox-jZU" kind="show" id="92s-xt-7h8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -631,12 +636,16 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                             <constraint firstItem="aNu-tC-Ncr" firstAttribute="trailing" secondItem="Ypy-56-x2I" secondAttribute="trailing" id="eM7-np-9Q5"/>
                             <constraint firstItem="aNu-tC-Ncr" firstAttribute="height" secondItem="Tvz-xn-I8f" secondAttribute="height" multiplier="0.28" id="fFe-sx-VkL"/>
                             <constraint firstItem="3b2-TK-lqa" firstAttribute="trailing" secondItem="Ypy-56-x2I" secondAttribute="trailing" id="iVD-Nk-BJp"/>
+                            <constraint firstItem="t46-A0-FuY" firstAttribute="centerY" secondItem="3b2-TK-lqa" secondAttribute="centerY" id="jjt-am-Z7a"/>
                             <constraint firstItem="9SI-MY-ZOw" firstAttribute="top" secondItem="Tvz-xn-I8f" secondAttribute="top" id="jnP-LZ-m5V"/>
+                            <constraint firstItem="KWw-1K-5QG" firstAttribute="centerY" secondItem="nrG-1U-t1s" secondAttribute="centerY" id="jpY-Wj-LxV"/>
                             <constraint firstItem="3b2-TK-lqa" firstAttribute="top" secondItem="9SI-MY-ZOw" secondAttribute="bottom" id="k3J-SK-lGJ"/>
                             <constraint firstItem="3b2-TK-lqa" firstAttribute="height" secondItem="Tvz-xn-I8f" secondAttribute="height" multiplier="0.28" id="mI6-th-QPU"/>
+                            <constraint firstItem="sRW-QM-DCA" firstAttribute="centerY" secondItem="aNu-tC-Ncr" secondAttribute="centerY" id="p2Z-jq-eJQ"/>
                             <constraint firstItem="nrG-1U-t1s" firstAttribute="leading" secondItem="Ypy-56-x2I" secondAttribute="leading" id="pql-wK-cas"/>
                             <constraint firstItem="aNu-tC-Ncr" firstAttribute="top" secondItem="nrG-1U-t1s" secondAttribute="bottom" id="stA-W3-UUR"/>
                             <constraint firstItem="nR1-ME-sAY" firstAttribute="leading" secondItem="Ypy-56-x2I" secondAttribute="leading" constant="298" id="wx3-zt-aZG"/>
+                            <constraint firstItem="nR1-ME-sAY" firstAttribute="width" secondItem="Tvz-xn-I8f" secondAttribute="width" multiplier="0.2" id="xGU-Bh-Ono"/>
                             <constraint firstItem="9SI-MY-ZOw" firstAttribute="trailing" secondItem="Ypy-56-x2I" secondAttribute="trailing" id="yBw-m4-AsC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ypy-56-x2I"/>
@@ -654,7 +663,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
         <!--Free Fall View Controller-->
         <scene sceneID="hvk-EG-My8">
             <objects>
-                <viewController id="KuI-X3-DGf" customClass="FreeFallViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="FreeFallViewController" storyboardIdentifier="FreeFallViewController" id="KuI-X3-DGf" customClass="FreeFallViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TC8-13-UHn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -724,6 +733,12 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bien Hecho!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-bH-B1f">
+                                <rect key="frame" x="0.0" y="315" width="375" height="32"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diH-xX-chr">
                                 <rect key="frame" x="0.0" y="20" width="375" height="35"/>
                                 <color key="backgroundColor" red="0.22352941176470587" green="0.23921568627450979" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -763,17 +778,12 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                     <action selector="action:" destination="KuI-X3-DGf" eventType="touchUpInside" id="hAP-p7-XZd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bien Hecho!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-bH-B1f">
-                                <rect key="frame" x="0.0" y="315" width="375" height="32"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40784313725490196" green="0.43137254901960786" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="La1-Ym-Msf" firstAttribute="trailing" secondItem="G3P-bH-B1f" secondAttribute="trailing" id="CiK-DJ-oZ7"/>
                             <constraint firstItem="diH-xX-chr" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" id="FPm-Qf-GKA"/>
+                            <constraint firstItem="G3P-bH-B1f" firstAttribute="centerX" secondItem="TC8-13-UHn" secondAttribute="centerX" id="GyI-iA-ksl"/>
                             <constraint firstItem="diH-xX-chr" firstAttribute="trailing" secondItem="La1-Ym-Msf" secondAttribute="trailing" id="JlP-EH-XPZ"/>
                             <constraint firstItem="sjw-uw-StH" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" constant="15" id="Ttp-nJ-nil"/>
                             <constraint firstItem="8AS-Ld-S8t" firstAttribute="trailing" secondItem="La1-Ym-Msf" secondAttribute="trailing" id="Tvw-mf-rZb"/>
@@ -875,7 +885,9 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="9T4-Bf-BU0"/>
                                     <action selector="playAgain:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="EP6-1o-kyn"/>
+                                    <segue destination="eqg-ox-jZU" kind="show" id="jdo-jN-cyS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu puntaje:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyJ-eq-X2f">
@@ -943,5 +955,6 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Oje-Fn-Fsn"/>
+        <segue reference="jdo-jN-cyS"/>
     </inferredMetricsTieBreakers>
 </document>
