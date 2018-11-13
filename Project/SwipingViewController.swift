@@ -14,9 +14,11 @@ class SwipingViewController: UIViewController {
     var timer = Timer()
     var actTimer = Timer()
     var arrWords : NSArray!
+    var arrWords1 : NSArray!
     var gameOver = false
     var indexWord : Int!
     var correctCount : Int!
+    var correct : Bool!
     @IBOutlet weak var skip1: UIView!
     @IBOutlet weak var skip2: UIView!
     @IBOutlet weak var skip3: UIView!
@@ -61,8 +63,6 @@ class SwipingViewController: UIViewController {
         }
         imageThumbnail.alpha = abs(xMovement / view.center.x)
         if sender.state == UIGestureRecognizer.State.ended {
-            let correct = (arrWords[indexWord] as! NSDictionary).object(forKey: "correct") as! Bool
-            
             if cardS.center.x < 75 {
                 // User choose incorrect
                 UIView.animate(withDuration: 0.3) {
@@ -75,7 +75,8 @@ class SwipingViewController: UIViewController {
                 }) { (finished: Bool) in
                     self.resetCard(timeAnimation: 0)
                 }
-                checkPoints(correct: !correct)
+                correct = !correct
+                checkPoints()
                 updateCard()
             } else if cardS.center.x > view.frame.width - 75 {
                 // User choose correct
@@ -85,7 +86,7 @@ class SwipingViewController: UIViewController {
                 }) { (finished: Bool) in
                     self.resetCard(timeAnimation: 0)
                 }
-                checkPoints(correct: correct)
+                checkPoints()
                 updateCard()
             } else {
                 resetCard(timeAnimation: 0.3)
@@ -94,7 +95,7 @@ class SwipingViewController: UIViewController {
         }
     }
     
-    func checkPoints(correct : Bool) {
+    func checkPoints() {
         if correct {
             correctCount = correctCount + 1
             lbCorrect.text = String(correctCount)
@@ -177,11 +178,17 @@ class SwipingViewController: UIViewController {
     func getData() {
         let path = Bundle.main.path(forResource: "Swiping", ofType: "plist")!
         arrWords = NSArray(contentsOfFile: path)
+        arrWords = arrWords.shuffled() as NSArray
     }
     
     func updateCard() {
         indexWord = (indexWord + 1) % arrWords.count
-        cardLabel.text = (arrWords[indexWord] as! NSDictionary).object(forKey: "word") as? String
+        correct = Bool.random()
+        if (correct) {
+            cardLabel.text = (arrWords[indexWord] as! NSDictionary).object(forKey: "right") as? String
+        } else {
+            cardLabel.text = (arrWords[indexWord] as! NSDictionary).object(forKey: "wrong") as? String
+        }
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
