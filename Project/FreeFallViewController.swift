@@ -8,6 +8,7 @@ class FreeFallViewController: UIViewController, Game {
     @IBOutlet weak var btnOption4: UIButton!
     @IBOutlet weak var btnOption5: UIButton!
     @IBOutlet weak var lbScore: UILabel!
+    
     var score:Int!
     var gameStarted:Bool!
     var option: Option?
@@ -23,6 +24,7 @@ class FreeFallViewController: UIViewController, Game {
     var detail:UIView!
     
     @IBOutlet weak var infoButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         infoButton.tintColor = UIColor.white
@@ -107,7 +109,7 @@ class FreeFallViewController: UIViewController, Game {
     var arregloDiccionarios : NSArray!
     
     func restart() {
-        timeCount = 20
+        timeCount = 3
         score = 0
         lbTimer.text = secondsToString(seconds: timeCount!)
         lbScore.text = "0"
@@ -214,10 +216,19 @@ class FreeFallViewController: UIViewController, Game {
     }
     
     func goToRetro(timeOver:Bool) {
+
         updateScore()
         timer.invalidate()
         actTimer.invalidate()
+        
         let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
+        
+        /*
+        let retroView = self.storyboard?.instantiateViewController(withIdentifier: "back") as! BackViewController
+         */
+        
+       // retroView.game = self
+        
         retroView.score = score
         retroView.game = self
         if !timeOver {
@@ -229,6 +240,7 @@ class FreeFallViewController: UIViewController, Game {
             retroView.wrongPhrase = nil
             retroView.source = 1
         }
+        
         present(retroView, animated: true, completion: nil)
     }
     

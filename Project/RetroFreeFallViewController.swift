@@ -39,60 +39,12 @@ class RetroFreeFallViewController: UIViewController {
             lbWrongPhrase.text = "Time Over!!"
             lbSolution.text = ""
         }
-      //  updateScore()
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
     }
-    
-    @IBAction func back(_ sender: Any) {
-        if source == 1 {
-            let viewT = self.storyboard?.instantiateViewController(withIdentifier: "FreeFallViewController") as! FreeFallViewController
-            present(viewT, animated: true, completion: nil)
-        } else if source == 2 {
-            let viewT = self.storyboard?.instantiateViewController(withIdentifier: "SwipingViewController") as! SwipingViewController
-            present(viewT, animated: true, completion: nil)
-        }
-    }
-    
-    func dataFilePath() -> String {
-        let url = FileManager().urls(for: .documentDirectory,
-                                     in: .userDomainMask).first!
-        let pathArchivo =
-            url.appendingPathComponent("scores.plist")
-        return pathArchivo.path
-    }
-    
-    func updateScore() {
-        let filePath = dataFilePath()
-        if FileManager.default.fileExists(atPath: filePath) {
-            let dictionary = NSDictionary(contentsOfFile: filePath)!
-            if source == 1 {
-                let storedScore = dictionary.object(forKey: "freefall")! as! Int
-                if storedScore < score {
-                    let newDictionary:NSDictionary = [
-                        "freefall": score,
-                        "swiping": dictionary.object(forKey: "swiping")! as! Int,
-                        "catchup": dictionary.object(forKey: "catchup")! as! Int,
-                    ]
-                    newDictionary.write(toFile: dataFilePath(), atomically: true)
-                }
-            } else if source == 2 {
-                let storedScore = dictionary.object(forKey: "swiping")! as! Int
-                if storedScore < score {
-                    let newDictionary:NSDictionary = [
-                        "freefall": dictionary.object(forKey: "freefall")! as! Int,
-                        "swiping": score,
-                        "catchup": dictionary.object(forKey: "catchup")! as! Int,
-                        ]
-                    newDictionary.write(toFile: dataFilePath(), atomically: true)
-                }
-            }
-        }
-    }
 
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -885,7 +885,6 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="9T4-Bf-BU0"/>
                                     <action selector="playAgain:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="EP6-1o-kyn"/>
                                 </connections>
                             </button>
@@ -945,7 +944,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pb6-Ur-xdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2809" y="-2128"/>
+            <point key="canvasLocation" x="2809" y="-2529"/>
         </scene>
     </scenes>
     <resources>
