@@ -112,14 +112,13 @@ class CatchUpViewController: UIViewController, Game {
         }
         else {
             timeCount = timeCount! - 1
-            print(timeCount!)
         }
     }
     
     func restart() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         score = 0
-        timeCount = Int.random(in: 5...10)
+        timeCount = Int.random(in: 35...80)
         lbScore.text = "0"
         getData()
         playMusic()
@@ -147,7 +146,6 @@ class CatchUpViewController: UIViewController, Game {
         btnUpPhrase.setTitle(upPhrase, for: .normal)
         btnDownPhrase.setTitle(downPhrase, for: .normal)
     }
-    
 
     func goToRetro(timeOver:Bool) {
         updateScore()
@@ -223,7 +221,7 @@ class CatchUpViewController: UIViewController, Game {
         do {
             playerCorrect = try AVAudioPlayer(contentsOf: url)
             guard let playerCorrect = playerCorrect else { return }
-            playerCorrect.numberOfLoops = 1
+            playerCorrect.numberOfLoops = 0
             playerCorrect.prepareToPlay()
         } catch let error {
             print(error.localizedDescription)
@@ -232,7 +230,7 @@ class CatchUpViewController: UIViewController, Game {
         do {
             playerWrong = try AVAudioPlayer(contentsOf: url)
             guard let playerWrong = playerWrong else { return }
-            playerWrong.numberOfLoops = 1
+            playerWrong.numberOfLoops = 0
             playerWrong.prepareToPlay()
         } catch let error {
             print(error.localizedDescription)
@@ -242,7 +240,7 @@ class CatchUpViewController: UIViewController, Game {
         do {
             playerTimeOver = try AVAudioPlayer(contentsOf: url)
             guard let playerTimeOver = playerTimeOver else { return }
-            playerTimeOver.numberOfLoops = 1
+            playerTimeOver.numberOfLoops = 0
             playerTimeOver.prepareToPlay()
         } catch let error {
             print(error.localizedDescription)

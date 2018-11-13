@@ -109,7 +109,7 @@ class FreeFallViewController: UIViewController, Game {
     var arregloDiccionarios : NSArray!
     
     func restart() {
-        timeCount = 3
+        timeCount = 40
         score = 0
         lbTimer.text = secondsToString(seconds: timeCount!)
         lbScore.text = "0"
@@ -222,13 +222,7 @@ class FreeFallViewController: UIViewController, Game {
         actTimer.invalidate()
         
         let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
-        
-        /*
-        let retroView = self.storyboard?.instantiateViewController(withIdentifier: "back") as! BackViewController
-         */
-        
-       // retroView.game = self
-        
+
         retroView.score = score
         retroView.game = self
         if !timeOver {
