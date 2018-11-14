@@ -42,7 +42,7 @@
 		FB503E1421763C4B003C3874 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		FB503E18217640C0003C3874 /* FreeFallData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FreeFallData.plist; sourceTree = "<group>"; };
 		FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinijuegosViewController.swift; sourceTree = "<group>"; };
-		FBAB2A79216FDF2A00E982F3 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAB2A79216FDF2A00E982F3 /* TildeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TildeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBAB2A81216FDF2A00E982F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		FBAB2A70216FDF2A00E982F3 = {
 			isa = PBXGroup;
 			children = (
-				FBAB2A7B216FDF2A00E982F3 /* Project */,
+				FBAB2A7B216FDF2A00E982F3 /* TildeApp */,
 				FBAB2A7A216FDF2A00E982F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,12 +78,12 @@
 		FBAB2A7A216FDF2A00E982F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBAB2A79216FDF2A00E982F3 /* Project.app */,
+				FBAB2A79216FDF2A00E982F3 /* TildeApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBAB2A7B216FDF2A00E982F3 /* Project */ = {
+		FBAB2A7B216FDF2A00E982F3 /* TildeApp */ = {
 			isa = PBXGroup;
 			children = (
 				FB0D4B17219A33D400BA2E41 /* AboutViewController.swift */,
@@ -109,15 +109,15 @@
 				FBAB2A88216FDF2A00E982F3 /* Info.plist */,
 				FBDBED3A2190EB06002641D9 /* CatchUp.plist */,
 			);
-			path = Project;
+			path = TildeApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FBAB2A78216FDF2A00E982F3 /* Project */ = {
+		FBAB2A78216FDF2A00E982F3 /* TildeApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBAB2A8B216FDF2A00E982F3 /* Build configuration list for PBXNativeTarget "Project" */;
+			buildConfigurationList = FBAB2A8B216FDF2A00E982F3 /* Build configuration list for PBXNativeTarget "TildeApp" */;
 			buildPhases = (
 				FBAB2A75216FDF2A00E982F3 /* Sources */,
 				FBAB2A76216FDF2A00E982F3 /* Frameworks */,
@@ -127,9 +127,9 @@
 			);
 			dependencies = (
 			);
-			name = Project;
+			name = TildeApp;
 			productName = Project;
-			productReference = FBAB2A79216FDF2A00E982F3 /* Project.app */;
+			productReference = FBAB2A79216FDF2A00E982F3 /* TildeApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +147,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FBAB2A74216FDF2A00E982F3 /* Build configuration list for PBXProject "Project" */;
+			buildConfigurationList = FBAB2A74216FDF2A00E982F3 /* Build configuration list for PBXProject "TildeApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBAB2A78216FDF2A00E982F3 /* Project */,
+				FBAB2A78216FDF2A00E982F3 /* TildeApp */,
 			);
 		};
 /* End PBXProject section */
@@ -348,13 +348,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5584YC7F3H;
-				INFOPLIST_FILE = Project/Info.plist;
+				INFOPLIST_FILE = TildeApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.pepe.Project1;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.daniel.TildeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -367,13 +367,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5584YC7F3H;
-				INFOPLIST_FILE = Project/Info.plist;
+				INFOPLIST_FILE = TildeApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.pepe.Project1;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.daniel.TildeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -383,7 +383,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FBAB2A74216FDF2A00E982F3 /* Build configuration list for PBXProject "Project" */ = {
+		FBAB2A74216FDF2A00E982F3 /* Build configuration list for PBXProject "TildeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FBAB2A89216FDF2A00E982F3 /* Debug */,
@@ -392,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBAB2A8B216FDF2A00E982F3 /* Build configuration list for PBXNativeTarget "Project" */ = {
+		FBAB2A8B216FDF2A00E982F3 /* Build configuration list for PBXNativeTarget "TildeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FBAB2A8C216FDF2A00E982F3 /* Debug */,
