@@ -8,17 +8,17 @@
 
 import UIKit
 
-class SwipingViewController: UIViewController {
+class SwipingViewController: UIViewController, Game {
 
     var timeCount : Int?
     var timer = Timer()
-    var actTimer = Timer()
     var arrWords : NSArray!
     var arrWords1 : NSArray!
     var gameOver = false
     var indexWord : Int!
     var correctCount : Int!
     var correct : Bool!
+    var detail:UIView!
     @IBOutlet weak var skip1: UIView!
     @IBOutlet weak var skip2: UIView!
     @IBOutlet weak var skip3: UIView!
@@ -30,6 +30,7 @@ class SwipingViewController: UIViewController {
     @IBOutlet weak var lbCorrect: UILabel!
     @IBOutlet weak var cardSecond: UIView!
     @IBOutlet weak var viewSkip: UIView!
+    @IBOutlet weak var infoButton: UIButton!
     
     var skips : Int!
     
@@ -130,13 +131,13 @@ class SwipingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeCount = 90
+        timeCount = 60
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         makeCardForm(card: card)
         makeCardForm(card: cardSecond)
         card.center = CGPoint(x: view.center.x, y: view.center.y)
         cardSec.center = CGPoint(x: view.center.x, y: view.center.y)
-        // TODO: Shuffle NSArray
+        infoButton.tintColor = UIColor.white
         correctCount = 0
         skips = 3
         indexWord = 0
@@ -169,6 +170,12 @@ class SwipingViewController: UIViewController {
         }
     }
     
+    @objc func continuePlaying(sender: UIButton!) {
+        detail.removeFromSuperview()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
+    }
+    
+    
     func secondsToString(seconds:Int) -> String {
         let minutes = seconds / 60
         let seconds = seconds % 60
@@ -197,6 +204,65 @@ class SwipingViewController: UIViewController {
     
     override var shouldAutorotate: Bool {
         return false
+    }
+    
+    // Protocolo Game
+    func restart() {
+        timeCount = 60
+        correctCount = 0
+        skips = 3
+        indexWord = 0
+        lbTimer.text = secondsToString(seconds: timeCount!)
+        lbCorrect.text = "0"
+        gameOver = false
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
+        getData()
+        updateCard()
+        //setOptions()
+        //restartPosition()
+        //hideButtons()
+    }
+    
+    //Action for information
+    @IBAction func infoTrigger(_ sender: Any) {
+        detail = UIView()
+        detail.backgroundColor = UIColor(
+            red: 0,
+            green: 0,
+            blue: 0,
+            alpha: 0.92)
+        detail.frame.size.width = view.frame.width
+        detail.frame.size.height = view.frame.height
+        detail.frame.origin.x = 0
+        detail.frame.origin.y = 0
+        let tv = UITextView()
+        tv.isEditable = false
+        tv.backgroundColor = UIColor(
+            red: 0,
+            green: 0,
+            blue: 0,
+            alpha: 0.0)
+        tv.textAlignment = .center
+        tv.text = "¿Cómo jugar?\n\n"
+        tv.text = tv.text + "Gira la palabra a la derecha si crees que esta escrita correctamente, o girala a la izquierda si crees que esta equivocada."
+        tv.font = tv.font!.withSize(20)
+        tv.textColor = .white
+        tv.frame.size.width = view.frame.width * 0.9
+        tv.frame.size.height = view.frame.height * 0.4
+        tv.frame.origin.y = view.frame.height * 0.5 - tv.frame.height * 0.5
+        tv.frame.origin.x = view.frame.width * 0.05
+        let btn = UIButton()
+        btn.frame.size.width = view.frame.width
+        btn.frame.size.height = 50
+        btn.frame.origin.y = view.frame.height - btn.frame.height - 100
+        btn.frame.origin.x = 0
+        btn.setTitle("OK", for: .normal)
+        btn.tintColor = .white
+        btn.addTarget(self, action: #selector(continuePlaying), for: .touchUpInside)
+        detail.addSubview(tv)
+        detail.addSubview(btn)
+        view.addSubview(detail)
+        timer.invalidate()
     }
     
     /*

@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
         <!--About View Controller-->
         <scene sceneID="TLz-Cy-7XR">
             <objects>
-                <viewController id="4lH-Gq-6i1" customClass="AboutViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4lH-Gq-6i1" customClass="AboutViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19C-K3-6VF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +156,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
         <!--Options View Controller-->
         <scene sceneID="M0L-zh-czl">
             <objects>
-                <viewController id="AC7-Nx-2kX" customClass="OptionsViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AC7-Nx-2kX" customClass="OptionsViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yFb-HX-wUS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +253,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
         <!--Swiping View Controller-->
         <scene sceneID="QFf-gB-LJQ">
             <objects>
-                <viewController restorationIdentifier="SwipingViewController" storyboardIdentifier="SwipingViewController" id="eqg-ox-jZU" customClass="SwipingViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SwipingViewController" storyboardIdentifier="SwipingViewController" id="eqg-ox-jZU" customClass="SwipingViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="14X-NZ-VI9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,11 +287,23 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                             <segue destination="sbH-5H-Rkx" kind="show" id="SmK-d1-O1r"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siD-L3-vmu">
+                                        <rect key="frame" x="345" y="32.5" width="22" height="22"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="action:" destination="KuI-X3-DGf" eventType="touchUpInside" id="gcf-PD-SMp"/>
+                                            <action selector="infoTrigger:" destination="eqg-ox-jZU" eventType="touchUpInside" id="gNC-Uw-klE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.62352941176470589" green="0.22745098039215686" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="cf7-ot-QYk" firstAttribute="centerX" secondItem="duY-TQ-7Oi" secondAttribute="centerX" id="DwC-83-v1h"/>
                                     <constraint firstItem="8r5-aA-9kj" firstAttribute="centerY" secondItem="cf7-ot-QYk" secondAttribute="centerY" id="Hm3-Fd-4K8"/>
+                                    <constraint firstAttribute="trailing" secondItem="siD-L3-vmu" secondAttribute="trailing" constant="8" id="IAa-FX-B2X"/>
+                                    <constraint firstItem="siD-L3-vmu" firstAttribute="centerY" secondItem="8r5-aA-9kj" secondAttribute="centerY" id="Jak-ql-hgC"/>
                                     <constraint firstItem="cf7-ot-QYk" firstAttribute="centerY" secondItem="duY-TQ-7Oi" secondAttribute="centerY" constant="10" id="JjN-RX-lhs"/>
                                     <constraint firstItem="8r5-aA-9kj" firstAttribute="leading" secondItem="duY-TQ-7Oi" secondAttribute="leading" constant="8" id="m43-L5-PVb"/>
                                 </constraints>
@@ -412,6 +424,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                         <outlet property="cardSec" destination="2Mt-io-YoA" id="FmC-fp-VtW"/>
                         <outlet property="cardSecond" destination="2Mt-io-YoA" id="2pW-fb-bGA"/>
                         <outlet property="imageThumbnail" destination="M8A-fc-gGC" id="Dbg-2f-wH7"/>
+                        <outlet property="infoButton" destination="siD-L3-vmu" id="THg-EL-v5X"/>
                         <outlet property="lbCorrect" destination="zfG-9v-PKp" id="jZP-oJ-nnf"/>
                         <outlet property="lbTimer" destination="cf7-ot-QYk" id="YQL-mc-UPZ"/>
                         <outlet property="skip1" destination="baI-dd-7fi" id="ies-Aj-nE9"/>
@@ -432,7 +445,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
         <!--Catch Up View Controller-->
         <scene sceneID="Zns-Cb-u7H">
             <objects>
-                <viewController id="axF-QV-027" customClass="CatchUpViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="axF-QV-027" customClass="CatchUpViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="un4-6R-555">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -539,7 +552,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
         <!--Minijuegos View Controller-->
         <scene sceneID="AqA-NB-y8P">
             <objects>
-                <viewController id="sbH-5H-Rkx" customClass="MinijuegosViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sbH-5H-Rkx" customClass="MinijuegosViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tvz-xn-I8f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -667,7 +680,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
         <!--Free Fall View Controller-->
         <scene sceneID="hvk-EG-My8">
             <objects>
-                <viewController restorationIdentifier="FreeFallViewController" storyboardIdentifier="FreeFallViewController" id="KuI-X3-DGf" customClass="FreeFallViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="FreeFallViewController" storyboardIdentifier="FreeFallViewController" id="KuI-X3-DGf" customClass="FreeFallViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TC8-13-UHn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -826,7 +839,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
         <!--Retro Free Fall View Controller-->
         <scene sceneID="GQ4-2Q-4wD">
             <objects>
-                <viewController restorationIdentifier="RetroFreeFallViewController" storyboardIdentifier="RetroFreeFallViewController" id="stJ-fJ-vQN" customClass="RetroFreeFallViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="RetroFreeFallViewController" storyboardIdentifier="RetroFreeFallViewController" id="stJ-fJ-vQN" customClass="RetroFreeFallViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oVh-wo-qux">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
