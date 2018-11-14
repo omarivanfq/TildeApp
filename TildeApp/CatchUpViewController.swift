@@ -125,7 +125,7 @@ class CatchUpViewController: UIViewController, Game {
     }
     
     func getData() {
-        let path = Bundle.main.path(forResource: "CatchUp", ofType: "plist")!
+        let path = Bundle.main.path(forResource: "Swiping", ofType: "plist")!
         arregloDiccionarios = NSArray(contentsOfFile: path)
         
         let randomIndex = Int.random(in: 0 ... arregloDiccionarios.count - 1)

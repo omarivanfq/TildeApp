@@ -14,7 +14,6 @@ class SwipingViewController: UIViewController, Game {
     var timer = Timer()
     var arrWords : NSArray!
     var arrWords1 : NSArray!
-    var gameOver = false
     var indexWord : Int!
     var correctCount : Int!
     var correct : Bool!
@@ -106,18 +105,43 @@ class SwipingViewController: UIViewController, Game {
     }
     
     func goToRetro(timeOver:Bool) {
+        updateScore()
+        timer.invalidate()
         let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
         retroView.score = correctCount
+        retroView.game = self
         if !timeOver {
-            retroView.wrongPhrase = (arrWords[indexWord] as! NSDictionary).object(forKey: "word") as? String
-            retroView.solution = ""
-            retroView.source = 2
+            retroView.wrongPhrase = (arrWords[indexWord] as! NSDictionary).object(forKey: "right") as? String
+            retroView.solution = (arrWords[indexWord] as! NSDictionary).object(forKey: "wrong") as? String
         }
         else {
             retroView.wrongPhrase = nil
-            retroView.source = 2
         }
         present(retroView, animated: true, completion: nil)
+    }
+    
+    func dataFilePath() -> String {
+        let url = FileManager().urls(for: .documentDirectory,
+                                     in: .userDomainMask).first!
+        let pathArchivo =
+            url.appendingPathComponent("scores.plist")
+        return pathArchivo.path
+    }
+    
+    func updateScore() {
+        let filePath = dataFilePath()
+        if FileManager.default.fileExists(atPath: filePath) {
+            let dictionary = NSDictionary(contentsOfFile: filePath)!
+            let storedScore = dictionary.object(forKey: "swiping")! as! Int
+            if storedScore < correctCount {
+                let newDictionary:NSDictionary = [
+                    "freefall": dictionary.object(forKey: "freefall")! as! Int,
+                    "swiping": correctCount,
+                    "catchup": dictionary.object(forKey: "swiping")! as! Int
+                    ]
+                newDictionary.write(toFile: dataFilePath(), atomically: true)
+            }
+        }
     }
     
     func resetCard(timeAnimation : Double) {
@@ -135,12 +159,17 @@ class SwipingViewController: UIViewController, Game {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         makeCardForm(card: card)
         makeCardForm(card: cardSecond)
+        card.frame.size.width = view.frame.width * 0.7
+        card.frame.size.height = view.frame.width * 0.7
         card.center = CGPoint(x: view.center.x, y: view.center.y)
         cardSec.center = CGPoint(x: view.center.x, y: view.center.y)
+        cardLabel.frame.size.width = card.frame.width
+        cardLabel.center = CGPoint(x: view.center.x-(card.center.x-card.frame.height/2), y: view.center.y-(card.center.y-card.frame.width/2))
         infoButton.tintColor = UIColor.white
         correctCount = 0
         skips = 3
         indexWord = 0
+        cardLabel.adjustsFontSizeToFitWidth = true
         getData()
         updateCard()
     }
@@ -162,8 +191,7 @@ class SwipingViewController: UIViewController, Game {
     
     @objc func counter() {
         if timeCount == 0 {
-            lbTimer.text = "Game Over"
-            gameOver = true
+            goToRetro(timeOver: true)
         } else {
             timeCount = timeCount! - 1
             lbTimer.text = secondsToString(seconds: timeCount!)
@@ -214,13 +242,9 @@ class SwipingViewController: UIViewController, Game {
         indexWord = 0
         lbTimer.text = secondsToString(seconds: timeCount!)
         lbCorrect.text = "0"
-        gameOver = false
         timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         getData()
         updateCard()
-        //setOptions()
-        //restartPosition()
-        //hideButtons()
     }
     
     //Action for information
@@ -262,6 +286,12 @@ class SwipingViewController: UIViewController, Game {
         detail.addSubview(tv)
         detail.addSubview(btn)
         view.addSubview(detail)
+        timer.invalidate()
+    }
+    
+    // Go back
+    @IBAction func goBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
         timer.invalidate()
     }
     

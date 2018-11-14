@@ -4,10 +4,11 @@ import AVFoundation
 class OptionsViewController: UIViewController {
 
     var player: AVAudioPlayer?
-    
+    var viewPrincipal : ViewController!
     @IBOutlet weak var switchMusic: UISwitch!
     
     @IBOutlet weak var switchVibration: UISwitch!
+    
     @IBAction func dismiss(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
         updateOptions()
@@ -23,14 +24,15 @@ class OptionsViewController: UIViewController {
         updateOptions()
     }
     
+    @IBAction func changeVibration(_ sender: UISwitch) {
+        viewPrincipal.wantVibration = sender.isOn
+        updateOptions()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if player!.isPlaying {
-            switchMusic.isOn = true
-        }
-        else {
-            switchMusic.isOn = false
-        }
+        switchMusic.isOn = player!.isPlaying
+        switchVibration.isOn = viewPrincipal.wantVibration
     }
     
     func dataOptionsFilePath() -> String {

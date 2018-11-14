@@ -2,2899 +2,1751 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<dict>
-		<key>right</key>
-		<string>
-artículos
-</string>
-		<key>wrong</key>
-		<string>
-articulos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>científicos
-</string>
-		<key>wrong</key>
-		<string>cientificos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>sintético</string>
-		<key>wrong</key>
-		<string>
-sintetico
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-bibliográficas
-</string>
-		<key>wrong</key>
-		<string>
-bibliograficas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-contextualizar
-</string>
-		<key>wrong</key>
-		<string>
-contextualisar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-verificar
-</string>
-		<key>wrong</key>
-		<string>
-berificar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-previos
-</string>
-		<key>wrong</key>
-		<string>
-prebios
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-además
-</string>
-		<key>wrong</key>
-		<string>
-ademas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-información
-</string>
-		<key>wrong</key>
-		<string>
-informasión
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-información
-</string>
-		<key>wrong</key>
-		<string>
-informacion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-artículos
-</string>
-		<key>wrong</key>
-		<string>
-articulos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-científicos
-</string>
-		<key>wrong</key>
-		<string>
-cientificos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-síntesis
-</string>
-		<key>wrong</key>
-		<string>
-sintesis
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-envergadura
-</string>
-		<key>wrong</key>
-		<string>
-enbergadura
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-esfuerzos
-</string>
-		<key>wrong</key>
-		<string>
-esfuersos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-acepción
-</string>
-		<key>wrong</key>
-		<string>
-acepsión
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>vfg</string>
-		<key>wrong</key>
-		<string>
-acepcion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-también
-</string>
-		<key>wrong</key>
-		<string>
-tambien
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-comité
-</string>
-		<key>wrong</key>
-		<string>
-comite
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-publicación
-</string>
-		<key>wrong</key>
-		<string>
-publicasión
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-publicación
-</string>
-		<key>wrong</key>
-		<string>
-publicacion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-estimó
-</string>
-		<key>wrong</key>
-		<string>
-estimo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-número
-</string>
-		<key>wrong</key>
-		<string>
-numero
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-artículos
-</string>
-		<key>wrong</key>
-		<string>
-articulos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-científicos
-</string>
-		<key>wrong</key>
-		<string>
-cientificos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-duplicándose
-</string>
-		<key>wrong</key>
-		<string>
-duplicandose
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-número
-</string>
-		<key>wrong</key>
-		<string>
-numero
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-artículos
-</string>
-		<key>wrong</key>
-		<string>
-articulos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-número
-</string>
-		<key>wrong</key>
-		<string>
-numero
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-artículos
-</string>
-		<key>wrong</key>
-		<string>
-articulos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-millones
-</string>
-		<key>wrong</key>
-		<string>
-miyones
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-pertenecían
-</string>
-		<key>wrong</key>
-		<string>
-pertenecian
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-además
-</string>
-		<key>wrong</key>
-		<string>
-ademas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desempeño
-</string>
-		<key>wrong</key>
-		<string>
-desempeño
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-científico
-</string>
-		<key>wrong</key>
-		<string>
-cientifico
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-países
-</string>
-		<key>wrong</key>
-		<string>
-paises
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigación
-</string>
-		<key>wrong</key>
-		<string>
-investigasión
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigación
-</string>
-		<key>wrong</key>
-		<string>
-investigacion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigación
-</string>
-		<key>wrong</key>
-		<string>
-inbestigación
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-científica
-</string>
-		<key>wrong</key>
-		<string>
-cientifica
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-características
-</string>
-		<key>wrong</key>
-		<string>
-caracteristicas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-artículo
-</string>
-		<key>wrong</key>
-		<string>
-articulo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-aterrorizado
-</string>
-		<key>wrong</key>
-		<string>
-aterrorisado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-trujillo
-</string>
-		<key>wrong</key>
-		<string>
-trujiyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-guerrilleros
-</string>
-		<key>wrong</key>
-		<string>
-guerriyeros
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desplazado
-</string>
-		<key>wrong</key>
-		<string>
-desplasado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-millones
-</string>
-		<key>wrong</key>
-		<string>
-miyones
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-violencia
-</string>
-		<key>wrong</key>
-		<string>
-biolencia
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-trujillo
-</string>
-		<key>wrong</key>
-		<string>
-trujiyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-universidad
-</string>
-		<key>wrong</key>
-		<string>
-unibersidad
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-violencia
-</string>
-		<key>wrong</key>
-		<string>
-biolencia
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-observando
-</string>
-		<key>wrong</key>
-		<string>
-obserbando
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-civil
-</string>
-		<key>wrong</key>
-		<string>
-cibil
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-enclave
-</string>
-		<key>wrong</key>
-		<string>
-enclabe
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-cognitivas
-</string>
-		<key>wrong</key>
-		<string>
-cognitibas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-vecinos
-</string>
-		<key>wrong</key>
-		<string>
-becinos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-trujillo
-</string>
-		<key>wrong</key>
-		<string>
-trujiyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-llenaron
-</string>
-		<key>wrong</key>
-		<string>
-yenaron
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-expectativas
-</string>
-		<key>wrong</key>
-		<string>
-expectatibas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-cuellos
-</string>
-		<key>wrong</key>
-		<string>
-cueyos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-pavoneos
-</string>
-		<key>wrong</key>
-		<string>
-paboneos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigadores
-</string>
-		<key>wrong</key>
-		<string>
-inbestigadores
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-llevado
-</string>
-		<key>wrong</key>
-		<string>
-llebado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-llevado
-</string>
-		<key>wrong</key>
-		<string>
-yevado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-trujillo
-</string>
-		<key>wrong</key>
-		<string>
-trujiyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-ellos
-</string>
-		<key>wrong</key>
-		<string>
-eyos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-esfuerzos
-</string>
-		<key>wrong</key>
-		<string>
-esfuersos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-guerrillero
-</string>
-		<key>wrong</key>
-		<string>
-guerriyero
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-izquierda
-</string>
-		<key>wrong</key>
-		<string>
-isquierda
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-fuerzas
-</string>
-		<key>wrong</key>
-		<string>
-fuersas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-revolucionarias
-</string>
-		<key>wrong</key>
-		<string>
-rebolucionarias
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-graves
-</string>
-		<key>wrong</key>
-		<string>
-grabes
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-esfuerzo
-</string>
-		<key>wrong</key>
-		<string>
-esfuerso
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-controvertido
-</string>
-		<key>wrong</key>
-		<string>
-controbertido
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-billones
-</string>
-		<key>wrong</key>
-		<string>
-biyones
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-millones
-</string>
-		<key>wrong</key>
-		<string>
-miyones
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigaciones
-</string>
-		<key>wrong</key>
-		<string>
-inbestigaciones
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-violencia
-</string>
-		<key>wrong</key>
-		<string>
-biolencia
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-realizado
-</string>
-		<key>wrong</key>
-		<string>
-realisado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-veteranos
-</string>
-		<key>wrong</key>
-		<string>
-beteranos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-aterrorizaron
-</string>
-		<key>wrong</key>
-		<string>
-aterrorisaron
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-detalle
-</string>
-		<key>wrong</key>
-		<string>
-detaye
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-esperanza
-</string>
-		<key>wrong</key>
-		<string>
-esperansa
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-violencia
-</string>
-		<key>wrong</key>
-		<string>
-biolencia
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-cognitivo
-</string>
-		<key>wrong</key>
-		<string>
-cognitibo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-científicos
-</string>
-		<key>wrong</key>
-		<string>
-cientificos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-estuvieron
-</string>
-		<key>wrong</key>
-		<string>
-estubieron
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-civiles
-</string>
-		<key>wrong</key>
-		<string>
-cibiles
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-eventualmente
-</string>
-		<key>wrong</key>
-		<string>
-ebentualmente
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-esfuerzos
-</string>
-		<key>wrong</key>
-		<string>
-esfuersos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-devastados
-</string>
-		<key>wrong</key>
-		<string>
-debastados
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-revelando
-</string>
-		<key>wrong</key>
-		<string>
-rebelando
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-jiovani
-</string>
-		<key>wrong</key>
-		<string>
-jiobani
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-universidad
-</string>
-		<key>wrong</key>
-		<string>
-unibersidad
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-inversiones
-</string>
-		<key>wrong</key>
-		<string>
-inbersiones
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-violencia
-</string>
-		<key>wrong</key>
-		<string>
-biolencia
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-civiles
-</string>
-		<key>wrong</key>
-		<string>
-cibiles
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-esfuerzos
-</string>
-		<key>wrong</key>
-		<string>
-esfuersos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-matallana
-</string>
-		<key>wrong</key>
-		<string>
-matayana
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-universidad
-</string>
-		<key>wrong</key>
-		<string>
-unibersidad
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-javeriana
-</string>
-		<key>wrong</key>
-		<string>
-jaberiana
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-varios
-</string>
-		<key>wrong</key>
-		<string>
-barios
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-civiles
-</string>
-		<key>wrong</key>
-		<string>
-cibiles
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-millones
-</string>
-		<key>wrong</key>
-		<string>
-miyones
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desplazadas
-</string>
-		<key>wrong</key>
-		<string>
-desplasadas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-violencia
-</string>
-		<key>wrong</key>
-		<string>
-biolencia
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-alternativamente
-</string>
-		<key>wrong</key>
-		<string>
-alternatibamente
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-guerrillas
-</string>
-		<key>wrong</key>
-		<string>
-guerriyas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-guerrillas
-</string>
-		<key>wrong</key>
-		<string>
-guerriyas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollar
-</string>
-		<key>wrong</key>
-		<string>
-desarroyar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-involucradas
-</string>
-		<key>wrong</key>
-		<string>
-inbolucradas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-ellos
-</string>
-		<key>wrong</key>
-		<string>
-eyos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-guerrilleros
-</string>
-		<key>wrong</key>
-		<string>
-guerriyeros
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-improvisados
-</string>
-		<key>wrong</key>
-		<string>
-improbisados
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-servicios
-</string>
-		<key>wrong</key>
-		<string>
-serbicios
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-civiles
-</string>
-		<key>wrong</key>
-		<string>
-cibiles
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigadores
-</string>
-		<key>wrong</key>
-		<string>
-inbestigadores
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-matallana
-</string>
-		<key>wrong</key>
-		<string>
-matayana
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-javeriana
-</string>
-		<key>wrong</key>
-		<string>
-jaberiana
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-civiles
-</string>
-		<key>wrong</key>
-		<string>
-cibiles
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-neurodesarrollo
-</string>
-		<key>wrong</key>
-		<string>
-neurodesarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-entrevistado
-</string>
-		<key>wrong</key>
-		<string>
-entrebistado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-civiles
-</string>
-		<key>wrong</key>
-		<string>
-cibiles
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-intervenciones
-</string>
-		<key>wrong</key>
-		<string>
-interbenciones
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-evitar
-</string>
-		<key>wrong</key>
-		<string>
-ebitar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-vuelvan
-</string>
-		<key>wrong</key>
-		<string>
-buelvan
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-atraviesan
-</string>
-		<key>wrong</key>
-		<string>
-atrabiesan
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-esperanzas
-</string>
-		<key>wrong</key>
-		<string>
-esperansas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-esfuerzo
-</string>
-		<key>wrong</key>
-		<string>
-esfuerso
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-esfuerzos
-</string>
-		<key>wrong</key>
-		<string>
-esfuersos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-mezcla
-</string>
-		<key>wrong</key>
-		<string>
-mescla
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-veteranos
-</string>
-		<key>wrong</key>
-		<string>
-beteranos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-universidad
-</string>
-		<key>wrong</key>
-		<string>
-unibersidad
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-konstanz
-</string>
-		<key>wrong</key>
-		<string>
-konstans
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-vivido
-</string>
-		<key>wrong</key>
-		<string>
-bivido
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-violencia
-</string>
-		<key>wrong</key>
-		<string>
-biolencia
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-aquellos
-</string>
-		<key>wrong</key>
-		<string>
-aqueyos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-civiles
-</string>
-		<key>wrong</key>
-		<string>
-cibiles
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-guerrilleros
-</string>
-		<key>wrong</key>
-		<string>
-guerriyeros
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-corazones
-</string>
-		<key>wrong</key>
-		<string>
-corasones
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-utilizadas
-</string>
-		<key>wrong</key>
-		<string>
-utilisadas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-radicalizados
-</string>
-		<key>wrong</key>
-		<string>
-radicalisados
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-gustavo
-</string>
-		<key>wrong</key>
-		<string>
-gustabo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-tovar
-</string>
-		<key>wrong</key>
-		<string>
-tobar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-universidad
-</string>
-		<key>wrong</key>
-		<string>
-unibersidad
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-último
-</string>
-		<key>wrong</key>
-		<string>
-ultimo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-número
-</string>
-		<key>wrong</key>
-		<string>
-numero
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-revista
-</string>
-		<key>wrong</key>
-		<string>
-rebista
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigadores
-</string>
-		<key>wrong</key>
-		<string>
-inbestigadores
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-avance
-</string>
-		<key>wrong</key>
-		<string>
-abance
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-servirá
-</string>
-		<key>wrong</key>
-		<string>
-servira
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-servirá
-</string>
-		<key>wrong</key>
-		<string>
-serbirá
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-comprensión
-</string>
-		<key>wrong</key>
-		<string>
-comprension
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-ayudará
-</string>
-		<key>wrong</key>
-		<string>
-ayudara
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embarazos
-</string>
-		<key>wrong</key>
-		<string>
-embarasos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-fallan
-</string>
-		<key>wrong</key>
-		<string>
-fayan
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-mamífero
-</string>
-		<key>wrong</key>
-		<string>
-mamifero
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-fertilizado
-</string>
-		<key>wrong</key>
-		<string>
-fertilisado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-espermatozoide
-</string>
-		<key>wrong</key>
-		<string>
-espermatosoide
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-divide
-</string>
-		<key>wrong</key>
-		<string>
-dibide
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-varias
-</string>
-		<key>wrong</key>
-		<string>
-barias
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-pequeña
-</string>
-		<key>wrong</key>
-		<string>
-pequeña
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-trofoblásticas
-</string>
-		<key>wrong</key>
-		<string>
-trofoblasticas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-formarán
-</string>
-		<key>wrong</key>
-		<string>
-formaran
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-endodérmicas
-</string>
-		<key>wrong</key>
-		<string>
-endodermicas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-primitivas
-</string>
-		<key>wrong</key>
-		<string>
-primitibas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-crearán
-</string>
-		<key>wrong</key>
-		<string>
-crearan
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-vitelino
-</string>
-		<key>wrong</key>
-		<string>
-bitelino
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-órganos
-</string>
-		<key>wrong</key>
-		<string>
-organos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollen
-</string>
-		<key>wrong</key>
-		<string>
-desarroyen
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-previos
-</string>
-		<key>wrong</key>
-		<string>
-prebios
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-habían
-</string>
-		<key>wrong</key>
-		<string>
-habian
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-señalan
-</string>
-		<key>wrong</key>
-		<string>
-señalan
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigadores
-</string>
-		<key>wrong</key>
-		<string>
-inbestigadores
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-utilizado
-</string>
-		<key>wrong</key>
-		<string>
-utilisado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-combinación
-</string>
-		<key>wrong</key>
-		<string>
-combinasión
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-combinación
-</string>
-		<key>wrong</key>
-		<string>
-combinacion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-genéticamente
-</string>
-		<key>wrong</key>
-		<string>
-geneticamente
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-trofoblásticas
-</string>
-		<key>wrong</key>
-		<string>
-trofoblasticas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-matriz
-</string>
-		<key>wrong</key>
-		<string>
-matris
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollar
-</string>
-		<key>wrong</key>
-		<string>
-desarroyar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-comienzan
-</string>
-		<key>wrong</key>
-		<string>
-comiensan
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-organizan
-</string>
-		<key>wrong</key>
-		<string>
-organisan
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-zernickagoetz
-</string>
-		<key>wrong</key>
-		<string>
-sernickagoets
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigadora
-</string>
-		<key>wrong</key>
-		<string>
-inbestigadora
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-fisiología
-</string>
-		<key>wrong</key>
-		<string>
-fisiologia
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-universidad
-</string>
-		<key>wrong</key>
-		<string>
-unibersidad
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-británica
-</string>
-		<key>wrong</key>
-		<string>
-britanica
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-anatómicamente
-</string>
-		<key>wrong</key>
-		<string>
-anatomicamente
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollan
-</string>
-		<key>wrong</key>
-		<string>
-desarroyan
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-zernickagoetz
-</string>
-		<key>wrong</key>
-		<string>
-sernickagoets
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-comunicación
-</string>
-		<key>wrong</key>
-		<string>
-comunicasión
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-comunicación
-</string>
-		<key>wrong</key>
-		<string>
-comunicacion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-patrón
-</string>
-		<key>wrong</key>
-		<string>
-patron
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-verdadera
-</string>
-		<key>wrong</key>
-		<string>
-berdadera
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-asociación
-</string>
-		<key>wrong</key>
-		<string>
-asociasión
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-asociación
-</string>
-		<key>wrong</key>
-		<string>
-asociacion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-actividad
-</string>
-		<key>wrong</key>
-		<string>
-actibidad
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-biológicos
-</string>
-		<key>wrong</key>
-		<string>
-biologicos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-llevaría
-</string>
-		<key>wrong</key>
-		<string>
-llevaria
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-llevaría
-</string>
-		<key>wrong</key>
-		<string>
-llebaría
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-llevaría
-</string>
-		<key>wrong</key>
-		<string>
-yevaría
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-siguió
-</string>
-		<key>wrong</key>
-		<string>
-siguio
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-patrón
-</string>
-		<key>wrong</key>
-		<string>
-patron
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-organizaron
-</string>
-		<key>wrong</key>
-		<string>
-organisaron
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-trofoblásticas
-</string>
-		<key>wrong</key>
-		<string>
-trofoblasticas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-cavidad
-</string>
-		<key>wrong</key>
-		<string>
-cabidad
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-convertirse
-</string>
-		<key>wrong</key>
-		<string>
-conbertirse
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-amniótico
-</string>
-		<key>wrong</key>
-		<string>
-amniotico
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollará
-</string>
-		<key>wrong</key>
-		<string>
-desarrollara
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollará
-</string>
-		<key>wrong</key>
-		<string>
-desarroyará
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollar
-</string>
-		<key>wrong</key>
-		<string>
-desarroyar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-convertir
-</string>
-		<key>wrong</key>
-		<string>
-conbertir
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigadores
-</string>
-		<key>wrong</key>
-		<string>
-inbestigadores
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-necesitaría
-</string>
-		<key>wrong</key>
-		<string>
-necesitaria
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-vitelino
-</string>
-		<key>wrong</key>
-		<string>
-bitelino
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrolla
-</string>
-		<key>wrong</key>
-		<string>
-desarroya
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-sanguíneos
-</string>
-		<key>wrong</key>
-		<string>
-sanguineos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-además
-</string>
-		<key>wrong</key>
-		<string>
-ademas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-optimizado
-</string>
-		<key>wrong</key>
-		<string>
-optimisado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-escasez
-</string>
-		<key>wrong</key>
-		<string>
-escases
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigar
-</string>
-		<key>wrong</key>
-		<string>
-inbestigar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-zernickagoetz
-</string>
-		<key>wrong</key>
-		<string>
-sernickagoets
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollado
-</string>
-		<key>wrong</key>
-		<string>
-desarroyado
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-técnica
-</string>
-		<key>wrong</key>
-		<string>
-tecnica
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollen
-</string>
-		<key>wrong</key>
-		<string>
-desarroyen
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-implantación
-</string>
-		<key>wrong</key>
-		<string>
-implantasión
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-implantación
-</string>
-		<key>wrong</key>
-		<string>
-implantacion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-analizar
-</string>
-		<key>wrong</key>
-		<string>
-analisar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-embrión
-</string>
-		<key>wrong</key>
-		<string>
-embrion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-después
-</string>
-		<key>wrong</key>
-		<string>
-despues
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-fertilización
-</string>
-		<key>wrong</key>
-		<string>
-fertilizasión
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-fertilización
-</string>
-		<key>wrong</key>
-		<string>
-fertilizacion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-fertilización
-</string>
-		<key>wrong</key>
-		<string>
-fertilisación
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-opinión
-</string>
-		<key>wrong</key>
-		<string>
-opinion
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-avance
-</string>
-		<key>wrong</key>
-		<string>
-abance
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-podría
-</string>
-		<key>wrong</key>
-		<string>
-podria
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-escasez
-</string>
-		<key>wrong</key>
-		<string>
-escases
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-investigar
-</string>
-		<key>wrong</key>
-		<string>
-inbestigar
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollan
-</string>
-		<key>wrong</key>
-		<string>
-desarroyan
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-óvulos
-</string>
-		<key>wrong</key>
-		<string>
-ovulos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-óvulos
-</string>
-		<key>wrong</key>
-		<string>
-óbulos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-clínicas
-</string>
-		<key>wrong</key>
-		<string>
-clinicas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-eventos
-</string>
-		<key>wrong</key>
-		<string>
-ebentos
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-células
-</string>
-		<key>wrong</key>
-		<string>
-celulas
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-permitirá
-</string>
-		<key>wrong</key>
-		<string>
-permitira
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-crítica
-</string>
-		<key>wrong</key>
-		<string>
-critica
-</string>
-	</dict>
-	<dict>
-		<key>right</key>
-		<string>
-desarrollo
-</string>
-		<key>wrong</key>
-		<string>
-desarroyo
-</string>
-	</dict>
+<dict>
+<key>right</key>
+<string>artículos</string>
+<key>wrong</key>
+<string>articulos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>científicos</string>
+<key>wrong</key>
+<string>cientificos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>sintético</string>
+<key>wrong</key>
+<string>sintetico</string>
+</dict>
+<dict>
+<key>right</key>
+<string>bibliográficas</string>
+<key>wrong</key>
+<string>bibliograficas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>contextualizar</string>
+<key>wrong</key>
+<string>contextualisar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>verificar</string>
+<key>wrong</key>
+<string>berificar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>previos</string>
+<key>wrong</key>
+<string>prebios</string>
+</dict>
+<dict>
+<key>right</key>
+<string>además</string>
+<key>wrong</key>
+<string>ademas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>información</string>
+<key>wrong</key>
+<string>informasión</string>
+</dict>
+<dict>
+<key>right</key>
+<string>información</string>
+<key>wrong</key>
+<string>informacion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>artículos</string>
+<key>wrong</key>
+<string>articulos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>científicos</string>
+<key>wrong</key>
+<string>cientificos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>síntesis</string>
+<key>wrong</key>
+<string>sintesis</string>
+</dict>
+<dict>
+<key>right</key>
+<string>envergadura</string>
+<key>wrong</key>
+<string>enbergadura</string>
+</dict>
+<dict>
+<key>right</key>
+<string>esfuerzos</string>
+<key>wrong</key>
+<string>esfuersos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>acepción</string>
+<key>wrong</key>
+<string>acepsión</string>
+</dict>
+<dict>
+<key>right</key>
+<string>acepción</string>
+<key>wrong</key>
+<string>acepcion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>también</string>
+<key>wrong</key>
+<string>tambien</string>
+</dict>
+<dict>
+<key>right</key>
+<string>comité</string>
+<key>wrong</key>
+<string>comite</string>
+</dict>
+<dict>
+<key>right</key>
+<string>publicación</string>
+<key>wrong</key>
+<string>publicasión</string>
+</dict>
+<dict>
+<key>right</key>
+<string>publicación</string>
+<key>wrong</key>
+<string>publicacion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>estimó</string>
+<key>wrong</key>
+<string>estimo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>número</string>
+<key>wrong</key>
+<string>numero</string>
+</dict>
+<dict>
+<key>right</key>
+<string>artículos</string>
+<key>wrong</key>
+<string>articulos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>científicos</string>
+<key>wrong</key>
+<string>cientificos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>duplicándose</string>
+<key>wrong</key>
+<string>duplicandose</string>
+</dict>
+<dict>
+<key>right</key>
+<string>número</string>
+<key>wrong</key>
+<string>numero</string>
+</dict>
+<dict>
+<key>right</key>
+<string>artículos</string>
+<key>wrong</key>
+<string>articulos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>número</string>
+<key>wrong</key>
+<string>numero</string>
+</dict>
+<dict>
+<key>right</key>
+<string>artículos</string>
+<key>wrong</key>
+<string>articulos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>millones</string>
+<key>wrong</key>
+<string>miyones</string>
+</dict>
+<dict>
+<key>right</key>
+<string>pertenecían</string>
+<key>wrong</key>
+<string>pertenecian</string>
+</dict>
+<dict>
+<key>right</key>
+<string>además</string>
+<key>wrong</key>
+<string>ademas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desempeño</string>
+<key>wrong</key>
+<string>desempeño</string>
+</dict>
+<dict>
+<key>right</key>
+<string>científico</string>
+<key>wrong</key>
+<string>cientifico</string>
+</dict>
+<dict>
+<key>right</key>
+<string>países</string>
+<key>wrong</key>
+<string>paises</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigación</string>
+<key>wrong</key>
+<string>investigasión</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigación</string>
+<key>wrong</key>
+<string>investigacion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigación</string>
+<key>wrong</key>
+<string>inbestigación</string>
+</dict>
+<dict>
+<key>right</key>
+<string>científica</string>
+<key>wrong</key>
+<string>cientifica</string>
+</dict>
+<dict>
+<key>right</key>
+<string>características</string>
+<key>wrong</key>
+<string>caracteristicas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>artículo</string>
+<key>wrong</key>
+<string>articulo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>aterrorizado</string>
+<key>wrong</key>
+<string>aterrorisado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>trujillo</string>
+<key>wrong</key>
+<string>trujiyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>guerrilleros</string>
+<key>wrong</key>
+<string>guerriyeros</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desplazado</string>
+<key>wrong</key>
+<string>desplasado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>millones</string>
+<key>wrong</key>
+<string>miyones</string>
+</dict>
+<dict>
+<key>right</key>
+<string>violencia</string>
+<key>wrong</key>
+<string>biolencia</string>
+</dict>
+<dict>
+<key>right</key>
+<string>trujillo</string>
+<key>wrong</key>
+<string>trujiyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>universidad</string>
+<key>wrong</key>
+<string>unibersidad</string>
+</dict>
+<dict>
+<key>right</key>
+<string>violencia</string>
+<key>wrong</key>
+<string>biolencia</string>
+</dict>
+<dict>
+<key>right</key>
+<string>observando</string>
+<key>wrong</key>
+<string>obserbando</string>
+</dict>
+<dict>
+<key>right</key>
+<string>civil</string>
+<key>wrong</key>
+<string>cibil</string>
+</dict>
+<dict>
+<key>right</key>
+<string>enclave</string>
+<key>wrong</key>
+<string>enclabe</string>
+</dict>
+<dict>
+<key>right</key>
+<string>cognitivas</string>
+<key>wrong</key>
+<string>cognitibas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>vecinos</string>
+<key>wrong</key>
+<string>becinos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>trujillo</string>
+<key>wrong</key>
+<string>trujiyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>llenaron</string>
+<key>wrong</key>
+<string>yenaron</string>
+</dict>
+<dict>
+<key>right</key>
+<string>expectativas</string>
+<key>wrong</key>
+<string>expectatibas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>cuellos</string>
+<key>wrong</key>
+<string>cueyos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>pavoneos</string>
+<key>wrong</key>
+<string>paboneos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigadores</string>
+<key>wrong</key>
+<string>inbestigadores</string>
+</dict>
+<dict>
+<key>right</key>
+<string>llevado</string>
+<key>wrong</key>
+<string>llebado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>llevado</string>
+<key>wrong</key>
+<string>yevado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>trujillo</string>
+<key>wrong</key>
+<string>trujiyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>ellos</string>
+<key>wrong</key>
+<string>eyos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>esfuerzos</string>
+<key>wrong</key>
+<string>esfuersos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>guerrillero</string>
+<key>wrong</key>
+<string>guerriyero</string>
+</dict>
+<dict>
+<key>right</key>
+<string>izquierda</string>
+<key>wrong</key>
+<string>isquierda</string>
+</dict>
+<dict>
+<key>right</key>
+<string>fuerzas</string>
+<key>wrong</key>
+<string>fuersas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>revolucionarias</string>
+<key>wrong</key>
+<string>rebolucionarias</string>
+</dict>
+<dict>
+<key>right</key>
+<string>graves</string>
+<key>wrong</key>
+<string>grabes</string>
+</dict>
+<dict>
+<key>right</key>
+<string>esfuerzo</string>
+<key>wrong</key>
+<string>esfuerso</string>
+</dict>
+<dict>
+<key>right</key>
+<string>controvertido</string>
+<key>wrong</key>
+<string>controbertido</string>
+</dict>
+<dict>
+<key>right</key>
+<string>billones</string>
+<key>wrong</key>
+<string>biyones</string>
+</dict>
+<dict>
+<key>right</key>
+<string>millones</string>
+<key>wrong</key>
+<string>miyones</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigaciones</string>
+<key>wrong</key>
+<string>inbestigaciones</string>
+</dict>
+<dict>
+<key>right</key>
+<string>violencia</string>
+<key>wrong</key>
+<string>biolencia</string>
+</dict>
+<dict>
+<key>right</key>
+<string>realizado</string>
+<key>wrong</key>
+<string>realisado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>veteranos</string>
+<key>wrong</key>
+<string>beteranos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>aterrorizaron</string>
+<key>wrong</key>
+<string>aterrorisaron</string>
+</dict>
+<dict>
+<key>right</key>
+<string>detalle</string>
+<key>wrong</key>
+<string>detaye</string>
+</dict>
+<dict>
+<key>right</key>
+<string>esperanza</string>
+<key>wrong</key>
+<string>esperansa</string>
+</dict>
+<dict>
+<key>right</key>
+<string>violencia</string>
+<key>wrong</key>
+<string>biolencia</string>
+</dict>
+<dict>
+<key>right</key>
+<string>cognitivo</string>
+<key>wrong</key>
+<string>cognitibo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>científicos</string>
+<key>wrong</key>
+<string>cientificos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>estuvieron</string>
+<key>wrong</key>
+<string>estubieron</string>
+</dict>
+<dict>
+<key>right</key>
+<string>civiles</string>
+<key>wrong</key>
+<string>cibiles</string>
+</dict>
+<dict>
+<key>right</key>
+<string>eventualmente</string>
+<key>wrong</key>
+<string>ebentualmente</string>
+</dict>
+<dict>
+<key>right</key>
+<string>esfuerzos</string>
+<key>wrong</key>
+<string>esfuersos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>devastados</string>
+<key>wrong</key>
+<string>debastados</string>
+</dict>
+<dict>
+<key>right</key>
+<string>revelando</string>
+<key>wrong</key>
+<string>rebelando</string>
+</dict>
+<dict>
+<key>right</key>
+<string>jiovani</string>
+<key>wrong</key>
+<string>jiobani</string>
+</dict>
+<dict>
+<key>right</key>
+<string>universidad</string>
+<key>wrong</key>
+<string>unibersidad</string>
+</dict>
+<dict>
+<key>right</key>
+<string>inversiones</string>
+<key>wrong</key>
+<string>inbersiones</string>
+</dict>
+<dict>
+<key>right</key>
+<string>violencia</string>
+<key>wrong</key>
+<string>biolencia</string>
+</dict>
+<dict>
+<key>right</key>
+<string>civiles</string>
+<key>wrong</key>
+<string>cibiles</string>
+</dict>
+<dict>
+<key>right</key>
+<string>esfuerzos</string>
+<key>wrong</key>
+<string>esfuersos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>matallana</string>
+<key>wrong</key>
+<string>matayana</string>
+</dict>
+<dict>
+<key>right</key>
+<string>universidad</string>
+<key>wrong</key>
+<string>unibersidad</string>
+</dict>
+<dict>
+<key>right</key>
+<string>javeriana</string>
+<key>wrong</key>
+<string>jaberiana</string>
+</dict>
+<dict>
+<key>right</key>
+<string>varios</string>
+<key>wrong</key>
+<string>barios</string>
+</dict>
+<dict>
+<key>right</key>
+<string>civiles</string>
+<key>wrong</key>
+<string>cibiles</string>
+</dict>
+<dict>
+<key>right</key>
+<string>millones</string>
+<key>wrong</key>
+<string>miyones</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desplazadas</string>
+<key>wrong</key>
+<string>desplasadas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>violencia</string>
+<key>wrong</key>
+<string>biolencia</string>
+</dict>
+<dict>
+<key>right</key>
+<string>alternativamente</string>
+<key>wrong</key>
+<string>alternatibamente</string>
+</dict>
+<dict>
+<key>right</key>
+<string>guerrillas</string>
+<key>wrong</key>
+<string>guerriyas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>guerrillas</string>
+<key>wrong</key>
+<string>guerriyas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollar</string>
+<key>wrong</key>
+<string>desarroyar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>involucradas</string>
+<key>wrong</key>
+<string>inbolucradas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>ellos</string>
+<key>wrong</key>
+<string>eyos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>guerrilleros</string>
+<key>wrong</key>
+<string>guerriyeros</string>
+</dict>
+<dict>
+<key>right</key>
+<string>improvisados</string>
+<key>wrong</key>
+<string>improbisados</string>
+</dict>
+<dict>
+<key>right</key>
+<string>servicios</string>
+<key>wrong</key>
+<string>serbicios</string>
+</dict>
+<dict>
+<key>right</key>
+<string>civiles</string>
+<key>wrong</key>
+<string>cibiles</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigadores</string>
+<key>wrong</key>
+<string>inbestigadores</string>
+</dict>
+<dict>
+<key>right</key>
+<string>matallana</string>
+<key>wrong</key>
+<string>matayana</string>
+</dict>
+<dict>
+<key>right</key>
+<string>javeriana</string>
+<key>wrong</key>
+<string>jaberiana</string>
+</dict>
+<dict>
+<key>right</key>
+<string>civiles</string>
+<key>wrong</key>
+<string>cibiles</string>
+</dict>
+<dict>
+<key>right</key>
+<string>neurodesarrollo</string>
+<key>wrong</key>
+<string>neurodesarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>entrevistado</string>
+<key>wrong</key>
+<string>entrebistado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>civiles</string>
+<key>wrong</key>
+<string>cibiles</string>
+</dict>
+<dict>
+<key>right</key>
+<string>intervenciones</string>
+<key>wrong</key>
+<string>interbenciones</string>
+</dict>
+<dict>
+<key>right</key>
+<string>evitar</string>
+<key>wrong</key>
+<string>ebitar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>vuelvan</string>
+<key>wrong</key>
+<string>buelvan</string>
+</dict>
+<dict>
+<key>right</key>
+<string>atraviesan</string>
+<key>wrong</key>
+<string>atrabiesan</string>
+</dict>
+<dict>
+<key>right</key>
+<string>esperanzas</string>
+<key>wrong</key>
+<string>esperansas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>esfuerzo</string>
+<key>wrong</key>
+<string>esfuerso</string>
+</dict>
+<dict>
+<key>right</key>
+<string>esfuerzos</string>
+<key>wrong</key>
+<string>esfuersos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>mezcla</string>
+<key>wrong</key>
+<string>mescla</string>
+</dict>
+<dict>
+<key>right</key>
+<string>veteranos</string>
+<key>wrong</key>
+<string>beteranos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>universidad</string>
+<key>wrong</key>
+<string>unibersidad</string>
+</dict>
+<dict>
+<key>right</key>
+<string>konstanz</string>
+<key>wrong</key>
+<string>konstans</string>
+</dict>
+<dict>
+<key>right</key>
+<string>vivido</string>
+<key>wrong</key>
+<string>bivido</string>
+</dict>
+<dict>
+<key>right</key>
+<string>violencia</string>
+<key>wrong</key>
+<string>biolencia</string>
+</dict>
+<dict>
+<key>right</key>
+<string>aquellos</string>
+<key>wrong</key>
+<string>aqueyos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>civiles</string>
+<key>wrong</key>
+<string>cibiles</string>
+</dict>
+<dict>
+<key>right</key>
+<string>guerrilleros</string>
+<key>wrong</key>
+<string>guerriyeros</string>
+</dict>
+<dict>
+<key>right</key>
+<string>corazones</string>
+<key>wrong</key>
+<string>corasones</string>
+</dict>
+<dict>
+<key>right</key>
+<string>utilizadas</string>
+<key>wrong</key>
+<string>utilisadas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>radicalizados</string>
+<key>wrong</key>
+<string>radicalisados</string>
+</dict>
+<dict>
+<key>right</key>
+<string>gustavo</string>
+<key>wrong</key>
+<string>gustabo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>tovar</string>
+<key>wrong</key>
+<string>tobar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>universidad</string>
+<key>wrong</key>
+<string>unibersidad</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>último</string>
+<key>wrong</key>
+<string>ultimo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>número</string>
+<key>wrong</key>
+<string>numero</string>
+</dict>
+<dict>
+<key>right</key>
+<string>revista</string>
+<key>wrong</key>
+<string>rebista</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigadores</string>
+<key>wrong</key>
+<string>inbestigadores</string>
+</dict>
+<dict>
+<key>right</key>
+<string>avance</string>
+<key>wrong</key>
+<string>abance</string>
+</dict>
+<dict>
+<key>right</key>
+<string>servirá</string>
+<key>wrong</key>
+<string>servira</string>
+</dict>
+<dict>
+<key>right</key>
+<string>servirá</string>
+<key>wrong</key>
+<string>serbirá</string>
+</dict>
+<dict>
+<key>right</key>
+<string>comprensión</string>
+<key>wrong</key>
+<string>comprension</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>ayudará</string>
+<key>wrong</key>
+<string>ayudara</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embarazos</string>
+<key>wrong</key>
+<string>embarasos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>fallan</string>
+<key>wrong</key>
+<string>fayan</string>
+</dict>
+<dict>
+<key>right</key>
+<string>mamífero</string>
+<key>wrong</key>
+<string>mamifero</string>
+</dict>
+<dict>
+<key>right</key>
+<string>fertilizado</string>
+<key>wrong</key>
+<string>fertilisado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>espermatozoide</string>
+<key>wrong</key>
+<string>espermatosoide</string>
+</dict>
+<dict>
+<key>right</key>
+<string>divide</string>
+<key>wrong</key>
+<string>dibide</string>
+</dict>
+<dict>
+<key>right</key>
+<string>varias</string>
+<key>wrong</key>
+<string>barias</string>
+</dict>
+<dict>
+<key>right</key>
+<string>pequeña</string>
+<key>wrong</key>
+<string>pequeña</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>trofoblásticas</string>
+<key>wrong</key>
+<string>trofoblasticas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>formarán</string>
+<key>wrong</key>
+<string>formaran</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>endodérmicas</string>
+<key>wrong</key>
+<string>endodermicas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>primitivas</string>
+<key>wrong</key>
+<string>primitibas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>crearán</string>
+<key>wrong</key>
+<string>crearan</string>
+</dict>
+<dict>
+<key>right</key>
+<string>vitelino</string>
+<key>wrong</key>
+<string>bitelino</string>
+</dict>
+<dict>
+<key>right</key>
+<string>órganos</string>
+<key>wrong</key>
+<string>organos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollen</string>
+<key>wrong</key>
+<string>desarroyen</string>
+</dict>
+<dict>
+<key>right</key>
+<string>previos</string>
+<key>wrong</key>
+<string>prebios</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>habían</string>
+<key>wrong</key>
+<string>habian</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>señalan</string>
+<key>wrong</key>
+<string>señalan</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigadores</string>
+<key>wrong</key>
+<string>inbestigadores</string>
+</dict>
+<dict>
+<key>right</key>
+<string>utilizado</string>
+<key>wrong</key>
+<string>utilisado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>combinación</string>
+<key>wrong</key>
+<string>combinasión</string>
+</dict>
+<dict>
+<key>right</key>
+<string>combinación</string>
+<key>wrong</key>
+<string>combinacion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>genéticamente</string>
+<key>wrong</key>
+<string>geneticamente</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>trofoblásticas</string>
+<key>wrong</key>
+<string>trofoblasticas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>matriz</string>
+<key>wrong</key>
+<string>matris</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollar</string>
+<key>wrong</key>
+<string>desarroyar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>comienzan</string>
+<key>wrong</key>
+<string>comiensan</string>
+</dict>
+<dict>
+<key>right</key>
+<string>organizan</string>
+<key>wrong</key>
+<string>organisan</string>
+</dict>
+<dict>
+<key>right</key>
+<string>zernickagoetz</string>
+<key>wrong</key>
+<string>sernickagoets</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigadora</string>
+<key>wrong</key>
+<string>inbestigadora</string>
+</dict>
+<dict>
+<key>right</key>
+<string>fisiología</string>
+<key>wrong</key>
+<string>fisiologia</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>universidad</string>
+<key>wrong</key>
+<string>unibersidad</string>
+</dict>
+<dict>
+<key>right</key>
+<string>británica</string>
+<key>wrong</key>
+<string>britanica</string>
+</dict>
+<dict>
+<key>right</key>
+<string>anatómicamente</string>
+<key>wrong</key>
+<string>anatomicamente</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollan</string>
+<key>wrong</key>
+<string>desarroyan</string>
+</dict>
+<dict>
+<key>right</key>
+<string>zernickagoetz</string>
+<key>wrong</key>
+<string>sernickagoets</string>
+</dict>
+<dict>
+<key>right</key>
+<string>comunicación</string>
+<key>wrong</key>
+<string>comunicasión</string>
+</dict>
+<dict>
+<key>right</key>
+<string>comunicación</string>
+<key>wrong</key>
+<string>comunicacion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>patrón</string>
+<key>wrong</key>
+<string>patron</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>sabíamos</string>
+<key>wrong</key>
+<string>sabiamos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>verdadera</string>
+<key>wrong</key>
+<string>berdadera</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>asociación</string>
+<key>wrong</key>
+<string>asociasión</string>
+</dict>
+<dict>
+<key>right</key>
+<string>asociación</string>
+<key>wrong</key>
+<string>asociacion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>actividad</string>
+<key>wrong</key>
+<string>actibidad</string>
+</dict>
+<dict>
+<key>right</key>
+<string>biológicos</string>
+<key>wrong</key>
+<string>biologicos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>llevaría</string>
+<key>wrong</key>
+<string>llevaria</string>
+</dict>
+<dict>
+<key>right</key>
+<string>llevaría</string>
+<key>wrong</key>
+<string>llebaría</string>
+</dict>
+<dict>
+<key>right</key>
+<string>llevaría</string>
+<key>wrong</key>
+<string>yevaría</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>siguió</string>
+<key>wrong</key>
+<string>siguio</string>
+</dict>
+<dict>
+<key>right</key>
+<string>patrón</string>
+<key>wrong</key>
+<string>patron</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>organizaron</string>
+<key>wrong</key>
+<string>organisaron</string>
+</dict>
+<dict>
+<key>right</key>
+<string>trofoblásticas</string>
+<key>wrong</key>
+<string>trofoblasticas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>cavidad</string>
+<key>wrong</key>
+<string>cabidad</string>
+</dict>
+<dict>
+<key>right</key>
+<string>convertirse</string>
+<key>wrong</key>
+<string>conbertirse</string>
+</dict>
+<dict>
+<key>right</key>
+<string>amniótico</string>
+<key>wrong</key>
+<string>amniotico</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollará</string>
+<key>wrong</key>
+<string>desarrollara</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollará</string>
+<key>wrong</key>
+<string>desarroyará</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollar</string>
+<key>wrong</key>
+<string>desarroyar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>convertir</string>
+<key>wrong</key>
+<string>conbertir</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigadores</string>
+<key>wrong</key>
+<string>inbestigadores</string>
+</dict>
+<dict>
+<key>right</key>
+<string>necesitaría</string>
+<key>wrong</key>
+<string>necesitaria</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>vitelino</string>
+<key>wrong</key>
+<string>bitelino</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrolla</string>
+<key>wrong</key>
+<string>desarroya</string>
+</dict>
+<dict>
+<key>right</key>
+<string>sanguíneos</string>
+<key>wrong</key>
+<string>sanguineos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>además</string>
+<key>wrong</key>
+<string>ademas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>optimizado</string>
+<key>wrong</key>
+<string>optimisado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>escasez</string>
+<key>wrong</key>
+<string>escases</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigar</string>
+<key>wrong</key>
+<string>inbestigar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>zernickagoetz</string>
+<key>wrong</key>
+<string>sernickagoets</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollado</string>
+<key>wrong</key>
+<string>desarroyado</string>
+</dict>
+<dict>
+<key>right</key>
+<string>técnica</string>
+<key>wrong</key>
+<string>tecnica</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollen</string>
+<key>wrong</key>
+<string>desarroyen</string>
+</dict>
+<dict>
+<key>right</key>
+<string>implantación</string>
+<key>wrong</key>
+<string>implantasión</string>
+</dict>
+<dict>
+<key>right</key>
+<string>implantación</string>
+<key>wrong</key>
+<string>implantacion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>analizar</string>
+<key>wrong</key>
+<string>analisar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>embrión</string>
+<key>wrong</key>
+<string>embrion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>después</string>
+<key>wrong</key>
+<string>despues</string>
+</dict>
+<dict>
+<key>right</key>
+<string>fertilización</string>
+<key>wrong</key>
+<string>fertilizasión</string>
+</dict>
+<dict>
+<key>right</key>
+<string>fertilización</string>
+<key>wrong</key>
+<string>fertilizacion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>fertilización</string>
+<key>wrong</key>
+<string>fertilisación</string>
+</dict>
+<dict>
+<key>right</key>
+<string>opinión</string>
+<key>wrong</key>
+<string>opinion</string>
+</dict>
+<dict>
+<key>right</key>
+<string>avance</string>
+<key>wrong</key>
+<string>abance</string>
+</dict>
+<dict>
+<key>right</key>
+<string>podría</string>
+<key>wrong</key>
+<string>podria</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>escasez</string>
+<key>wrong</key>
+<string>escases</string>
+</dict>
+<dict>
+<key>right</key>
+<string>investigar</string>
+<key>wrong</key>
+<string>inbestigar</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollan</string>
+<key>wrong</key>
+<string>desarroyan</string>
+</dict>
+<dict>
+<key>right</key>
+<string>óvulos</string>
+<key>wrong</key>
+<string>ovulos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>óvulos</string>
+<key>wrong</key>
+<string>óbulos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>clínicas</string>
+<key>wrong</key>
+<string>clinicas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>eventos</string>
+<key>wrong</key>
+<string>ebentos</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>células</string>
+<key>wrong</key>
+<string>celulas</string>
+</dict>
+<dict>
+<key>right</key>
+<string>permitirá</string>
+<key>wrong</key>
+<string>permitira</string>
+</dict>
+<dict>
+<key>right</key>
+<string>crítica</string>
+<key>wrong</key>
+<string>critica</string>
+</dict>
+<dict>
+<key>right</key>
+<string>desarrollo</string>
+<key>wrong</key>
+<string>desarroyo</string>
+</dict>
 </array>
 </plist>

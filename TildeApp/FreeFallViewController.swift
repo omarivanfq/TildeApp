@@ -1,4 +1,5 @@
 import UIKit
+import AudioToolbox
 
 class FreeFallViewController: UIViewController, Game {
     
@@ -9,6 +10,7 @@ class FreeFallViewController: UIViewController, Game {
     @IBOutlet weak var btnOption5: UIButton!
     @IBOutlet weak var lbScore: UILabel!
     
+    var viewPrincipal:ViewController!
     var score:Int!
     var gameStarted:Bool!
     var option: Option?
@@ -27,10 +29,17 @@ class FreeFallViewController: UIViewController, Game {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewPrincipal = self.presentingViewController?.presentingViewController as? ViewController
         infoButton.tintColor = UIColor.white
         gameStarted = false
         setButtons()
-        restart()
+    restart()
+        btnOption1.titleLabel?.adjustsFontSizeToFitWidth = true
+        btnOption2.titleLabel?.adjustsFontSizeToFitWidth = true
+        btnOption3.titleLabel?.adjustsFontSizeToFitWidth = true
+        btnOption4.titleLabel?.adjustsFontSizeToFitWidth = true
+        btnOption5.titleLabel?.adjustsFontSizeToFitWidth = true
+        lbPhrase.adjustsFontSizeToFitWidth = true
     }
     
     @IBAction func goBack(_ sender: UIButton) {
@@ -216,7 +225,9 @@ class FreeFallViewController: UIViewController, Game {
     }
     
     func goToRetro(timeOver:Bool) {
-
+        if (viewPrincipal?.wantVibration ?? false) {
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        }
         updateScore()
         timer.invalidate()
         actTimer.invalidate()

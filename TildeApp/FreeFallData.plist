@@ -122,5 +122,18 @@
 			<string>expreción</string>
 		</array>
 	</dict>
+	<dict>
+		<key>solution</key>
+		<string>adolescencia</string>
+		<key>phrase</key>
+		<string>La ______ es una etapa muy díficil</string>
+		<key>options</key>
+		<array>
+			<string>adolescencia</string>
+			<string>adolescensia</string>
+			<string>adolecencia</string>
+			<string>adolesensia</string>
+		</array>
+	</dict>
 </array>
 </plist>
