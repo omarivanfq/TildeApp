@@ -124,15 +124,469 @@
 	</dict>
 	<dict>
 		<key>solution</key>
-		<string>adolescencia</string>
+		<string>serenata</string>
 		<key>phrase</key>
-		<string>La ______ es una etapa muy díficil</string>
+		<string>Para su cumpleaños le llevó una ________.</string>
 		<key>options</key>
 		<array>
-			<string>adolescencia</string>
-			<string>adolescensia</string>
-			<string>adolecencia</string>
-			<string>adolesensia</string>
+			<string>serenata</string>
+			<string>zerenata</string>
+			<string>cerenata</string>
+			<string>serenata</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>belleza</string>
+		<key>phrase</key>
+		<string>La ______ interior es la que cuenta.</string>
+		<key>options</key>
+		<array>
+			<string>belleza</string>
+			<string>bellesa</string>
+			<string>velleza</string>
+			<string>vellesa</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>viento</string>
+		<key>phrase</key>
+		<string>El ______ no dejaba de soplar.</string>
+		<key>options</key>
+		<array>
+			<string>viento</string>
+			<string>biento</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>lámpara</string>
+		<key>phrase</key>
+		<string>La ______ se quemó.</string>
+		<key>options</key>
+		<array>
+			<string>lámpara</string>
+			<string>lampara</string>
+			<string>lampára</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>abejas</string>
+		<key>phrase</key>
+		<string>Las _____ eran muchas.</string>
+		<key>options</key>
+		<array>
+			<string>abejas</string>
+			<string>avejas</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>agresivo</string>
+		<key>phrase</key>
+		<string>Ese perro es muy ______.</string>
+		<key>options</key>
+		<array>
+			<string>agrecivo</string>
+			<string>agresibo</string>
+			<string>agrecibo</string>
+			<string>agrezivo</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>actividad</string>
+		<key>phrase</key>
+		<string>Los niños disfrutaron mucho la _______.</string>
+		<key>options</key>
+		<array>
+			<string>actividad</string>
+			<string>actibidad</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>química</string>
+		<key>phrase</key>
+		<string>Patricio lee un libro de ______.</string>
+		<key>options</key>
+		<array>
+			<string>química</string>
+			<string>quimica</string>
+			<string>quimíca</string>			
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>canción</string>
+		<key>phrase</key>
+		<string>Marta cantó esa hermosa _______.</string>
+		<key>options</key>
+		<array>
+			<string>canción</string>
+			<string>cancion</string>
+			<string>cansion</string>
+			<string>cansión</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>amanecer</string>
+		<key>phrase</key>
+		<string>Fue muy bonito ver el _______.</string>
+		<key>options</key>
+		<array>
+			<string>amanecer</string>
+			<string>amaneser</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>persianas</string>
+		<key>phrase</key>
+		<string>Mariana cerró las ______.</string>
+		<key>options</key>
+		<array>
+			<string>persianas</string>
+			<string>percianas</string>
+			<string>perzianas</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>difícil</string>
+		<key>phrase</key>
+		<string>La tarea estaba muy ______.</string>
+		<key>options</key>
+		<array>
+			<string>difícil</string>
+			<string>dificil</string>
+			<string>difísil</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>película</string>
+		<key>phrase</key>
+		<string>¡La ______ nos gustó mucho!</string>
+		<key>options</key>
+		<array>
+			<string>película</string>
+			<string>pelicula</string>
+		</array>
+	</dict>	
+	<dict>
+		<key>solution</key>
+		<string>matemáticas</string>
+		<key>phrase</key>
+		<string>Las ______ no me gustan.</string>
+		<key>options</key>
+		<array>
+			<string>matemáticas</string>
+			<string>matematicas</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>celebraron</string>
+		<key>phrase</key>
+		<string>María y Rubén ______ su aniversario.</string>
+		<key>options</key>
+		<array>
+			<string>celebraron</string>
+			<string>selebraron</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>presición</string>
+		<key>phrase</key>
+		<string>Su ______ me sorprendió.</string>
+		<key>options</key>
+		<array>
+			<string>presición</string>
+			<string>precisión</string>
+			<string>presicion</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>ayudó</string>
+		<key>phrase</key>
+		<string>Daniel me _____ con la tarea.</string>
+		<key>options</key>
+		<array>
+			<string>ayudó</string>
+			<string>ayudo</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>habitación</string>
+		<key>phrase</key>
+		<string>La _____ era muy grande.</string>
+		<key>options</key>
+		<array>
+			<string>habitación</string>
+			<string>habitacion</string>
+			<string>habitasión</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>automóvil</string>
+		<key>phrase</key>
+		<string>La rueda del ______ se rompió.</string>
+		<key>options</key>
+		<array>
+			<string>automóvil</string>
+			<string>automovil</string>
+			<string>automobil</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>miércoles</string>
+		<key>phrase</key>
+		<string>El _______ llovió todo el día.</string>
+		<key>options</key>
+		<array>
+			<string>miércoles</string>
+			<string>miercoles</string>
+		</array>
+	</dict>	
+	<dict>
+		<key>solution</key>
+		<string>bolígrafo</string>
+		<key>phrase</key>
+		<string>El _______ se rompió.</string>
+		<key>options</key>
+		<array>
+			<string>bolígrafo</string>
+			<string>boligrafo</string>
+			<string>voligrafo</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>veloz</string>
+		<key>phrase</key>
+		<string>Traté de alcanzarlo pero él fue muy _____.</string>
+		<key>options</key>
+		<array>
+			<string>veloz</string>
+			<string>véloz</string>
+			<string>velóz</string>
+			<string>beloz</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>asistencia</string>
+		<key>phrase</key>
+		<string>La ______ a la clase es obligatoria.</string>
+		<key>options</key>
+		<array>
+			<string>asistencia</string>
+			<string>acistensia</string>
+			<string>acistencia</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>misión</string>
+		<key>phrase</key>
+		<string>Estoy en medio de una ____ muy importante.</string>
+		<key>options</key>
+		<array>
+			<string>misión</string>
+			<string>mision</string>
+			<string>mición</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>escenario</string>
+		<key>phrase</key>
+		<string>El _____ de la obra fue hermoso.</string>
+		<key>options</key>
+		<array>
+			<string>escenario</string>
+			<string>esenario</string>
+			<string>ecenario</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>compró</string>
+		<key>phrase</key>
+		<string>Marlon se _____ una playera azul.</string>
+		<key>options</key>
+		<array>
+			<string>compro</string>
+			<string>compró</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>sintió</string>
+		<key>phrase</key>
+		<string>El terremoto se ______ muy fuerte.</string>
+		<key>options</key>
+		<array>
+			<string>sintió</string>
+			<string>sintio</string>
+		</array>
+	</dict>	
+	<dict>
+		<key>solution</key>
+		<string>haber</string>
+		<key>phrase</key>
+		<string>Me alegra _____ ayudado.</string>
+		<key>options</key>
+		<array>
+			<string>haber</string>
+			<string>a ver</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>A ver</string>
+		<key>phrase</key>
+		<string>¡______ si nos visitan un día!</string>
+		<key>options</key>
+		<array>
+			<string>Haber</string>
+			<string>A ver</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>Ahí</string>
+		<key>phrase</key>
+		<string>____ es donde encontré al gatito.</string>
+		<key>options</key>
+		<array>
+			<string>Ahí</string>
+			<string>Ay</string>
+			<string>Hay</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>Ay</string>
+		<key>phrase</key>
+		<string>¡____ que dolor!</string>
+		<key>options</key>
+		<array>
+			<string>Ahí</string>
+			<string>Ay</string>
+			<string>Hay</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>Hay</string>
+		<key>phrase</key>
+		<string>____ que encontrar una solución.</string>
+		<key>options</key>
+		<array>
+			<string>Hay</string>
+			<string>Ay</string>
+			<string>Ahí</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>Haber</string>
+		<key>phrase</key>
+		<string>____ estado ahí hubiera sido genial.</string>
+		<key>options</key>
+		<array>
+			<string>Haber</string>
+			<string>a ver</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>decisión</string>
+		<key>phrase</key>
+		<string>Fue una ______ muy difícil de tomar.</string>
+		<key>options</key>
+		<array>
+			<string>decisión</string>
+			<string>desición</string>
+			<string>decición</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>aprendizaje</string>
+		<key>phrase</key>
+		<string>El ______ es muy importante.</string>
+		<key>options</key>
+		<array>
+			<string>aprendizaje</string>
+			<string>aprendisaje</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>ceremonia</string>
+		<key>phrase</key>
+		<string>La _______ estuvo muy bonita.</string>
+		<key>options</key>
+		<array>
+			<string>ceremonia</string>
+			<string>seremonia</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>adivinanza</string>
+		<key>phrase</key>
+		<string>La _____ estaba muy difícil.</string>
+		<key>options</key>
+		<array>
+			<string>adivinanza</string>
+			<string>adivinansa</string>
+			<string>adibinanza</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>autobús</string>
+		<key>phrase</key>
+		<string>Perdí el _____ por esperarte.</string>
+		<key>options</key>
+		<array>
+			<string>autobús</string>
+			<string>autobus</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>advertí</string>
+		<key>phrase</key>
+		<string>Yo le _____ que sería difícil.</string>
+		<key>options</key>
+		<array>
+			<string>advertí</string>
+			<string>adverti</string>
+			<string>adbertí</string>
+		</array>
+	</dict>
+	<dict>
+		<key>solution</key>
+		<string>hermoso</string>
+		<key>phrase</key>
+		<string>El aterdecer estuvo _______.</string>
+		<key>options</key>
+		<array>
+			<string>hermoso</string>
+			<string>hermozo</string>
 		</array>
 	</dict>
 </array>

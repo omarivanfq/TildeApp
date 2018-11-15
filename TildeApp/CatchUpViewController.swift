@@ -75,27 +75,37 @@ class CatchUpViewController: UIViewController, Game {
     }
     
     @IBAction func choosesUp(_ sender: Any) {
+        let viewP = self.presentingViewController?.presentingViewController as! ViewController
         if (upCorrect) {
             getData()
             score = score + 1
             lbScore.text = "\(score!)"
-            playerCorrect!.play()
+            if (viewP.wantSoundEffects) {
+                playerCorrect!.play()
+            }
         }
         else {
-            playerWrong!.play()
+            if (viewP.wantSoundEffects) {
+                playerWrong!.play()
+            }
             goToRetro(timeOver: false)
         }
     }
     
     @IBAction func choosesDown(_ sender: Any) {
+        let viewP = self.presentingViewController?.presentingViewController as! ViewController
         if (!upCorrect) {
             getData()
             score = score + 1
             lbScore.text = "\(score!)"
+            if (viewP.wantSoundEffects) {
             playerCorrect!.play()
+            }
         }
         else {
-            playerWrong!.play()
+            if (viewP.wantSoundEffects) {
+                playerWrong!.play()
+            }
             goToRetro(timeOver: false)
         }
     }
@@ -149,8 +159,8 @@ class CatchUpViewController: UIViewController, Game {
     }
 
     func goToRetro(timeOver:Bool) {
-        let viewPrincipal = self.presentingViewController?.presentingViewController as! ViewController
-        if (viewPrincipal.wantVibration) {
+        let viewP = self.presentingViewController?.presentingViewController as! ViewController
+        if (viewP.wantVibration) {
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
         }
         updateScore()
@@ -171,7 +181,9 @@ class CatchUpViewController: UIViewController, Game {
         }
         else {
             retroView.wrongPhrase = nil
-            playerTimeOver!.play()
+            if (viewP.wantSoundEffects) {
+                playerTimeOver!.play()
+            }
         }
         present(retroView, animated: true, completion: nil)
     }
