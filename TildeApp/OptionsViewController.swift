@@ -7,6 +7,7 @@ class OptionsViewController: UIViewController {
     var viewPrincipal : ViewController!
     @IBOutlet weak var switchMusic: UISwitch!
     
+    @IBOutlet weak var switchEffects: UISwitch!
     @IBOutlet weak var switchVibration: UISwitch!
     
     @IBAction func dismiss(_ sender: UIButton) {
@@ -24,6 +25,11 @@ class OptionsViewController: UIViewController {
         updateOptions()
     }
     
+    @IBAction func changeEffects(_ sender: UISwitch) {
+        viewPrincipal.wantSoundEffects = sender.isOn
+        updateOptions()
+    }
+    
     @IBAction func changeVibration(_ sender: UISwitch) {
         viewPrincipal.wantVibration = sender.isOn
         updateOptions()
@@ -33,6 +39,7 @@ class OptionsViewController: UIViewController {
         super.viewDidLoad()
         switchMusic.isOn = player!.isPlaying
         switchVibration.isOn = viewPrincipal.wantVibration
+        switchEffects.isOn = viewPrincipal.wantSoundEffects
     }
     
     func dataOptionsFilePath() -> String {
@@ -47,7 +54,8 @@ class OptionsViewController: UIViewController {
         let filePath = dataOptionsFilePath()
         let newDictionary:NSDictionary = [
             "music": switchMusic.isOn,
-            "vibration": switchVibration.isOn
+            "vibration": switchVibration.isOn,
+            "soundEffect": switchEffects.isOn
         ]
         newDictionary.write(toFile: filePath, atomically: true)
     }

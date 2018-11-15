@@ -5,6 +5,7 @@ class ViewController: UIViewController {
 
     var player: AVAudioPlayer?
     var wantVibration : Bool!
+    var wantSoundEffects : Bool!
     override func viewDidLoad() {
         super.viewDidLoad()
         setMusic()
@@ -46,11 +47,13 @@ class ViewController: UIViewController {
             let dictionary = NSDictionary(contentsOfFile: filePath)!
             let musicPlaying = dictionary.object(forKey: "music") as! Bool
             wantVibration = (dictionary.object(forKey: "vibration") as! Bool)
+            wantSoundEffects = (dictionary.object(forKey: "soundEffect") as! Bool)
             if musicPlaying {
                 player!.play()
             }
         }
         else {
+            wantSoundEffects = true
             wantVibration = true
             player!.play()
         }

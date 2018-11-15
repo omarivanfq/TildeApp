@@ -101,14 +101,17 @@ class SwipingViewController: UIViewController, Game {
     }
     
     func checkPoints() {
+        let viewP = self.presentingViewController?.presentingViewController as! ViewController
         if correct {
-            playerCorrect!.stop()
-            playerCorrect!.play()
+            if (viewP.wantSoundEffects) {
+                playerCorrect!.play()
+            }
             correctCount = correctCount + 1
             lbCorrect.text = String(correctCount)
         } else {
-            playerWrong!.stop()
-            playerWrong!.play()
+            if (viewP.wantSoundEffects) {
+                playerWrong!.play()
+            }
             goToRetro(timeOver: false)
         }
     }
@@ -128,7 +131,10 @@ class SwipingViewController: UIViewController, Game {
             retroView.solution = (arrWords[indexWord] as! NSDictionary).object(forKey: "right") as? String
         }
         else {
-            playerTimeOver!.play()
+            let viewP = self.presentingViewController?.presentingViewController as! ViewController
+            if (viewP.wantSoundEffects) {
+                playerTimeOver!.play()
+            }
             retroView.wrongPhrase = nil
         }
         present(retroView, animated: true, completion: nil)

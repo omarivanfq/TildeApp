@@ -58,6 +58,7 @@ class FreeFallViewController: UIViewController, Game {
         let screenHeight = screenSize.height
         lbResult.frame.origin.x = screenWidth * 0.5 - lbResult.frame.width * 0.5
         lbResult.frame.origin.y = screenHeight * 0.5 - lbResult.frame.height * 0.5
+        let viewP = self.presentingViewController?.presentingViewController as! ViewController
         if (opcion == solution!) {
             showCongratsLabel()
             restartPosition()
@@ -65,12 +66,16 @@ class FreeFallViewController: UIViewController, Game {
             options.removeAll()
             setOptions()
             score = score + 1
-            playerCorrect!.play()
+            if (viewP.wantSoundEffects) {
+                playerCorrect!.play()
+            }
             lbScore.text = "\(score!)"
         }
         else {
             gameOver = true
-            playerWrong!.play()
+            if (viewP.wantSoundEffects) {
+                playerWrong!.play()
+            }
             goToRetro(timeOver: false)
         }
     }
@@ -248,7 +253,10 @@ class FreeFallViewController: UIViewController, Game {
             retroView.source = 1
         }
         else {
-            playerTimeOver!.play()
+            let viewP = self.presentingViewController?.presentingViewController as! ViewController
+            if (viewP.wantSoundEffects) {
+                playerTimeOver!.play()
+            }
             retroView.wrongPhrase = nil
             retroView.source = 1
         }

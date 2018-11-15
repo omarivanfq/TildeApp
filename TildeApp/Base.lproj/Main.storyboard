@@ -166,7 +166,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5Df-Jp-5aU">
-                                <rect key="frame" x="71.5" y="238" width="177.5" height="92"/>
+                                <rect key="frame" x="71.5" y="207.5" width="177.5" height="153"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="y4F-Ac-qRO">
                                         <rect key="frame" x="0.0" y="0.0" width="177.5" height="31"/>
@@ -188,8 +188,28 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                             <constraint firstAttribute="height" constant="31" id="7vz-I7-mbu"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oMc-N4-lQW">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-sa-RNw">
                                         <rect key="frame" x="0.0" y="61" width="177.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Efectos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgg-Yx-6dg">
+                                                <rect key="frame" x="0.0" y="0.0" width="113.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-3i-bGh">
+                                                <rect key="frame" x="128.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="changeEffects:" destination="AC7-Nx-2kX" eventType="valueChanged" id="TwE-md-Kv2"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="qFj-UL-Mmb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oMc-N4-lQW">
+                                        <rect key="frame" x="0.0" y="122" width="177.5" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSx-jb-9Lg">
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="31"/>
@@ -245,6 +265,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                         <viewLayoutGuide key="safeArea" id="xH3-nQ-7e9"/>
                     </view>
                     <connections>
+                        <outlet property="switchEffects" destination="nOF-3i-bGh" id="U1a-5S-wV4"/>
                         <outlet property="switchMusic" destination="GL6-kN-Wbx" id="PIK-0k-5KX"/>
                         <outlet property="switchVibration" destination="uHl-iL-atA" id="3Jj-x4-Sn9"/>
                     </connections>
