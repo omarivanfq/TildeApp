@@ -262,7 +262,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIL-n2-UyH">
-                                <rect key="frame" x="94" y="86.5" width="132" height="33"/>
+                                <rect key="frame" x="94" y="77" width="132" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -312,7 +312,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Mt-io-YoA">
-                                <rect key="frame" x="48" y="172" width="224" height="224"/>
+                                <rect key="frame" x="32" y="156" width="256" height="256"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -391,7 +391,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfG-9v-PKp">
-                                <rect key="frame" x="110" y="127.5" width="100" height="33"/>
+                                <rect key="frame" x="110" y="118" width="100" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="qxo-Bo-3IZ"/>
                                 </constraints>
@@ -402,7 +402,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                         </subviews>
                         <color key="backgroundColor" red="0.84313725490196079" green="0.44313725490196076" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eIL-n2-UyH" firstAttribute="top" secondItem="duY-TQ-7Oi" secondAttribute="bottom" constant="29.5" id="2bc-i6-2rJ"/>
+                            <constraint firstItem="eIL-n2-UyH" firstAttribute="top" secondItem="duY-TQ-7Oi" secondAttribute="bottom" constant="20" id="2bc-i6-2rJ"/>
                             <constraint firstItem="hUI-KR-kpi" firstAttribute="leading" secondItem="unf-AH-xYi" secondAttribute="leading" id="2xI-NB-rzd"/>
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="centerX" secondItem="14X-NZ-VI9" secondAttribute="centerX" id="7Qj-gz-UoA"/>
                             <constraint firstItem="2Mt-io-YoA" firstAttribute="centerY" secondItem="14X-NZ-VI9" secondAttribute="centerY" id="DjR-Wb-Hoj"/>
@@ -413,7 +413,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="height" secondItem="14X-NZ-VI9" secondAttribute="height" multiplier="0.1" id="bqU-JK-Qex"/>
                             <constraint firstItem="eIL-n2-UyH" firstAttribute="centerX" secondItem="14X-NZ-VI9" secondAttribute="centerX" id="cr9-3g-bqg"/>
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="top" secondItem="14X-NZ-VI9" secondAttribute="top" id="fzf-eH-gGV"/>
-                            <constraint firstItem="2Mt-io-YoA" firstAttribute="width" secondItem="14X-NZ-VI9" secondAttribute="width" multiplier="0.7" id="g6t-AH-KrC"/>
+                            <constraint firstItem="2Mt-io-YoA" firstAttribute="width" secondItem="14X-NZ-VI9" secondAttribute="width" multiplier="0.8" id="g6t-AH-KrC"/>
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="trailing" secondItem="unf-AH-xYi" secondAttribute="trailing" id="jfg-h3-cGs"/>
                             <constraint firstItem="ayp-b6-SDa" firstAttribute="height" secondItem="14X-NZ-VI9" secondAttribute="height" multiplier="0.16" id="k3c-6O-FwG"/>
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="leading" secondItem="unf-AH-xYi" secondAttribute="leading" id="wei-AJ-N5I"/>

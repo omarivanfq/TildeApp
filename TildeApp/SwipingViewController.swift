@@ -173,13 +173,13 @@ class SwipingViewController: UIViewController, Game {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         makeCardForm(card: card)
         makeCardForm(card: cardSecond)
-        card.frame.size.width = view.frame.width * 0.7
-        card.frame.size.height = view.frame.width * 0.7
+        card.frame.size.width = view.frame.width * 0.8
+        card.frame.size.height = view.frame.width * 0.8
         card.center = CGPoint(x: view.center.x, y: view.center.y)
         cardSec.center = CGPoint(x: view.center.x, y: view.center.y)
         imageThumbnail.frame.size.width = card.frame.width * 0.6
         imageThumbnail.center = CGPoint(x: view.center.x-(card.center.x-card.frame.height/2), y: view.center.y-(card.center.y-card.frame.width/2))
-        cardLabel.frame.size.width = card.frame.width * 0.8
+        cardLabel.frame.size.width = card.frame.width * 0.9
         cardLabel.center = CGPoint(x: view.center.x-(card.center.x-card.frame.height/2), y: view.center.y-(card.center.y-card.frame.width/2))
         infoButton.tintColor = UIColor.white
         correctCount = 0
