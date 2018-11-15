@@ -32,12 +32,6 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func vibrar(_ sender: Any) {
-        if (wantVibration) {
-            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-        }
-    }
-    
     func dataOptionsFilePath() -> String {
         let url = FileManager().urls(for: .documentDirectory,
                                      in: .userDomainMask).first!

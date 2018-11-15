@@ -1,5 +1,6 @@
 import UIKit
 import AudioToolbox
+import AVFoundation
 
 class FreeFallViewController: UIViewController, Game {
     
@@ -10,7 +11,6 @@ class FreeFallViewController: UIViewController, Game {
     @IBOutlet weak var btnOption5: UIButton!
     @IBOutlet weak var lbScore: UILabel!
     
-    var viewPrincipal:ViewController!
     var score:Int!
     var gameStarted:Bool!
     var option: Option?
@@ -24,16 +24,19 @@ class FreeFallViewController: UIViewController, Game {
     var optionWords = [String]()
     var gameOver:Bool?
     var detail:UIView!
+    var playerCorrect: AVAudioPlayer?
+    var playerWrong: AVAudioPlayer?
+    var playerTimeOver: AVAudioPlayer?
     
     @IBOutlet weak var infoButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewPrincipal = self.presentingViewController?.presentingViewController as? ViewController
         infoButton.tintColor = UIColor.white
         gameStarted = false
         setButtons()
-    restart()
+        restart()
+        setSoundEffectPlayers()
         btnOption1.titleLabel?.adjustsFontSizeToFitWidth = true
         btnOption2.titleLabel?.adjustsFontSizeToFitWidth = true
         btnOption3.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -62,10 +65,12 @@ class FreeFallViewController: UIViewController, Game {
             options.removeAll()
             setOptions()
             score = score + 1
+            playerCorrect!.play()
             lbScore.text = "\(score!)"
         }
         else {
             gameOver = true
+            playerWrong!.play()
             goToRetro(timeOver: false)
         }
     }
@@ -225,7 +230,8 @@ class FreeFallViewController: UIViewController, Game {
     }
     
     func goToRetro(timeOver:Bool) {
-        if (viewPrincipal?.wantVibration ?? false) {
+        let viewPrincipal = self.presentingViewController?.presentingViewController as! ViewController
+        if (viewPrincipal.wantVibration) {
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
         }
         updateScore()
@@ -242,6 +248,7 @@ class FreeFallViewController: UIViewController, Game {
             retroView.source = 1
         }
         else {
+            playerTimeOver!.play()
             retroView.wrongPhrase = nil
             retroView.source = 1
         }
@@ -309,6 +316,38 @@ class FreeFallViewController: UIViewController, Game {
         return false
     }
     
+    // Sound effects
+    func setSoundEffectPlayers() {
+        var url = Bundle.main.url(forResource: "correct", withExtension: "mp3")!
+        do {
+            playerCorrect = try AVAudioPlayer(contentsOf: url)
+            guard let playerCorrect = playerCorrect else { return }
+            playerCorrect.numberOfLoops = 0
+            playerCorrect.prepareToPlay()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        url = Bundle.main.url(forResource: "wrong", withExtension: "mp3")!
+        do {
+            playerWrong = try AVAudioPlayer(contentsOf: url)
+            guard let playerWrong = playerWrong else { return }
+            playerWrong.numberOfLoops = 0
+            playerWrong.prepareToPlay()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+        url = Bundle.main.url(forResource: "time-over", withExtension: "mp3")!
+        do {
+            playerTimeOver = try AVAudioPlayer(contentsOf: url)
+            guard let playerTimeOver = playerTimeOver else { return }
+            playerTimeOver.numberOfLoops = 0
+            playerTimeOver.prepareToPlay()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+    }
 }
 
 

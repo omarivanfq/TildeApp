@@ -1,5 +1,6 @@
 import UIKit
 import AVFoundation
+import AudioToolbox
 
 class CatchUpViewController: UIViewController, Game {
     
@@ -148,6 +149,10 @@ class CatchUpViewController: UIViewController, Game {
     }
 
     func goToRetro(timeOver:Bool) {
+        let viewPrincipal = self.presentingViewController?.presentingViewController as! ViewController
+        if (viewPrincipal.wantVibration) {
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        }
         updateScore()
         player?.stop()
         timer.invalidate()

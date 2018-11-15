@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AudioToolbox
+import AVFoundation
 
 class SwipingViewController: UIViewController, Game {
 
@@ -18,6 +20,9 @@ class SwipingViewController: UIViewController, Game {
     var correctCount : Int!
     var correct : Bool!
     var detail:UIView!
+    var playerCorrect: AVAudioPlayer?
+    var playerWrong: AVAudioPlayer?
+    var playerTimeOver: AVAudioPlayer?
     @IBOutlet weak var skip1: UIView!
     @IBOutlet weak var skip2: UIView!
     @IBOutlet weak var skip3: UIView!
@@ -97,24 +102,33 @@ class SwipingViewController: UIViewController, Game {
     
     func checkPoints() {
         if correct {
+            playerCorrect!.stop()
+            playerCorrect!.play()
             correctCount = correctCount + 1
             lbCorrect.text = String(correctCount)
         } else {
+            playerWrong!.stop()
+            playerWrong!.play()
             goToRetro(timeOver: false)
         }
     }
     
     func goToRetro(timeOver:Bool) {
+        let viewPrincipal = self.presentingViewController?.presentingViewController as! ViewController
+        if (viewPrincipal.wantVibration) {
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        }
         updateScore()
         timer.invalidate()
         let retroView = self.storyboard?.instantiateViewController(withIdentifier: "RetroFreeFallViewController") as! RetroFreeFallViewController
         retroView.score = correctCount
         retroView.game = self
         if !timeOver {
-            retroView.wrongPhrase = (arrWords[indexWord] as! NSDictionary).object(forKey: "right") as? String
-            retroView.solution = (arrWords[indexWord] as! NSDictionary).object(forKey: "wrong") as? String
+            retroView.wrongPhrase = (arrWords[indexWord] as! NSDictionary).object(forKey: "wrong") as? String
+            retroView.solution = (arrWords[indexWord] as! NSDictionary).object(forKey: "right") as? String
         }
         else {
+            playerTimeOver!.play()
             retroView.wrongPhrase = nil
         }
         present(retroView, animated: true, completion: nil)
@@ -163,7 +177,9 @@ class SwipingViewController: UIViewController, Game {
         card.frame.size.height = view.frame.width * 0.7
         card.center = CGPoint(x: view.center.x, y: view.center.y)
         cardSec.center = CGPoint(x: view.center.x, y: view.center.y)
-        cardLabel.frame.size.width = card.frame.width
+        imageThumbnail.frame.size.width = card.frame.width * 0.6
+        imageThumbnail.center = CGPoint(x: view.center.x-(card.center.x-card.frame.height/2), y: view.center.y-(card.center.y-card.frame.width/2))
+        cardLabel.frame.size.width = card.frame.width * 0.8
         cardLabel.center = CGPoint(x: view.center.x-(card.center.x-card.frame.height/2), y: view.center.y-(card.center.y-card.frame.width/2))
         infoButton.tintColor = UIColor.white
         correctCount = 0
@@ -172,6 +188,7 @@ class SwipingViewController: UIViewController, Game {
         cardLabel.adjustsFontSizeToFitWidth = true
         getData()
         updateCard()
+        setSoundEffectPlayers()
     }
     
     func makeCardForm(card : UIView) {
@@ -295,6 +312,38 @@ class SwipingViewController: UIViewController, Game {
         timer.invalidate()
     }
     
+    // Sound effects
+    func setSoundEffectPlayers() {
+        var url = Bundle.main.url(forResource: "correct", withExtension: "mp3")!
+        do {
+            playerCorrect = try AVAudioPlayer(contentsOf: url)
+            guard let playerCorrect = playerCorrect else { return }
+            playerCorrect.numberOfLoops = 0
+            playerCorrect.prepareToPlay()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        url = Bundle.main.url(forResource: "wrong", withExtension: "mp3")!
+        do {
+            playerWrong = try AVAudioPlayer(contentsOf: url)
+            guard let playerWrong = playerWrong else { return }
+            playerWrong.numberOfLoops = 0
+            playerWrong.prepareToPlay()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+        url = Bundle.main.url(forResource: "time-over", withExtension: "mp3")!
+        do {
+            playerTimeOver = try AVAudioPlayer(contentsOf: url)
+            guard let playerTimeOver = playerTimeOver else { return }
+            playerTimeOver.numberOfLoops = 0
+            playerTimeOver.prepareToPlay()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+    }
     /*
     // MARK: - Navigation
 
