@@ -12,7 +12,7 @@ class FreeFallViewController: UIViewController, Game {
     @IBOutlet weak var lbScore: UILabel!
     
     var score:Int!
-    var gameStarted:Bool!
+    // var gameStarted:Bool!
     var option: Option?
     var options = [Option]()
     var timeCount:Int?
@@ -33,15 +33,9 @@ class FreeFallViewController: UIViewController, Game {
     override func viewDidLoad() {
         super.viewDidLoad()
         infoButton.tintColor = UIColor.white
-        gameStarted = false
         setButtons()
         restart()
         setSoundEffectPlayers()
-        btnOption1.titleLabel?.adjustsFontSizeToFitWidth = true
-        btnOption2.titleLabel?.adjustsFontSizeToFitWidth = true
-        btnOption3.titleLabel?.adjustsFontSizeToFitWidth = true
-        btnOption4.titleLabel?.adjustsFontSizeToFitWidth = true
-        btnOption5.titleLabel?.adjustsFontSizeToFitWidth = true
         lbPhrase.adjustsFontSizeToFitWidth = true
     }
     
@@ -146,14 +140,11 @@ class FreeFallViewController: UIViewController, Game {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
         showButtons()
-        gameStarted = true
     }
     
     @objc func continuePlaying(sender: UIButton!) {
         detail.removeFromSuperview()
-        if !gameStarted {
-            showButtons()
-        }
+        showButtons()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
     }
@@ -168,6 +159,9 @@ class FreeFallViewController: UIViewController, Game {
         buttons.append(btnOption3)
         buttons.append(btnOption4)
         buttons.append(btnOption5)
+        for button in buttons {
+            button.titleLabel?.adjustsFontSizeToFitWidth = true
+        }
     }
     
     func getData() {
