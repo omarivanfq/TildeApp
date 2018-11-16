@@ -1,3 +1,8 @@
+/*
+    Omar Iván Flores Quijada
+    Luis Daniel Vázquez Peña
+    16 / nov / 2018
+ */
 import UIKit
 import AVFoundation
 
@@ -13,7 +18,7 @@ class ViewController: UIViewController {
     }
 
     func setMusic() {
-        let url = Bundle.main.url(forResource: "the-ting-tings-earthquake-official-audio", withExtension: "mp3")!
+        let url = Bundle.main.url(forResource: "background-music", withExtension: "mp3")!
         do {
             player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else { return }

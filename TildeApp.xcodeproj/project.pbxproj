@@ -10,11 +10,12 @@
 		8D099DF6219D3518006B0BE1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D099DF5219D3518006B0BE1 /* AudioToolbox.framework */; };
 		8D2382072176A31C009A39AC /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2382062176A31C009A39AC /* SwipingViewController.swift */; };
 		8D2382092176A4D2009A39AC /* Swiping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D2382082176A4D2009A39AC /* Swiping.plist */; };
+		FB04CF78219F1A3E00B4BBC8 /* background-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB04CF77219F1A3E00B4BBC8 /* background-music.mp3 */; };
 		FB04DFBC2199CDC4008D8B41 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB04DFBB2199CDC4008D8B41 /* OptionsViewController.swift */; };
 		FB0D4B18219A33D400BA2E41 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D4B17219A33D400BA2E41 /* AboutViewController.swift */; };
 		FB0D4B1C219A3BA400BA2E41 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0D4B1A219A3BA400BA2E41 /* wrong.mp3 */; };
 		FB0D4B1E219A3CDB00BA2E41 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0D4B1D219A3CDB00BA2E41 /* correct.mp3 */; };
-		FB3D0918217F81E100DF3CB5 /* RetroFreeFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */; };
+		FB3D0918217F81E100DF3CB5 /* RetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D0917217F81E100DF3CB5 /* RetroViewController.swift */; };
 		FB503E1321763B2A003C3874 /* FreeFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1221763B2A003C3874 /* FreeFallViewController.swift */; };
 		FB503E1521763C4B003C3874 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB503E1421763C4B003C3874 /* Option.swift */; };
 		FB503E1A217648F7003C3874 /* FreeFallData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB503E18217640C0003C3874 /* FreeFallData.plist */; };
@@ -24,7 +25,6 @@
 		FBAB2A82216FDF2A00E982F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAB2A80216FDF2A00E982F3 /* Main.storyboard */; };
 		FBAB2A84216FDF2A00E982F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAB2A83216FDF2A00E982F3 /* Assets.xcassets */; };
 		FBAB2A87216FDF2A00E982F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAB2A85216FDF2A00E982F3 /* LaunchScreen.storyboard */; };
-		FBD2A7602191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD2A75F2191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 */; };
 		FBD2A7622191E25A005F71B6 /* clock-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD2A7612191E25A005F71B6 /* clock-sound.mp3 */; };
 		FBD2A7642191E494005F71B6 /* time-over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD2A7632191E494005F71B6 /* time-over.mp3 */; };
 		FBDBED3D2190F009002641D9 /* CatchUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBED3C2190F009002641D9 /* CatchUpViewController.swift */; };
@@ -34,11 +34,12 @@
 		8D099DF5219D3518006B0BE1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8D2382062176A31C009A39AC /* SwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
 		8D2382082176A4D2009A39AC /* Swiping.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Swiping.plist; sourceTree = "<group>"; };
+		FB04CF77219F1A3E00B4BBC8 /* background-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "background-music.mp3"; sourceTree = "<group>"; };
 		FB04DFBB2199CDC4008D8B41 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		FB0D4B17219A33D400BA2E41 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		FB0D4B1A219A3BA400BA2E41 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
 		FB0D4B1D219A3CDB00BA2E41 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
-		FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroFreeFallViewController.swift; sourceTree = "<group>"; };
+		FB3D0917217F81E100DF3CB5 /* RetroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroViewController.swift; sourceTree = "<group>"; };
 		FB503E1221763B2A003C3874 /* FreeFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFallViewController.swift; sourceTree = "<group>"; };
 		FB503E1421763C4B003C3874 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		FB503E18217640C0003C3874 /* FreeFallData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FreeFallData.plist; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		FBAB2A83216FDF2A00E982F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBAB2A86216FDF2A00E982F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBAB2A88216FDF2A00E982F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBD2A75F2191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "the-ting-tings-earthquake-official-audio.mp3"; sourceTree = "<group>"; };
 		FBD2A7612191E25A005F71B6 /* clock-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "clock-sound.mp3"; sourceTree = "<group>"; };
 		FBD2A7632191E494005F71B6 /* time-over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "time-over.mp3"; sourceTree = "<group>"; };
 		FBDBED3C2190F009002641D9 /* CatchUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchUpViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +76,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB04CF79219F1A7800B4BBC8 /* music_and_sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D4B1A219A3BA400BA2E41 /* wrong.mp3 */,
+				FBD2A7632191E494005F71B6 /* time-over.mp3 */,
+				FB0D4B1D219A3CDB00BA2E41 /* correct.mp3 */,
+				FB04CF77219F1A3E00B4BBC8 /* background-music.mp3 */,
+				FBD2A7612191E25A005F71B6 /* clock-sound.mp3 */,
+			);
+			path = music_and_sounds;
+			sourceTree = "<group>";
+		};
+		FB04CF7A219F1AB900B4BBC8 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				FB04CF7B219F1AF100B4BBC8 /* games */,
+				FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */,
+				FB3D0917217F81E100DF3CB5 /* RetroViewController.swift */,
+				FB0D4B17219A33D400BA2E41 /* AboutViewController.swift */,
+				FB04DFBB2199CDC4008D8B41 /* OptionsViewController.swift */,
+				FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		FB04CF7B219F1AF100B4BBC8 /* games */ = {
+			isa = PBXGroup;
+			children = (
+				FB503E1221763B2A003C3874 /* FreeFallViewController.swift */,
+				8D2382062176A31C009A39AC /* SwipingViewController.swift */,
+				FBDBED3C2190F009002641D9 /* CatchUpViewController.swift */,
+			);
+			path = games;
+			sourceTree = "<group>";
+		};
+		FB04CF7C219F1B1600B4BBC8 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				FB503E18217640C0003C3874 /* FreeFallData.plist */,
+				8D2382082176A4D2009A39AC /* Swiping.plist */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		FBAB2A70216FDF2A00E982F3 = {
 			isa = PBXGroup;
 			children = (
@@ -96,24 +140,12 @@
 		FBAB2A7B216FDF2A00E982F3 /* TildeApp */ = {
 			isa = PBXGroup;
 			children = (
-				FB0D4B17219A33D400BA2E41 /* AboutViewController.swift */,
-				FB503E18217640C0003C3874 /* FreeFallData.plist */,
+				FB04CF7C219F1B1600B4BBC8 /* data */,
+				FB04CF7A219F1AB900B4BBC8 /* viewcontrollers */,
+				FB04CF79219F1A7800B4BBC8 /* music_and_sounds */,
 				FBAB2A7C216FDF2A00E982F3 /* AppDelegate.swift */,
-				FBAB2A7E216FDF2A00E982F3 /* ViewController.swift */,
 				FBAB2A80216FDF2A00E982F3 /* Main.storyboard */,
-				FB04DFBB2199CDC4008D8B41 /* OptionsViewController.swift */,
-				FBDBED3C2190F009002641D9 /* CatchUpViewController.swift */,
-				FB3D0917217F81E100DF3CB5 /* RetroFreeFallViewController.swift */,
-				FB0D4B1D219A3CDB00BA2E41 /* correct.mp3 */,
-				FB0D4B1A219A3BA400BA2E41 /* wrong.mp3 */,
-				FB8A88F921778E7300B858C1 /* MinijuegosViewController.swift */,
-				8D2382062176A31C009A39AC /* SwipingViewController.swift */,
-				FBD2A75F2191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 */,
-				FBD2A7612191E25A005F71B6 /* clock-sound.mp3 */,
-				FBD2A7632191E494005F71B6 /* time-over.mp3 */,
-				8D2382082176A4D2009A39AC /* Swiping.plist */,
 				FB503E1421763C4B003C3874 /* Option.swift */,
-				FB503E1221763B2A003C3874 /* FreeFallViewController.swift */,
 				FBAB2A83216FDF2A00E982F3 /* Assets.xcassets */,
 				FBAB2A85216FDF2A00E982F3 /* LaunchScreen.storyboard */,
 				FBAB2A88216FDF2A00E982F3 /* Info.plist */,
@@ -181,8 +213,8 @@
 			files = (
 				8D2382092176A4D2009A39AC /* Swiping.plist in Resources */,
 				FBAB2A87216FDF2A00E982F3 /* LaunchScreen.storyboard in Resources */,
+				FB04CF78219F1A3E00B4BBC8 /* background-music.mp3 in Resources */,
 				FBAB2A84216FDF2A00E982F3 /* Assets.xcassets in Resources */,
-				FBD2A7602191E195005F71B6 /* the-ting-tings-earthquake-official-audio.mp3 in Resources */,
 				FB0D4B1C219A3BA400BA2E41 /* wrong.mp3 in Resources */,
 				FBD2A7642191E494005F71B6 /* time-over.mp3 in Resources */,
 				FBAB2A82216FDF2A00E982F3 /* Main.storyboard in Resources */,
@@ -200,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB503E1521763C4B003C3874 /* Option.swift in Sources */,
-				FB3D0918217F81E100DF3CB5 /* RetroFreeFallViewController.swift in Sources */,
+				FB3D0918217F81E100DF3CB5 /* RetroViewController.swift in Sources */,
 				FBAB2A7F216FDF2A00E982F3 /* ViewController.swift in Sources */,
 				FB503E1321763B2A003C3874 /* FreeFallViewController.swift in Sources */,
 				8D2382072176A31C009A39AC /* SwipingViewController.swift in Sources */,

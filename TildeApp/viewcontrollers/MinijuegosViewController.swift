@@ -40,9 +40,6 @@ class MinijuegosViewController: UIViewController {
         lbScoreFreeFall.text = "\(dictionary!.object(forKey: "freefall")! as! Int)"
         lbScoreSwiping.text = "\(dictionary!.object(forKey: "swiping")! as! Int)"
         lbScoreCatchUp.text = "\(dictionary!.object(forKey: "catchup")! as! Int)"
-        print(dictionary!.object(forKey: "freefall")!)
-        print(dictionary!.object(forKey: "swiping")!)
-        print(dictionary!.object(forKey: "catchup")!)
     }
     
     func dataFilePath() -> String {

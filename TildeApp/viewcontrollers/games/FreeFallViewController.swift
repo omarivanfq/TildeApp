@@ -12,8 +12,6 @@ class FreeFallViewController: UIViewController, Game {
     @IBOutlet weak var lbScore: UILabel!
     
     var score:Int!
-    // var gameStarted:Bool!
-    var option: Option?
     var options = [Option]()
     var timeCount:Int?
     var timer = Timer()
@@ -22,18 +20,16 @@ class FreeFallViewController: UIViewController, Game {
     var solution:String?
     var currentPhrase:String?
     var optionWords = [String]()
-    var gameOver:Bool?
     var detail:UIView!
     var playerCorrect: AVAudioPlayer?
     var playerWrong: AVAudioPlayer?
     var playerTimeOver: AVAudioPlayer?
-    
     @IBOutlet weak var infoButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        infoButton.tintColor = UIColor.white
         setButtons()
+        getData()
         restart()
         setSoundEffectPlayers()
         lbPhrase.adjustsFontSizeToFitWidth = true
@@ -47,16 +43,11 @@ class FreeFallViewController: UIViewController, Game {
     
     @IBAction func chooses(_ sender: UIButton) {
         let opcion = sender.titleLabel?.text!
-        let screenSize = UIScreen.main.bounds
-        let screenWidth = screenSize.width
-        let screenHeight = screenSize.height
-        lbResult.frame.origin.x = screenWidth * 0.5 - lbResult.frame.width * 0.5
-        lbResult.frame.origin.y = screenHeight * 0.5 - lbResult.frame.height * 0.5
         let viewP = self.presentingViewController?.presentingViewController as! ViewController
         if (opcion == solution!) {
             showCongratsLabel()
             restartPosition()
-            getData() // recuperando nueva info
+            newPhrase()
             options.removeAll()
             setOptions()
             score = score + 1
@@ -66,7 +57,6 @@ class FreeFallViewController: UIViewController, Game {
             lbScore.text = "\(score!)"
         }
         else {
-            gameOver = true
             if (viewP.wantSoundEffects) {
                 playerWrong!.play()
             }
@@ -126,10 +116,9 @@ class FreeFallViewController: UIViewController, Game {
         score = 0
         lbTimer.text = secondsToString(seconds: timeCount!)
         lbScore.text = "0"
-        gameOver = false
         lbResult.alpha = 0
         timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(letsStartPlaying), userInfo: nil, repeats: true)
-        getData()
+        newPhrase()
         setOptions()
         restartPosition()
         hideButtons()
@@ -144,9 +133,7 @@ class FreeFallViewController: UIViewController, Game {
     
     @objc func continuePlaying(sender: UIButton!) {
         detail.removeFromSuperview()
-        showButtons()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
-        actTimer = Timer.scheduledTimer(timeInterval: 0.007, target: self, selector: #selector(act), userInfo: nil, repeats: true)
+        letsStartPlaying()
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -154,6 +141,7 @@ class FreeFallViewController: UIViewController, Game {
     }
     
     func setButtons(){
+        infoButton.tintColor = UIColor.white
         buttons.append(btnOption1)
         buttons.append(btnOption2)
         buttons.append(btnOption3)
@@ -167,14 +155,14 @@ class FreeFallViewController: UIViewController, Game {
     func getData() {
         let path = Bundle.main.path(forResource: "FreeFallData", ofType: "plist")!
         arregloDiccionarios = NSArray(contentsOfFile: path)
+    }
+    
+    func newPhrase(){
         let randomIndex = Int.random(in: 0 ... arregloDiccionarios.count - 1)
-        
         let dic = arregloDiccionarios[randomIndex] as! NSDictionary
-        
         let phrase = dic.object(forKey: "phrase") as? String
         let optionsArray = dic.object(forKey: "options") as? [String]
         let sol = dic.object(forKey: "solution") as? String
-            
         currentPhrase = phrase
         optionWords.removeAll()
         for op in optionsArray! {
@@ -199,10 +187,8 @@ class FreeFallViewController: UIViewController, Game {
     }
     
     @objc func act() {
-        if !gameOver! {
-            for option in options {
-                option.act()
-            }
+        for option in options {
+            option.act()
         }
     }
     
@@ -212,8 +198,6 @@ class FreeFallViewController: UIViewController, Game {
     
     @objc func counter() {
         if timeCount == 0 {
-            lbTimer.text = "Game Over"
-            gameOver = true
             goToRetro(timeOver: true)
         }
         else {
@@ -265,6 +249,11 @@ class FreeFallViewController: UIViewController, Game {
     }
     
     func showCongratsLabel(){
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        lbResult.frame.origin.x = screenWidth * 0.5 - lbResult.frame.width * 0.5
+        lbResult.frame.origin.y = screenHeight * 0.5 - lbResult.frame.height * 0.5
         UIView.animate(withDuration: 0.5, animations: {
             self.lbResult.alpha = 1
         }, completion: { _ in
