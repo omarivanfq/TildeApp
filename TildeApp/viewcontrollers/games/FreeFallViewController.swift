@@ -32,6 +32,9 @@ class FreeFallViewController: UIViewController, Game {
         getData()
         restart()
         setSoundEffectPlayers()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            infoButton.transform = CGAffineTransform(scaleX: 2, y: 2)
+        }
         lbPhrase.adjustsFontSizeToFitWidth = true
     }
     
@@ -85,7 +88,11 @@ class FreeFallViewController: UIViewController, Game {
         tv.textAlignment = .center
         tv.text = "¿Cómo jugar?\n\n"
         tv.text = tv.text + "Selecciona la palabra que complete correctamente el enunciado que aparece en la parte inferior de la pantalla.\nPor cada elección correcta obtendrás un punto pero al primer error termina el juego."
-        tv.font = tv.font!.withSize(20)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            tv.font = tv.font!.withSize(40)
+        } else {
+            tv.font = tv.font!.withSize(20)
+        }
         tv.textColor = .white
         tv.frame.size.width = view.frame.width * 0.9
         tv.frame.size.height = view.frame.height * 0.4
@@ -97,6 +104,11 @@ class FreeFallViewController: UIViewController, Game {
         btn.frame.origin.y = view.frame.height - btn.frame.height - 100
         btn.frame.origin.x = 0
         btn.setTitle("OK", for: .normal)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            btn.titleLabel!.font = btn.titleLabel!.font.withSize(40)
+        } else {
+            btn.titleLabel!.font = btn.titleLabel!.font.withSize(20)
+        }
         btn.tintColor = .white
         btn.addTarget(self, action: #selector(continuePlaying), for: .touchUpInside)
         detail.addSubview(tv)
@@ -148,6 +160,10 @@ class FreeFallViewController: UIViewController, Game {
         buttons.append(btnOption4)
         buttons.append(btnOption5)
         for button in buttons {
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                button.frame.size.width = view.frame.width * 0.2
+                button.frame.size.height = view.frame.width * 0.2
+            }
             button.titleLabel?.adjustsFontSizeToFitWidth = true
         }
     }

@@ -37,6 +37,11 @@ class OptionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            switchMusic.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+            switchEffects.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+            switchVibration.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+        }
         switchMusic.isOn = player!.isPlaying
         switchVibration.isOn = viewPrincipal.wantVibration
         switchEffects.isOn = viewPrincipal.wantSoundEffects

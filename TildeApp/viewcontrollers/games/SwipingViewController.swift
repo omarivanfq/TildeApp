@@ -43,15 +43,20 @@ class SwipingViewController: UIViewController, Game {
             skip3.alpha = 0.3
             skips = skips - 1
             updateCard()
+            playerCorrect!.play()
         } else if skips == 2 {
             skip2.alpha = 0.3
             skips = skips - 1
             updateCard()
+            playerCorrect!.play()
         } else if skips == 1 {
             skip1.alpha = 0.3
             skips = skips - 1
             updateCard()
+            playerCorrect!.play()
             viewSkip.alpha = 0.3
+        } else {
+            playerWrong!.play()
         }
     }
     
@@ -179,8 +184,8 @@ class SwipingViewController: UIViewController, Game {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
         makeCardForm(card: card)
         makeCardForm(card: cardSecond)
-        card.frame.size.width = view.frame.width * 0.8
-        card.frame.size.height = view.frame.width * 0.8
+        card.frame.size.width = view.frame.width * 0.7
+        card.frame.size.height = view.frame.width * 0.7
         card.center = CGPoint(x: view.center.x, y: view.center.y)
         cardSec.center = CGPoint(x: view.center.x, y: view.center.y)
         imageThumbnail.frame.size.width = card.frame.width * 0.6
@@ -195,6 +200,9 @@ class SwipingViewController: UIViewController, Game {
         getData()
         updateCard()
         setSoundEffectPlayers()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            infoButton.transform = CGAffineTransform(scaleX: 2, y: 2)
+        }
     }
     
     func makeCardForm(card : UIView) {
@@ -292,7 +300,11 @@ class SwipingViewController: UIViewController, Game {
         tv.textAlignment = .center
         tv.text = "¿Cómo jugar?\n\n"
         tv.text = tv.text + "Gira la palabra a la derecha si crees que esta escrita correctamente, o girala a la izquierda si crees que esta equivocada."
-        tv.font = tv.font!.withSize(20)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            tv.font = tv.font!.withSize(40)
+        } else {
+            tv.font = tv.font!.withSize(20)
+        }
         tv.textColor = .white
         tv.frame.size.width = view.frame.width * 0.9
         tv.frame.size.height = view.frame.height * 0.4
@@ -304,6 +316,11 @@ class SwipingViewController: UIViewController, Game {
         btn.frame.origin.y = view.frame.height - btn.frame.height - 100
         btn.frame.origin.x = 0
         btn.setTitle("OK", for: .normal)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            btn.titleLabel!.font = btn.titleLabel!.font.withSize(40)
+        } else {
+            btn.titleLabel!.font = btn.titleLabel!.font.withSize(20)
+        }
         btn.tintColor = .white
         btn.addTarget(self, action: #selector(continuePlaying), for: .touchUpInside)
         detail.addSubview(tv)

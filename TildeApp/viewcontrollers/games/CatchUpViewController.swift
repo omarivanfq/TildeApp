@@ -44,7 +44,11 @@ class CatchUpViewController: UIViewController, Game {
         tv.textAlignment = .center
         tv.text = "¿Cómo jugar?\n\n"
         tv.text = tv.text + "¡Este juego lo puedes jugar con tus amigos!\nEn pantalla se muestran dos frases, el jugador debe seleccionar la correcta y pasar el dispositivo al siguiente jugador para que haga lo mismo.\n¡El tiempo del juego puede terminar en cualquier momento y quien tenga el dispositivo en sus manos pierde!"
-        tv.font = tv.font!.withSize(20)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            tv.font = tv.font!.withSize(40)
+        } else {
+            tv.font = tv.font!.withSize(20)
+        }
         tv.textColor = .white
         tv.frame.size.width = view.frame.width * 0.9
         tv.frame.size.height = view.frame.height * 0.4
@@ -56,6 +60,11 @@ class CatchUpViewController: UIViewController, Game {
         btn.frame.origin.y = view.frame.height - btn.frame.height - 100
         btn.frame.origin.x = 0
         btn.setTitle("OK", for: .normal)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            btn.titleLabel!.font = btn.titleLabel!.font.withSize(40)
+        } else {
+            btn.titleLabel!.font = btn.titleLabel!.font.withSize(20)
+        }
         btn.tintColor = .white
         btn.addTarget(self, action: #selector(continuePlaying), for: .touchUpInside)
         detail.addSubview(tv)
@@ -115,6 +124,9 @@ class CatchUpViewController: UIViewController, Game {
         infoButton.tintColor = UIColor.white
         restart()
         setSoundEffectPlayers()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            infoButton.transform = CGAffineTransform(scaleX: 2, y: 2)
+        }
     }
 
     @objc func counter() {

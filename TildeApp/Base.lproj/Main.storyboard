@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,51 +15,63 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqM-mH-KPe">
-                                <rect key="frame" x="0.0" y="420.5" width="320" height="73.5"/>
+                                <rect key="frame" x="0.0" y="493.5" width="375" height="87"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.42745098039215684" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Opciones">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                </variation>
                                 <connections>
                                     <segue destination="AC7-Nx-2kX" kind="presentation" identifier="toOptions" id="ygc-UZ-RK0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tee-Rn-5Co">
-                                <rect key="frame" x="0.0" y="494" width="320" height="74"/>
+                                <rect key="frame" x="0.0" y="580.5" width="375" height="86.5"/>
                                 <color key="backgroundColor" red="0.1764705882352941" green="0.36470588235294116" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Acerca">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                </variation>
                                 <connections>
                                     <segue destination="4lH-Gq-6i1" kind="presentation" id="a5S-qE-UQW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tilde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJH-XV-SLh">
+                                <rect key="frame" x="106" y="30" width="163" height="63"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="54"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="100"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ey9-Bp-u3l">
+                                <rect key="frame" x="-108.5" y="108" width="600" height="267"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7j-Zw-0lZ">
-                                <rect key="frame" x="0.0" y="335" width="320" height="85.5"/>
+                                <rect key="frame" x="0.0" y="393.5" width="375" height="100"/>
                                 <color key="backgroundColor" red="0.23529411764705882" green="0.50196078431372548" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Jugar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                </variation>
                                 <connections>
                                     <segue destination="sbH-5H-Rkx" kind="presentation" id="Oje-Fn-Fsn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tilde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJH-XV-SLh">
-                                <rect key="frame" x="78.5" y="30" width="163" height="63"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="54"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ey9-Bp-u3l">
-                                <rect key="frame" x="-136" y="108" width="600" height="227"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980392156865" green="0.59215686274509804" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -70,10 +82,9 @@
                             <constraint firstItem="bqM-mH-KPe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IyK-Kh-Wkm"/>
                             <constraint firstItem="GJH-XV-SLh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="KSY-lh-NEU"/>
                             <constraint firstItem="tee-Rn-5Co" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LZj-fI-bPS"/>
-                            <constraint firstAttribute="bottom" secondItem="tee-Rn-5Co" secondAttribute="bottom" id="MMU-E0-hxB"/>
                             <constraint firstItem="bqM-mH-KPe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MXu-nJ-ihQ"/>
-                            <constraint firstItem="bqM-mH-KPe" firstAttribute="top" secondItem="J7j-Zw-0lZ" secondAttribute="bottom" id="OCO-ai-y3e"/>
                             <constraint firstItem="Ey9-Bp-u3l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4" id="ObL-qo-v7Q"/>
+                            <constraint firstItem="bqM-mH-KPe" firstAttribute="top" secondItem="J7j-Zw-0lZ" secondAttribute="bottom" id="SXB-Lc-93V"/>
                             <constraint firstItem="J7j-Zw-0lZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VSb-5V-0ri"/>
                             <constraint firstItem="Ey9-Bp-u3l" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="c2o-Jo-xp6"/>
                             <constraint firstItem="tee-Rn-5Co" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="niK-b8-T0q"/>
@@ -94,11 +105,11 @@
             <objects>
                 <viewController id="4lH-Gq-6i1" customClass="AboutViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19C-K3-6VF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-5Q-I9f">
-                                <rect key="frame" x="0.0" y="245" width="320" height="227.5"/>
+                                <rect key="frame" x="0.0" y="285.5" width="375" height="267"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.28173159246575341" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Tilde ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Agosto Diciembre de 2018, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.
 Desarrolladores:
@@ -107,26 +118,46 @@ Omar Iván Flores Quijada
 
 Luis Daniel Vázquez Peña
 
-Tilde se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.</string>
+Tilde se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro. 
+
+Música:
+"Doobly Doo" de Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/
+
+Efectos de sonido:
+"Correct" de ertfelda (https://freesound.org/people/ertfelda/)
+"Error" de Autistic Lucario (https://freesound.org/people/Autistic%20Lucario/)
+"Tick Tock" de FoolBoyMedia (https://freesound.org/people/FoolBoyMedia/)
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                </variation>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-aK-3RN">
-                                <rect key="frame" x="80" y="-153" width="160" height="600"/>
+                                <rect key="frame" x="94" y="-128.5" width="187.5" height="600.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tilde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVr-No-X5h">
-                                <rect key="frame" x="92" y="494" width="136" height="53"/>
+                                <rect key="frame" x="120" y="581.5" width="135.5" height="52.5"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="90"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bQ-4s-pny">
-                                <rect key="frame" x="15" y="25" width="30" height="61"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <rect key="frame" x="15" y="25" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                </variation>
                                 <connections>
                                     <action selector="dismiss:" destination="4lH-Gq-6i1" eventType="touchUpInside" id="W5i-d4-cSx"/>
                                 </connections>
@@ -158,104 +189,113 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
             <objects>
                 <viewController id="AC7-Nx-2kX" customClass="OptionsViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yFb-HX-wUS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-vi-wgz">
                                 <rect key="frame" x="83" y="234" width="381" height="393"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5Df-Jp-5aU">
-                                <rect key="frame" x="71.5" y="207.5" width="177.5" height="153"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Df-Jp-5aU">
+                                <rect key="frame" x="94" y="267" width="187.5" height="133"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="y4F-Ac-qRO">
-                                        <rect key="frame" x="0.0" y="0.0" width="177.5" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="y4F-Ac-qRO">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Música" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-dx-LZe">
-                                                <rect key="frame" x="0.0" y="0.0" width="113.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="5.5" width="113.5" height="33.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                </variation>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GL6-kN-Wbx">
-                                                <rect key="frame" x="128.5" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="138.5" y="7" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="changeMusic:" destination="AC7-Nx-2kX" eventType="valueChanged" id="qXe-it-BCO"/>
                                                 </connections>
                                             </switch>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="7vz-I7-mbu"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-sa-RNw">
-                                        <rect key="frame" x="0.0" y="61" width="177.5" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-sa-RNw">
+                                        <rect key="frame" x="0.0" y="45" width="187.5" height="44"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Efectos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgg-Yx-6dg">
-                                                <rect key="frame" x="0.0" y="0.0" width="113.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="5.5" width="113.5" height="33.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                </variation>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-3i-bGh">
-                                                <rect key="frame" x="128.5" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="138.5" y="6.5" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="changeEffects:" destination="AC7-Nx-2kX" eventType="valueChanged" id="TwE-md-Kv2"/>
                                                 </connections>
                                             </switch>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="qFj-UL-Mmb"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oMc-N4-lQW">
-                                        <rect key="frame" x="0.0" y="122" width="177.5" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oMc-N4-lQW">
+                                        <rect key="frame" x="0.0" y="89" width="187.5" height="44"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSx-jb-9Lg">
-                                                <rect key="frame" x="0.0" y="0.0" width="113.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="5.5" width="113.5" height="33.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                </variation>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHl-iL-atA">
-                                                <rect key="frame" x="128.5" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="138.5" y="6.5" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="changeVibration:" destination="AC7-Nx-2kX" eventType="valueChanged" id="xXl-TJ-grK"/>
                                                 </connections>
                                             </switch>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="YJa-Ow-TP3"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="oMc-N4-lQW" firstAttribute="height" secondItem="5Df-Jp-5aU" secondAttribute="height" multiplier="0.33" id="FKs-PE-jBd"/>
                                     <constraint firstItem="y4F-Ac-qRO" firstAttribute="leading" secondItem="5Df-Jp-5aU" secondAttribute="leading" id="auR-Tj-sgU"/>
+                                    <constraint firstItem="r2n-sa-RNw" firstAttribute="height" secondItem="5Df-Jp-5aU" secondAttribute="height" multiplier="0.33" id="bSA-GP-dGU"/>
                                     <constraint firstItem="y4F-Ac-qRO" firstAttribute="top" secondItem="5Df-Jp-5aU" secondAttribute="top" id="c6Y-Ju-QK1"/>
                                     <constraint firstAttribute="trailing" secondItem="y4F-Ac-qRO" secondAttribute="trailing" id="v4E-ZZ-uAE"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFy-q8-fPX">
-                                <rect key="frame" x="15" y="25" width="30" height="58"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <rect key="frame" x="15" y="25" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                </variation>
                                 <connections>
                                     <action selector="dismiss:" destination="AC7-Nx-2kX" eventType="touchUpInside" id="SlD-OU-ltd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl4-q6-8yB">
-                                <rect key="frame" x="0.0" y="136.5" width="320" height="50.5"/>
+                                <rect key="frame" x="0.0" y="201.5" width="375" height="50.5"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="36"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="80"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.25882352941176473" green="0.41960784313725491" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kl4-q6-8yB" firstAttribute="centerY" secondItem="xH3-nQ-7e9" secondAttribute="centerY" multiplier="0.55" id="ABX-qf-uGw"/>
+                            <constraint firstItem="kl4-q6-8yB" firstAttribute="bottom" secondItem="5Df-Jp-5aU" secondAttribute="top" constant="-15" id="7rV-Vl-IP7"/>
                             <constraint firstItem="IFy-q8-fPX" firstAttribute="leading" secondItem="xH3-nQ-7e9" secondAttribute="leading" constant="15" id="AZh-g7-yzM"/>
+                            <constraint firstItem="5Df-Jp-5aU" firstAttribute="height" secondItem="yFb-HX-wUS" secondAttribute="height" multiplier="0.2" id="CAO-ci-fsj"/>
                             <constraint firstItem="kl4-q6-8yB" firstAttribute="leading" secondItem="xH3-nQ-7e9" secondAttribute="leading" id="I6L-SV-qXJ"/>
                             <constraint firstItem="IFy-q8-fPX" firstAttribute="top" secondItem="xH3-nQ-7e9" secondAttribute="top" constant="5" id="MdM-RK-whR"/>
                             <constraint firstItem="5Df-Jp-5aU" firstAttribute="centerY" secondItem="yFb-HX-wUS" secondAttribute="centerY" id="lKf-VJ-YJ6"/>
@@ -279,43 +319,53 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
             <objects>
                 <viewController restorationIdentifier="SwipingViewController" storyboardIdentifier="SwipingViewController" id="eqg-ox-jZU" customClass="SwipingViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="14X-NZ-VI9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIL-n2-UyH">
-                                <rect key="frame" x="94" y="77" width="132" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <rect key="frame" x="118.5" y="71.5" width="138" height="38"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="54"/>
+                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duY-TQ-7Oi" userLabel="Timer">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cf7-ot-QYk">
-                                        <rect key="frame" x="54.5" y="22" width="211" height="33"/>
+                                        <rect key="frame" x="66" y="24.5" width="243" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="211" id="dWu-g7-3T9"/>
                                             <constraint firstAttribute="width" secondItem="cf7-ot-QYk" secondAttribute="height" multiplier="211:33" id="lfh-7L-f4K"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="54"/>
+                                        </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8r5-aA-9kj">
-                                        <rect key="frame" x="8" y="20.5" width="30" height="36"/>
+                                        <rect key="frame" x="12" y="25.5" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        </variation>
                                         <connections>
                                             <action selector="goBack:" destination="eqg-ox-jZU" eventType="touchUpInside" id="cP9-RY-uXz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siD-L3-vmu">
-                                        <rect key="frame" x="290" y="27.5" width="22" height="22"/>
+                                        <rect key="frame" x="341" y="32.5" width="22" height="22"/>
                                         <state key="normal">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=regular"/>
                                         <connections>
                                             <action selector="action:" destination="KuI-X3-DGf" eventType="touchUpInside" id="gcf-PD-SMp"/>
                                             <action selector="infoTrigger:" destination="eqg-ox-jZU" eventType="touchUpInside" id="gNC-Uw-klE"/>
@@ -326,14 +376,14 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <constraints>
                                     <constraint firstItem="cf7-ot-QYk" firstAttribute="centerX" secondItem="duY-TQ-7Oi" secondAttribute="centerX" id="DwC-83-v1h"/>
                                     <constraint firstItem="8r5-aA-9kj" firstAttribute="centerY" secondItem="cf7-ot-QYk" secondAttribute="centerY" id="Hm3-Fd-4K8"/>
-                                    <constraint firstAttribute="trailing" secondItem="siD-L3-vmu" secondAttribute="trailing" constant="8" id="IAa-FX-B2X"/>
+                                    <constraint firstAttribute="trailing" secondItem="siD-L3-vmu" secondAttribute="trailing" constant="12" id="IAa-FX-B2X"/>
                                     <constraint firstItem="siD-L3-vmu" firstAttribute="centerY" secondItem="8r5-aA-9kj" secondAttribute="centerY" id="Jak-ql-hgC"/>
                                     <constraint firstItem="cf7-ot-QYk" firstAttribute="centerY" secondItem="duY-TQ-7Oi" secondAttribute="centerY" constant="10" id="JjN-RX-lhs"/>
-                                    <constraint firstItem="8r5-aA-9kj" firstAttribute="leading" secondItem="duY-TQ-7Oi" secondAttribute="leading" constant="8" id="m43-L5-PVb"/>
+                                    <constraint firstItem="8r5-aA-9kj" firstAttribute="leading" secondItem="duY-TQ-7Oi" secondAttribute="leading" constant="12" id="m43-L5-PVb"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Mt-io-YoA">
-                                <rect key="frame" x="32" y="156" width="256" height="256"/>
+                                <rect key="frame" x="56.5" y="202.5" width="262.5" height="262.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -345,14 +395,17 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Palabra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Lc-QR-csN">
-                                        <rect key="frame" x="8" y="112" width="247" height="40"/>
+                                        <rect key="frame" x="8" y="71" width="247" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="70"/>
+                                        </variation>
                                     </label>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8A-fc-gGC">
-                                        <rect key="frame" x="39" y="40" width="184" height="184"/>
+                                        <rect key="frame" x="39" y="56" width="184" height="184"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -363,33 +416,36 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUI-KR-kpi" userLabel="Skip">
-                                <rect key="frame" x="0.0" y="476.5" width="320" height="91"/>
+                                <rect key="frame" x="0.0" y="560" width="375" height="106.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayp-b6-SDa">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="27"/>
                                         <state key="normal" title="Saltar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="54"/>
+                                        </variation>
                                         <connections>
                                             <action selector="skip:" destination="eqg-ox-jZU" eventType="touchUpInside" id="Ldj-pz-cvx"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elipse" translatesAutoresizingMaskIntoConstraints="NO" id="baI-dd-7fi">
-                                        <rect key="frame" x="108" y="65.5" width="18" height="18"/>
+                                        <rect key="frame" x="135.5" y="78" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="baI-dd-7fi" secondAttribute="height" multiplier="1:1" id="1fj-ba-fdZ"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elipse" translatesAutoresizingMaskIntoConstraints="NO" id="e2T-qq-J2H">
-                                        <rect key="frame" x="151" y="65.5" width="18" height="18"/>
+                                        <rect key="frame" x="178.5" y="78" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="18" id="7Aj-V4-NX7"/>
                                             <constraint firstAttribute="width" secondItem="e2T-qq-J2H" secondAttribute="height" multiplier="1:1" id="A15-Rz-Jsk"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elipse" translatesAutoresizingMaskIntoConstraints="NO" id="tq0-0d-0EW">
-                                        <rect key="frame" x="194" y="65.5" width="18" height="18"/>
+                                        <rect key="frame" x="221.5" y="78" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tq0-0d-0EW" secondAttribute="height" multiplier="1:1" id="FQ3-3V-xfs"/>
                                         </constraints>
@@ -407,34 +463,37 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                     <constraint firstItem="ayp-b6-SDa" firstAttribute="centerX" secondItem="hUI-KR-kpi" secondAttribute="centerX" id="WBN-Nn-7QS"/>
                                     <constraint firstItem="ayp-b6-SDa" firstAttribute="centerY" secondItem="hUI-KR-kpi" secondAttribute="centerY" id="azr-Ro-DoP"/>
                                     <constraint firstItem="baI-dd-7fi" firstAttribute="centerY" secondItem="e2T-qq-J2H" secondAttribute="centerY" id="dbv-xu-y0K"/>
-                                    <constraint firstItem="e2T-qq-J2H" firstAttribute="top" secondItem="ayp-b6-SDa" secondAttribute="centerY" constant="20" id="hV3-ra-NZf"/>
+                                    <constraint firstItem="e2T-qq-J2H" firstAttribute="top" secondItem="ayp-b6-SDa" secondAttribute="centerY" constant="25" id="hV3-ra-NZf"/>
                                     <constraint firstItem="tq0-0d-0EW" firstAttribute="leading" secondItem="e2T-qq-J2H" secondAttribute="trailing" constant="25" id="zLp-0q-nbV"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfG-9v-PKp">
-                                <rect key="frame" x="110" y="118" width="100" height="33"/>
+                                <rect key="frame" x="137.5" y="104.5" width="100" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="qxo-Bo-3IZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="27"/>
                                 <color key="textColor" red="0.62352941176470589" green="0.22745098039215686" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="54"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.84313725490196079" green="0.44313725490196076" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eIL-n2-UyH" firstAttribute="top" secondItem="duY-TQ-7Oi" secondAttribute="bottom" constant="20" id="2bc-i6-2rJ"/>
+                            <constraint firstItem="eIL-n2-UyH" firstAttribute="top" secondItem="duY-TQ-7Oi" secondAttribute="bottom" constant="5" id="2bc-i6-2rJ"/>
                             <constraint firstItem="hUI-KR-kpi" firstAttribute="leading" secondItem="unf-AH-xYi" secondAttribute="leading" id="2xI-NB-rzd"/>
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="centerX" secondItem="14X-NZ-VI9" secondAttribute="centerX" id="7Qj-gz-UoA"/>
                             <constraint firstItem="2Mt-io-YoA" firstAttribute="centerY" secondItem="14X-NZ-VI9" secondAttribute="centerY" id="DjR-Wb-Hoj"/>
                             <constraint firstItem="2Mt-io-YoA" firstAttribute="centerX" secondItem="14X-NZ-VI9" secondAttribute="centerX" id="Hla-kv-NKZ"/>
                             <constraint firstItem="zfG-9v-PKp" firstAttribute="centerX" secondItem="14X-NZ-VI9" secondAttribute="centerX" id="Xlt-QV-ULB"/>
                             <constraint firstItem="hUI-KR-kpi" firstAttribute="trailing" secondItem="unf-AH-xYi" secondAttribute="trailing" id="a3N-2c-mkg"/>
-                            <constraint firstItem="zfG-9v-PKp" firstAttribute="top" secondItem="eIL-n2-UyH" secondAttribute="bottom" constant="8" id="aqF-l8-N2m"/>
+                            <constraint firstItem="zfG-9v-PKp" firstAttribute="top" secondItem="eIL-n2-UyH" secondAttribute="bottom" constant="-5" id="aqF-l8-N2m"/>
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="height" secondItem="14X-NZ-VI9" secondAttribute="height" multiplier="0.1" id="bqU-JK-Qex"/>
                             <constraint firstItem="eIL-n2-UyH" firstAttribute="centerX" secondItem="14X-NZ-VI9" secondAttribute="centerX" id="cr9-3g-bqg"/>
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="top" secondItem="14X-NZ-VI9" secondAttribute="top" id="fzf-eH-gGV"/>
-                            <constraint firstItem="2Mt-io-YoA" firstAttribute="width" secondItem="14X-NZ-VI9" secondAttribute="width" multiplier="0.8" id="g6t-AH-KrC"/>
+                            <constraint firstItem="2Mt-io-YoA" firstAttribute="width" secondItem="14X-NZ-VI9" secondAttribute="width" multiplier="0.7" id="g6t-AH-KrC"/>
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="trailing" secondItem="unf-AH-xYi" secondAttribute="trailing" id="jfg-h3-cGs"/>
                             <constraint firstItem="ayp-b6-SDa" firstAttribute="height" secondItem="14X-NZ-VI9" secondAttribute="height" multiplier="0.16" id="k3c-6O-FwG"/>
                             <constraint firstItem="duY-TQ-7Oi" firstAttribute="leading" secondItem="unf-AH-xYi" secondAttribute="leading" id="wei-AJ-N5I"/>
@@ -464,40 +523,46 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1816.8" y="-1379.4602698650676"/>
+            <point key="canvasLocation" x="1816.4062499999998" y="-1379.6486090775986"/>
         </scene>
         <!--Catch Up View Controller-->
         <scene sceneID="Zns-Cb-u7H">
             <objects>
                 <viewController id="axF-QV-027" customClass="CatchUpViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="un4-6R-555">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="HkI-nj-8Ga">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                                 <color key="backgroundColor" red="0.33545731355963115" green="0.1845966042202439" blue="0.49559803299492389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="33"/>
                                 <state key="normal" title="Primera frase">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="66"/>
+                                </variation>
                                 <connections>
                                     <action selector="choosesUp:" destination="axF-QV-027" eventType="touchDown" id="iiT-jy-gKJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="AoA-iq-9dL">
-                                <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
                                 <color key="backgroundColor" red="0.70642653164013069" green="0.48811639071481694" blue="0.79207645939086291" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="33"/>
                                 <state key="normal" title="Segunda frase">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="66"/>
+                                </variation>
                                 <connections>
                                     <action selector="choosesDown:" destination="axF-QV-027" eventType="touchDown" id="Uqw-M3-8ea"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMY-WT-zI2">
-                                <rect key="frame" x="97.5" y="221.5" width="125" height="125"/>
+                                <rect key="frame" x="125" y="271" width="125" height="125"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elipse" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-KN-ze4">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
@@ -507,6 +572,9 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="70"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.26274509800000001" green="0.37647058820000001" blue="0.31372549020000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -528,12 +596,15 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                </variation>
                                 <connections>
                                     <action selector="goBack:" destination="axF-QV-027" eventType="touchUpInside" id="TWp-7l-JVH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9Y-F5-0Ne">
-                                <rect key="frame" x="278" y="536" width="22" height="22"/>
+                                <rect key="frame" x="328" y="620" width="22" height="22"/>
                                 <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -545,8 +616,8 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AoA-iq-9dL" firstAttribute="height" secondItem="un4-6R-555" secondAttribute="height" multiplier="0.5" id="11X-iR-Fsb"/>
-                            <constraint firstItem="gkF-A1-JgS" firstAttribute="bottom" secondItem="u9Y-F5-0Ne" secondAttribute="bottom" constant="10" id="4FU-3k-FWL"/>
-                            <constraint firstItem="gkF-A1-JgS" firstAttribute="trailing" secondItem="u9Y-F5-0Ne" secondAttribute="trailing" constant="20" id="4gh-cY-dV0"/>
+                            <constraint firstItem="gkF-A1-JgS" firstAttribute="bottom" secondItem="u9Y-F5-0Ne" secondAttribute="bottom" constant="25" id="4FU-3k-FWL"/>
+                            <constraint firstItem="gkF-A1-JgS" firstAttribute="trailing" secondItem="u9Y-F5-0Ne" secondAttribute="trailing" constant="25" id="4gh-cY-dV0"/>
                             <constraint firstItem="j9A-qT-ZuM" firstAttribute="top" secondItem="gkF-A1-JgS" secondAttribute="top" constant="10" id="6We-hR-pDP"/>
                             <constraint firstItem="fMY-WT-zI2" firstAttribute="centerX" secondItem="un4-6R-555" secondAttribute="centerX" id="GSE-tW-QIt"/>
                             <constraint firstItem="HkI-nj-8Ga" firstAttribute="height" secondItem="un4-6R-555" secondAttribute="height" multiplier="0.5" id="SgT-Dq-3Jr"/>
@@ -578,69 +649,90 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
             <objects>
                 <viewController id="sbH-5H-Rkx" customClass="MinijuegosViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tvz-xn-I8f">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b2-TK-lqa">
-                                <rect key="frame" x="0.0" y="91" width="320" height="159"/>
+                                <rect key="frame" x="0.0" y="106.5" width="375" height="187"/>
                                 <color key="backgroundColor" red="0.40784313725490196" green="0.43137254901960786" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="free fall       ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                </variation>
                                 <connections>
                                     <segue destination="KuI-X3-DGf" kind="presentation" identifier="toFreeFall" id="QJs-Ct-5Z4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNu-tC-Ncr">
-                                <rect key="frame" x="0.0" y="409" width="320" height="159"/>
+                                <rect key="frame" x="0.0" y="480" width="375" height="187"/>
                                 <color key="backgroundColor" red="0.70196078431372544" green="0.4823529411764706" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="catch up       ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                </variation>
                                 <connections>
                                     <segue destination="axF-QV-027" kind="show" id="aCg-sX-8Xn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-1U-t1s">
-                                <rect key="frame" x="0.0" y="250" width="320" height="159"/>
+                                <rect key="frame" x="0.0" y="293.5" width="375" height="186.5"/>
                                 <color key="backgroundColor" red="0.84313725490196079" green="0.44313725490196076" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="swiping      ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                </variation>
                                 <connections>
                                     <segue destination="eqg-ox-jZU" kind="show" id="92s-xt-7h8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minijuegos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SI-MY-ZOw">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
                                 <color key="backgroundColor" red="0.27450980392156865" green="0.59215686274509804" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="64"/>
+                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-ME-sAY">
-                                <rect key="frame" x="256" y="91" width="64" height="477"/>
+                                <rect key="frame" x="300" y="106.5" width="75" height="560.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t46-A0-FuY">
-                                        <rect key="frame" x="19" y="66.5" width="26.5" height="26"/>
+                                        <rect key="frame" x="24.5" y="81" width="26.5" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWw-1K-5QG">
-                                        <rect key="frame" x="19" y="225.5" width="26.5" height="26"/>
+                                        <rect key="frame" x="24.5" y="267.5" width="26.5" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRW-QM-DCA">
-                                        <rect key="frame" x="19" y="384.5" width="26.5" height="26"/>
+                                        <rect key="frame" x="24.5" y="454.5" width="26.5" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.07100813356164383" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -651,11 +743,14 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8j-sE-SiV">
-                                <rect key="frame" x="25" y="18.5" width="30" height="54"/>
+                                <rect key="frame" x="25" y="26.5" width="30" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                </variation>
                                 <connections>
                                     <action selector="goBack:" destination="sbH-5H-Rkx" eventType="touchUpInside" id="fdP-BI-QLn"/>
                                 </connections>
@@ -706,7 +801,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
             <objects>
                 <viewController restorationIdentifier="FreeFallViewController" storyboardIdentifier="FreeFallViewController" id="KuI-X3-DGf" customClass="FreeFallViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TC8-13-UHn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUJ-jT-HE4">
@@ -716,6 +811,9 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <state key="normal" title="op1" backgroundImage="elipse">
                                     <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                </variation>
                                 <connections>
                                     <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="5KS-cD-EiR"/>
                                 </connections>
@@ -727,6 +825,9 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <state key="normal" title="op3" backgroundImage="elipse">
                                     <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                </variation>
                                 <connections>
                                     <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="Yfl-j1-Hwu"/>
                                 </connections>
@@ -738,6 +839,9 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <state key="normal" title="op4" backgroundImage="elipse">
                                     <color key="titleColor" red="0.41176470588235292" green="0.44313725490196076" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                </variation>
                                 <connections>
                                     <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="988-6n-U4w"/>
                                 </connections>
@@ -749,6 +853,9 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <state key="normal" title="op2" backgroundImage="elipse">
                                     <color key="titleColor" red="0.41176470590000003" green="0.4431372549" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                </variation>
                                 <connections>
                                     <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="DOl-e4-rkf"/>
                                 </connections>
@@ -760,12 +867,15 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <state key="normal" title="op5" backgroundImage="elipse">
                                     <color key="titleColor" red="0.41176470590000003" green="0.4431372549" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                </variation>
                                 <connections>
                                     <action selector="chooses:" destination="KuI-X3-DGf" eventType="touchUpInside" id="G7u-6L-71i"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phrase" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AS-Ld-S8t">
-                                <rect key="frame" x="0.0" y="348" width="320" height="120"/>
+                                <rect key="frame" x="0.0" y="447" width="375" height="120"/>
                                 <color key="backgroundColor" red="0.55686274509803924" green="0.5725490196078431" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="mLF-HA-ytk"/>
@@ -773,45 +883,54 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bien Hecho!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-bH-B1f">
-                                <rect key="frame" x="0.0" y="315" width="320" height="32"/>
+                                <rect key="frame" x="0.0" y="315" width="375" height="31.5"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="54"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diH-xX-chr">
-                                <rect key="frame" x="0.0" y="20" width="320" height="35"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="33.5"/>
                                 <color key="backgroundColor" red="0.22352941176470587" green="0.23921568627450979" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Cmx-yp-2Yi"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjw-uw-StH">
-                                <rect key="frame" x="15" y="19.5" width="30" height="36"/>
+                                <rect key="frame" x="15" y="18.5" width="30" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                </variation>
                                 <connections>
                                     <action selector="goBack:" destination="KuI-X3-DGf" eventType="touchUpInside" id="uVf-XP-VQ7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47o-cO-L9V">
-                                <rect key="frame" x="260" y="20" width="30" height="35"/>
+                                <rect key="frame" x="315" y="20" width="30" height="33.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.58122859589041098" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="4hL-ae-3yb"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcK-6l-Rve">
-                                <rect key="frame" x="273" y="516" width="22" height="22"/>
+                                <rect key="frame" x="328" y="620" width="22" height="22"/>
                                 <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -826,11 +945,13 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                             <constraint firstItem="diH-xX-chr" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" id="FPm-Qf-GKA"/>
                             <constraint firstItem="G3P-bH-B1f" firstAttribute="centerX" secondItem="TC8-13-UHn" secondAttribute="centerX" id="GyI-iA-ksl"/>
                             <constraint firstItem="diH-xX-chr" firstAttribute="trailing" secondItem="La1-Ym-Msf" secondAttribute="trailing" id="JlP-EH-XPZ"/>
+                            <constraint firstItem="diH-xX-chr" firstAttribute="height" secondItem="TC8-13-UHn" secondAttribute="height" multiplier="0.05" id="KZU-rf-sNH"/>
                             <constraint firstItem="sjw-uw-StH" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" constant="15" id="Ttp-nJ-nil"/>
                             <constraint firstItem="8AS-Ld-S8t" firstAttribute="trailing" secondItem="La1-Ym-Msf" secondAttribute="trailing" id="Tvw-mf-rZb"/>
                             <constraint firstItem="47o-cO-L9V" firstAttribute="centerY" secondItem="diH-xX-chr" secondAttribute="centerY" id="U1k-RB-TGV"/>
                             <constraint firstItem="47o-cO-L9V" firstAttribute="height" secondItem="diH-xX-chr" secondAttribute="height" id="WUT-cK-2ll"/>
                             <constraint firstItem="G3P-bH-B1f" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" id="Zbh-Kd-ksd"/>
+                            <constraint firstItem="47o-cO-L9V" firstAttribute="width" secondItem="TC8-13-UHn" secondAttribute="width" multiplier="0.08" id="d80-J2-QqA"/>
                             <constraint firstItem="La1-Ym-Msf" firstAttribute="trailing" secondItem="47o-cO-L9V" secondAttribute="trailing" constant="30" id="eja-fq-cuy"/>
                             <constraint firstItem="G3P-bH-B1f" firstAttribute="top" secondItem="TC8-13-UHn" secondAttribute="top" constant="315" id="hlj-qM-knm"/>
                             <constraint firstItem="8AS-Ld-S8t" firstAttribute="leading" secondItem="La1-Ym-Msf" secondAttribute="leading" id="jZJ-j4-udI"/>
@@ -838,7 +959,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                             <constraint firstItem="La1-Ym-Msf" firstAttribute="trailing" secondItem="kcK-6l-Rve" secondAttribute="trailing" constant="25" id="onB-p3-QHl"/>
                             <constraint firstItem="diH-xX-chr" firstAttribute="top" secondItem="La1-Ym-Msf" secondAttribute="top" id="rx2-9k-WV5"/>
                             <constraint firstItem="La1-Ym-Msf" firstAttribute="bottom" secondItem="8AS-Ld-S8t" secondAttribute="bottom" constant="100" id="v2z-nW-Lad"/>
-                            <constraint firstItem="La1-Ym-Msf" firstAttribute="bottom" secondItem="kcK-6l-Rve" secondAttribute="bottom" constant="30" id="vPS-bZ-qjr"/>
+                            <constraint firstItem="La1-Ym-Msf" firstAttribute="bottom" secondItem="kcK-6l-Rve" secondAttribute="bottom" constant="25" id="vPS-bZ-qjr"/>
                             <constraint firstItem="G3P-bH-B1f" firstAttribute="trailing" secondItem="8AS-Ld-S8t" secondAttribute="trailing" id="zsk-rc-MjV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="La1-Ym-Msf"/>
@@ -865,39 +986,48 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
             <objects>
                 <viewController restorationIdentifier="RetroFreeFallViewController" storyboardIdentifier="RetroFreeFallViewController" id="stJ-fJ-vQN" customClass="RetroFreeFallViewController" customModule="TildeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oVh-wo-qux">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1T7-ir-QjC">
-                                <rect key="frame" x="20" y="60" width="280" height="227"/>
+                                <rect key="frame" x="20" y="60" width="335" height="267"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phrase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8I-sI-nwz">
-                                        <rect key="frame" x="0.0" y="10" width="280" height="136.5"/>
+                                        <rect key="frame" x="0.0" y="10" width="335" height="160"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="29"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="58"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="solution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pic-Qs-zmi">
-                                        <rect key="frame" x="0.0" y="187.5" width="280" height="33"/>
+                                        <rect key="frame" x="0.0" y="217" width="335" height="32.5"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="46"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respuesta correcta:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfm-6t-wQs">
-                                        <rect key="frame" x="0.0" y="166.5" width="262" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="ZdY-uq-U8d"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="190" width="317" height="27"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="36"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Terminó el tiempo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOF-RN-k66">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="227"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="267"/>
                                         <color key="backgroundColor" red="0.2627450980392157" green="0.37647058823529411" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="44"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="88"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
@@ -905,6 +1035,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                     <constraint firstItem="dfm-6t-wQs" firstAttribute="top" secondItem="Y8I-sI-nwz" secondAttribute="bottom" constant="20" id="8LM-ij-gjL"/>
                                     <constraint firstItem="dfm-6t-wQs" firstAttribute="leading" secondItem="pic-Qs-zmi" secondAttribute="leading" id="B8a-yD-rNv"/>
                                     <constraint firstAttribute="bottom" secondItem="OOF-RN-k66" secondAttribute="bottom" id="CJW-Fg-uuG"/>
+                                    <constraint firstItem="dfm-6t-wQs" firstAttribute="height" secondItem="1T7-ir-QjC" secondAttribute="height" multiplier="0.1" id="FHF-TU-bdv"/>
                                     <constraint firstAttribute="trailing" secondItem="Y8I-sI-nwz" secondAttribute="trailing" id="I7j-Vd-Xlb"/>
                                     <constraint firstItem="Y8I-sI-nwz" firstAttribute="leading" secondItem="1T7-ir-QjC" secondAttribute="leading" id="IL4-VH-xgu"/>
                                     <constraint firstItem="pic-Qs-zmi" firstAttribute="leading" secondItem="1T7-ir-QjC" secondAttribute="leading" id="NDB-3J-LtO"/>
@@ -919,35 +1050,47 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRO-Wu-Tjs">
-                                <rect key="frame" x="0.0" y="511" width="320" height="57"/>
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45256314212328769" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="27"/>
                                 <state key="normal" title="jugar de nuevo">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="54"/>
+                                </variation>
                                 <connections>
                                     <action selector="playAgain:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="EP6-1o-kyn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu puntaje:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyJ-eq-X2f">
-                                <rect key="frame" x="0.0" y="317" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="357" width="375" height="43.5"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="31"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="62"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ0-2P-uf9">
-                                <rect key="frame" x="97" y="391" width="126.5" height="73"/>
+                                <rect key="frame" x="124.5" y="430.5" width="126.5" height="73"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="104"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6F-O9-Kls">
-                                <rect key="frame" x="0.0" y="468.5" width="320" height="42.5"/>
+                                <rect key="frame" x="0.0" y="550.5" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.36103381849315069" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="24"/>
                                 <state key="normal" title="volver a inicio">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="48"/>
+                                </variation>
                                 <connections>
                                     <action selector="goToHome:" destination="stJ-fJ-vQN" eventType="touchUpInside" id="j36-77-68p"/>
                                 </connections>
@@ -985,7 +1128,7 @@ Tilde se distribuye como está de manera gratuita y se prohíbe su distribucio
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pb6-Ur-xdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2809" y="-2529"/>
+            <point key="canvasLocation" x="2808.984375" y="-2529.1361639824304"/>
         </scene>
     </scenes>
     <resources>
